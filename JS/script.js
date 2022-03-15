@@ -60,3 +60,21 @@ function validerForm(){
 
     return true;
 }
+
+function validerLogin(){
+    var id = document.forms["SignIn"]["NomUser"];
+    var pass = document.forms["SignIn"]["PassUser"];
+
+    if(id.value == "" || id.value.length != 8 || !/^[a-zA-Z]+$/.test(id.value)){
+        alert("Entrez un identifiant valide.")
+        id.focus();
+        return false;
+    }
+
+    if(pass.value == "" || pass.value.length != 8 || !/^[a-zA-Z0-9]+$/.test(pass.value)){
+        alert("Entrez un mots de passe valide.")
+        pass.focus();
+        return false;
+    }
+    return true;
+}
