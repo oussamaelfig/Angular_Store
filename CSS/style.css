@@ -1,8 +1,37 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: all 0.2s linear;
-  text-transform: capitalize;
-  font-family: "Exo 2", sans-serif;
+.navbar a {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.nav-link {
+  color: rgb(216, 216, 216) !important;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.container,
+.container-xxl {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1400px) {
+  .container-fluid {
+    max-width: 1320px;
+  }
+}
+
+.navbar-toggler {
+  border-color: #dbe0e7;
+  background-color: transparent;
+  border-radius: 0.25rem;
+}
+.navbar-light .navbar-toggler {
+  color: #dbe0e7 !important;
 }
