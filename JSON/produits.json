@@ -1,0 +1,64 @@
+{
+    "produit":[
+        {"nom":"Samsung Galaxy S22 Ultra",
+        "quantité":"12",
+        "prix":"1789.99$",
+        "description":"Voici le Galaxy S22 Ultra, avec la puissance de note. La puce la plus rapide jamais installée dans un appareil Galaxy. L’écran Dynamic AMOLED 2X avec Vision Booster est l’ennemi numéro 1 des reflets, atteignant 1 750 nits à son maximum. Et la fréquence de rafraîchissement adaptative de 120 Hz assure un défilement fluide, en s’adaptant à ce qui est à l’écran pour un affichage optimisé.",
+        "photo":"../Images/galaxyS22U.jpg"
+        },
+        {"nom":"iPhone 13 Pro",
+            "quantité":"10",
+            "prix":"1399.99$",
+            "description":"A dramatically more powerful camera system. A display so responsive, every interaction feels new again. The world’s fastest smartphone chip. Exceptional durability. And a huge leap in battery life. Let’s Pro.",
+            "photo":"../Images/iphone.jpg"
+        },
+        {"nom":"Xbox Series X",
+            "quantité":"0",
+            "prix":"599.99$",
+            "description":"Procurez-vous une puissante machine de jeu : la console Xbox Series X. Elle combine un disque SSD de 1 To avec une puissance de traitement graphique de 12 téraflops pour des jeux incroyablement rapides et des temps de chargement réduits. Profitez d'une expérience incroyable avec des jeux en 4K à 120 images/s, un son spatial 3D évolué et plus encore. Elle prend aussi en charge des milliers de titres provenant de 4 générations de consoles Xbox.",
+            "photo":"../Images/seriesX"
+        },
+        {"nom":"Xbox Series S",
+            "quantité":"20",
+            "prix":"349.99$",
+            "description":"Rapide et performante, la console Xbox Series S vous permet de jouer à vos jeux à votre façon. Cette puissante console entièrement numérique est dotée d'un disque SSD de 512 Go pour une expérience de jeu rapide et des temps de chargement réduits. Profitez d'une expérience incroyable avec des jeux en 1440p à 120 images/s et un son spatial 3D évolué. Elle prend aussi en charge des milliers de titres provenant de 4 générations de consoles Xbox.",
+            "photo":"../Images/seriesS.jpg"
+        },
+        {"nom":"PS5",
+            "quantité":"0",
+            "prix":"699.99$",
+            "description":"",
+            "photo":"../Images/galaxyS22U.jpg"
+        },
+        {"nom":"Souris d'ordinateur",
+            "quantité":"55",
+            "prix":"9.99$",
+            "description":"Souris d'ordinateur générique qui permet de cliquer et de bouger le curseur. Le clic gauche vient déjà brisé. Un deal incroyable!",
+            "photo":"../Images/souris.jpg"
+        },
+        {"nom":"Nintendo Switch",
+            "quantité":"6",
+            "prix":"329.99$",
+            "description":"Faites ce que vous croyiez impossible avec la Nintendo Switch. Grâce à une autonomie maximale de 9 heures, vous pouvez jouer à vos jeux solos ou multijoueurs à la maison, puis sortir et jouer à ces mêmes jeux où et quand vous voulez. Il suffit de fixer les manettes Joy-Con à l'écran haute définition lumineux, et le tour est joué. Vous pouvez aussi détacher les manettes et en donner une à un ami pour une partie multijoueur.",
+            "photo":"../Images/switch.jpg"
+        },
+        {"nom":"Télévision Samsung 8K 80''",
+            "quantité":"10",
+            "prix":"4399.99$",
+            "description":"Profitez de vos émissions et jeux vidéos préféré avec une définition incroyable et des couleurs qui vous marquent avec la technologie d'imgae HDR.",
+            "photo":"../Images/tv_samsung.png"
+        },
+        {"nom":"Apple Watch",
+            "quantité":"10",
+            "prix":"349.98$",
+            "description":"Gardez traque de votre santé avec votre Apple Watch. Restez en ligne grâce à la connexion cellulaire et GPS. Elle offre des entraînements de haut niveau des meilleurs entraîneurs au monde pour atteindre vos objectifs personnels et rester motivé(e) en écoutant de la musique, des baladoémissions et des livres audio.",
+            "photo":"../Images/watch.jpg"
+        },
+        {"nom":"Télévision 4K Premium",
+            "quantité":"10",
+            "prix":"1099.99$",
+            "description":"Plonger dans un monde de couleurs et de réalisme incroyable grâce à cette télévision de qualité Premium. De plus, vous profiter d'une incroyable garantie de 12 heures!",
+            "photo":"../Images/tv.png"
+        }
+    ]
+}
