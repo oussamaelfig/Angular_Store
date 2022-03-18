@@ -1,3 +1,24 @@
-# TP2_INF3190
+# TP2 INF3190 HIVER 2022
 
-Travail pratique 2 : HTML, CSS, JS/jQuery, PHP, Bootstrap, etc.
+### Description du projet :
+
+Site web commercial responsive ...
+
+### Fonctionnalités implémentées :
+
+...
+
+### Technologies utilisés:
+
+- HTML
+- CSS
+- BOOTSTRAP
+- JAVASCRIPT
+- JQUERY
+- PHP
+
+### Développeurs:
+
+OUSSAMA EL-FIGHA | ELFO74030209
+
+NICOLAS PLANTE |
