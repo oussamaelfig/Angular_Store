@@ -1,135 +1,228 @@
-.navbar li a {
-  font-family: "Poppins", sans-serif !important;
-  font-weight: 500;
-  float: right;
-  text-align: left;
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Poppins:wght@300&display=swap");
+
+:root {
+  --primary: #0d6efd;
+  --dark: #21252f;
+  --body: #888;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
 }
 
-#logo-site {
-  width: 70%;
+body {
+  font-family: "Cabin", sans-serif;
+  line-height: 1.7;
+  color: var(--body);
 }
 
-.navbar {
-  background-image: linear-gradient(to right, #0d6efd, rgb(4, 21, 165));
+#logo-comp {
 }
 
-.nav-link {
-  color: rgb(216, 216, 216) !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+  color: var(--dark);
+  font-weight: 700;
 }
 
-.nav-link:hover {
-  color: rgba(255, 255, 255, 0.85) !important;
+a {
+  color: var(--dark);
+  text-decoration: none;
 }
 
-.p-2 {
-  padding: 0.5rem !important;
+.logo {
+  width: 160px;
 }
 
-.container,
-.container-xxl {
+.navbar .nav-link {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 14px 18px;
+  border-width: 2px;
+  border-radius: 0;
+}
+
+.hero {
+  background-image: url(../Images/computer-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: "";
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 1400px) {
-  .container-fluid {
-    max-width: 1320px;
-  }
-}
-
-.navbar-toggler {
-  border-color: #dbe0e7;
-  background-color: transparent;
-  border-radius: 0.25rem;
-  outline: none !important;
-}
-.navbar-light .navbar-toggler {
-  color: #dbe0e7 !important;
-}
-
-/*button explore*/
-#explore {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#explore {
-  background-color: rgb(33, 35, 61);
-  color: white;
-  width: 200px;
-  height: auto;
-  border: 1px solid white;
-  font-size: 20px;
-  border-radius: 100px;
-  transition: 0.6s;
-  overflow: hidden;
-  position: relative;
-}
-
-#explore:focus {
-  outline: none;
-}
-
-#explore:before {
-  content: "";
-  display: block;
-  position: relative;
-  background-color: #c2c6cc;
-  width: 60px;
   height: 100%;
-  left: 0;
-  right: 0;
-  opacity: 0.5s;
-  filter: blur(30px);
-  transform: translateX(-130px) skewX(-15deg);
-}
-
-#explore:after {
-  content: "";
-  display: block;
-  position: relative;
-  background-color: #b4d2da;
-  width: 30px;
-  height: 100%;
-  left: 30px;
+  position: absolute;
   top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/*product list*/
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-products {
+  padding: 80px 0 54px;
+}
+
+.section-products .header {
+  margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+  font-size: 1rem;
+  color: #fe302f;
+  font-weight: 500;
+}
+
+.section-products .header h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #444444;
+}
+
+.section-products .single-product {
+  margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+  position: relative;
+  height: 290px;
+  max-height: 290px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+  transform: scale(1.2, 1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+  background: url("../Images/watch.jpg") no-repeat center;
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+  background: url("../Images/iphone-13-pro-green-select.png") no-repeat center;
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+.section-products #product-3 .part-1::before {
+  background: url("../Images/airpods-product.jpg") no-repeat center;
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+.section-products #product-4 .part-1::before {
+  background: url("../Images/macbook-product.jpg") no-repeat center;
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #ffffff;
+  background-color: #fe302f;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+  left: 0;
+  background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+  position: absolute;
+  bottom: -41px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   opacity: 0;
-  filter: blur(30px);
-  transform: translate(-100px) scaleX(-15deg);
+  transition: bottom 0.5s, opacity 0.5s;
 }
 
-#explore:hover {
-  background: #b4d2da;
-  cursor: pointer;
+.section-products .single-product:hover .part-1 ul {
+  bottom: 30px;
+  opacity: 1;
 }
 
-#explore:hover:before {
-  transform: translateX(300px) skewX(-15deg);
-  opacity: 0.6;
-  transition: 0.7s;
+.section-products .single-product .part-1 ul li {
+  display: inline-block;
+  margin-right: 4px;
 }
 
-#explore:hover::after {
-  transform: translateX(300px) skewX(-15deg);
-  opacity: 0.1;
-  transition: 0.7s;
+.section-products .single-product .part-1 ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+  transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+  color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+  font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+/*banner text carousel*/
+#header-carousel {
+  font-weight: 900;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 /*footer*/
-footer {
-  background-image: linear-gradient(to right, #0d6efd, rgb(4, 21, 165));
-}
-/*banner*/
-#banner {
-  background-image: linear-gradient(to right, #0d6efd, rgb(4, 21, 165));
-  color: white;
-  padding-top: 5%;
+.footer-top {
+  padding-bottom: 50px;
+  padding: 90px 90px 10px 90px;
+  background-color: var(--body);
 }
 
-.promo-title {
-  font-size: 40px;
-  font-weight: 600;
-  margin-top: 100px;
+footer h5 {
+  color: #ffbd59;
 }
