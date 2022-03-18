@@ -12,22 +12,18 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
-        <div class="container-fluid">
-            <a href="../index.html"><img id="logo-site" src="../Images/logoEnt1.png" alt="Logo de compecom" /></a>
+    <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="logo-comp" class="logo" src="../Images/logoEnt1.png"
+                    alt="logo" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
-                    </path>
-                </svg>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Explorer</a>
@@ -36,7 +32,7 @@
                         <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="postuler.html">Postuler</a>
+                        <a class="nav-link" href="postuler.html">Postuler</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="signIn.html">Se connecter</a>
@@ -46,7 +42,7 @@
         </div>
     </nav>
 
-    <div class="text-center container-fluid p-5 mt-5 bg-light">
+    <div class="text-center container-fluid p-5 bg-light">
         <h1>Devenez membre de notre formidable équipe!</h1>
         <p class="muted"><small>Salaire à partir de 0,25$/jour</small></pid>
         <form name="Post" action="#" onsubmit="return validerForm()">
@@ -134,46 +130,38 @@
         </form>
     </div>
     <!--  FOOTER -->
-    <footer class="bg-primary text-white pt-5 pb-4">
-        <div class="container text-md-left">
-            <div class="row text-left text-md-left">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning-bold text-warning">
-                        COMPECOM
-                    </h5>
-                    <p class="text-left">
-                        COMPECOM aide les clients à garder un œil sur le monde trépidant de la technologie avec toutes
-                        les dernières nouvelles, des multiples choix de produits, des éditoriaux perspicaces et des
-                        aperçus uniques.
-                    </p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
-                        Développeurs
-                    </h5>
-                    <p>
-                        <a href="mailto:el-figha.oussama@courrier.uqam.ca" class="text-white"
-                            style="text-decoration: none">
-                            OUSSAMA EL-FIGHA</a>
-                    </p>
-                    <p>
-                        <a href="mailto:plante.nicolas.4@courrier.uqam.ca" class="text-white"
-                            style="text-decoration: none">
-                            NICOLAS PLANTE</a>
-                    </p>
-                </div>
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
-                        Contact
-                    </h5>
-
-                    <p><i class="bi bi-telephone-fill"></i>&nbsp +1(000)000-0000</p>
-                    <p><i class="bi bi-building"></i>&nbspMontréal, 994 Rue Rachel Est</p>
-                    <p><i class="bi bi-envelope"></i></i>&nbspcompecom@compecom.ca</p>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="../index.html"><img class="logo" src="../Images/logoEnt1.png" alt="logoCompany" /></a>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Développeurs</h5>
+                        <ul>
+                            <li>
+                                <a href="mailto:el-figha.oussama@courrier.uqam.ca" class="text-white"
+                                    style="text-decoration: none">
+                                    OUSSAMA EL-FIGHA</a>
+                            </li>
+                            <li>
+                                <a href="mailto:plante.nicolas.4@courrier.uqam.ca" class="text-white"
+                                    style="text-decoration: none">
+                                    NICOLAS PLANTE</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-white">
+                        <h5>Contact</h5>
+                        <p><i class="bi bi-telephone-fill"></i>&nbsp +1(000)000-0000</p>
+                        <p><i class="bi bi-building"></i>&nbspMontréal, 994 Rue Rachel Est</p>
+                        <p><i class="bi bi-envelope"></i></i>&nbspcompecom@compecom.ca</p>
+                    </div>
                 </div>
             </div>
-            <hr class="mb-4">
-            <div class="row align-items-center">
+            <hr class="mb-4 text-white">
+            <div class="row align-items-center text-white">
                 <p class="text-center">Le projet est développé dans le cadre du cours
                     <a class="link-light" href="http://www.etudier.uqam.ca/cours?sigle=INF3190"
                         style="text-decoration: none"><strong>INF3190</strong> </a>
