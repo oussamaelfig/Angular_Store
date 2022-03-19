@@ -4,9 +4,13 @@
 
 Site web commercial responsive ...
 
+
+
 ### Fonctionnalités implémentées :
 
 ...
+
+
 
 ### Technologies utilisés:
 
@@ -17,8 +21,11 @@ Site web commercial responsive ...
 - JQUERY
 - PHP
 
+
+
 ### Développeurs:
 
 OUSSAMA EL-FIGHA | ELFO74030209
 
-NICOLAS PLANTE |
+NICOLAS PLANTE  |
+
