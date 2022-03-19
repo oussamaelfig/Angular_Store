@@ -26,9 +26,11 @@ Site web commercial responsive ...
 OUSSAMA EL-FIGHA | ELFO74030209
 
 NICOLAS PLANTE | PLAN83020108
-  
+
 ## Identifiants des utilisateurs
+
 ### Utilisateur de base:
+
 -username = "allosalu", mot de passe = "1234asdf"  
 -username = "userDeux", mot de passe = "p1s2d3f4"  
 -username = "infowebs", mot de passe = "INF31902"  
@@ -38,7 +40,8 @@ NICOLAS PLANTE | PLAN83020108
 -username = "hellowor", mot de passe = "tech2022"  
 -username = "bonjourM", mot de passe = "yeetMe44"  
 -username = "confiden", mot de passe = "pass1234"  
--username = "qwertyui", mot de passe = "QwErTy12"  
-  
-### Administrateur  
--username = "adminast", mot de passe = "TpAdmi12"  
+-username = "qwertyui", mot de passe = "QwErTy12"
+
+### Administrateur
+
+-username = "adminast", mot de passe = "TpAdmi12"
