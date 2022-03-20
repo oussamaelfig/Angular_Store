@@ -1,4 +1,4 @@
-$('#cart-icon').click(function(){
+$('#open-cart').click(function(){
   $('.cart').addClass('active');
 });
 
