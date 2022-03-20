@@ -6,6 +6,13 @@ $("#close-cart").click(function () {
   $(".cart").removeClass("active");
 });
 
+//cart working JS
+if (document.readyState == "loading") {
+  document.addEventListener("DOMContentLoaded", ready);
+} else {
+  ready();
+}
+
 function ready() {
   //Remove items from cart
   var reomveCartButtons = document.getElementsByClassName("cart-remove");
