@@ -1,30 +1,22 @@
-// // cart
-// let cartIcon = document.querySelector("#cart-icon");
-// let cart = document.querySelector(".cart");
-// let closeCart = document.querySelector("#close-cart");
+$("#open-cart").click(function () {
+  $(".cart").addClass("active");
+});
 
-// //open cart
-// cartIcon.onlclick = () => {
-//   cart.classList.add("active");
-// };
+$("#close-cart").click(function () {
+  $(".cart").removeClass("active");
+});
 
-// //close cart
-// closeCart.onlclick = () => {
-//   cart.classList.remove("active");
-// };
-
-function open() {
-  document.querySelector(".cart").classList.add("active");
+function ready() {
+  //Remove items from cart
+  var reomveCartButtons = document.getElementsByClassName("cart-remove");
+  console.log(reomveCartButtons);
+  for (var i = 0; i < reomveCartButtons.length; i++) {
+    var button = reomveCartButtons[i];
+    button.addEventListener("click", removeCartItem);
+  }
 }
 
-function close() {
-  document.querySelector(".cart").classList.remove("active");
+function removeCartItem(event) {
+  var buttonClicked = event.target;
+  buttonClicked.parentElement.remove();
 }
-
-document.querySelector("#cart-icon").onlclick = function () {
-  open();
-};
-
-document.querySelector("#close-cart").onlclick = function () {
-  close();
-};
