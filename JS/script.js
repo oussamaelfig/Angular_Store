@@ -76,5 +76,52 @@ function validerLogin(){
         pass.focus();
         return false;
     }
+    if(!verifierLoginTemp(id, pass)){
+        alert("Identifiant et/ou mot de passe invalide!")
+        return false;
+    }
+    
     return true;
+}
+
+//Fonction temp qui ne fait pas la diff entre users normaux et admin
+function verifierLoginTemp(id, pass){
+    var file = '{ '+
+        '"users":['+
+            '{"username":"allosalu","motdepasse":"1234asdf"},'+
+            '{"username":"userDeux","motdepasse":"p1s2d3f4"},'+
+            '{"username":"infowebs","motdepasse":"INF31902"},'+
+            '{"username":"infoJava","motdepasse":"2050inf2"},'+
+            '{"username":"jaimectf","motdepasse":"2171best"},'+
+            '{"username":"cpluscpl","motdepasse":"cPlus232"},'+
+            '{"username":"hellowor","motdepasse":"tech2022"},'+
+            '{"username":"bonjourM","motdepasse":"yeetMe44"},'+
+            '{"username":"confiden","motdepasse":"pass1234"},'+
+            '{"username":"qwertyui","motdepasse":"QwErTy12"}'+
+        '],'+
+    
+        '"admin":[{"username":"administ", "motdepasse":"TpAdmi12"}]'+
+    '}';
+    var json = JSON.parse(file);
+    var usersArray = json.users;
+    var gerantArray = json.admin;
+    var cpt = 0;
+    var estEgaux = false;
+    while(cpt < usersArray.length && !estEgaux){
+        if(usersArray[cpt].username === id.value && usersArray[cpt].motdepasse === pass.value){
+            estEgaux = true;
+        }
+        ++cpt;
+    }
+    while(cpt < gerantArray.length && !estEgaux){
+        if(gerantArray[cpt].username === id.value && gerantArray[cpt].motdepasse === pass.value){
+            estEgaux = true;
+        }
+        ++cpt;
+    }
+    if(estEgaux){
+        return true;
+    }
+
+    return false;
 }
