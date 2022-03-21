@@ -46,240 +46,196 @@
             <a class="nav-link" href="signIn.html">Se connecter</a>
           </li>
         </ul>
+        <div class="d-flex align-items-center">
+      <!-- Icon -->
+      <button type="button" class="btn btn-light" id="open-cart"><a class="text-reset me-3" href="#">
+        <i class="fas fa-shopping-cart" id="cart-icon"></i>
+      </a></button>
+      <!--Shopping cart-->
+      <div style="overflow-y: scroll; height:400px;" class="cart" id="panier">
+          <h2 class="cart-title">Votre panier</h2>
+          <!--Contenet cart-->
+          <div class="cart-content">
+          
+          </div>
+          
+          <!--  total -->
+          <div class="total">
+            <div class="totalHT">
+            <div class="total-title">Totale Hors Taxes&#160</div>
+            <div class="total-price">0.00 $</div>
+          </div>
+          <div class="totalTTC">
+            <div class="total-title">Totale (taxes incluses)&#160</div>
+            <div class="total-price-apres-taxes">0.00 $</div>
+          </div>
+          </div>
+          <!--  Button type -->
+          <button type="button" class="btn-buy">Buy now</button>
+          <i class="bi bi-x" id="close-cart"></i>
+      </div>
+        </div>
       </div>
     </div>
   </nav>
 
   <!--list of products -->
   <!--Smartphones-->
-  <section class="section-products">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="header">
-            <h1 id="list-products">Liste produits</h1>
-            <br>
-            <h2>Smartphones</h2>
-          </div>
+  <section class="shop container">
+      <h3 class="header-red">Explorer nos produits</h3>
+      <h1 class="section-title">Smartphones</h1>
+      <br>
+      <div class="shop-content">
+        <!--product 1-->
+        <div class="product-box">
+          <img
+            src="../Images/iphone-13-pro-green-select.png"
+            alt="apple watch"
+            class="product-img"
+          />
+          <h2 class="product-title">Apple iPhone 13 256Go</h2>
+          <span class="price">1599.00 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
+        </div>
+        <!--Product 2-->
+        <div class="product-box">
+          <img
+            src="../Images/iphone12.jpg"
+            alt="iphone 13"
+            class="product-img"
+          />
+          <h2 class="product-title">Apple iPhone 12 128Go</h2>
+          <span class="price">899.45 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
+        </div>
+        <!--Product 3-->
+        <div class="product-box">
+          <img
+            src="../Images/SamsungGalaxyNote10+.webp"
+            alt="AirPods"
+            class="product-img"
+          />
+          <h2 class="product-title">Galaxy Note10, Note10+ 5G 246Go</h2>
+          <span class="price">799.00 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
+        </div>
+        <!--Product 4-->
+        <div class="product-box">
+          <img
+            src="../Images/GooglePixel6Pro.png"
+            alt="MacBook"
+            class="product-img"
+          />
+          <h2 class="product-title">Google Pixel 6 128Go</h2>
+          <span class="price">599.00 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
         </div>
       </div>
-      <div class="row">
-        <!-- Product1 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-1" class="single-product">
-            <div class="part-1">
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">Apple iPhone 13 256Go</h3></a>
-              <h4 class="product-price">1 599.00 $</h4>
-            </div>
-          </div>
+    </section>
+<hr style="width:50% ; margin: auto;"> 
+ <!--Laptops-->
+<section class="shop container">
+  <br>
+  <br>
+        <h1 class="section-title">Laptops</h1>
+        <br>
+      <div class="shop-content">
+        <!--product 5-->
+        <div class="product-box">
+          <img
+            src="../Images/macbook-product.jpg"
+            alt="apple watch"
+            class="product-img"
+          />
+          <h2 class="product-title">MacBook Pro 14 po</h2>
+          <span class="price">2499.00 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
         </div>
-        <!-- Product2 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-2" class="single-product">
-            <div class="part-1">
-              <span class="new">new</span>
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">Apple iPhone 12 128Go </h3></a>
-              <h4 class="product-price">899.45 $</h4>
-            </div>
-          </div>
+        <!--Product 6-->
+        <div class="product-box">
+          <img src="../Images/imac-po.jpg" alt="iphone 13" class="product-img" />
+          <h2 class="product-title">iMac 24 po</h2>
+          <span class="price">1849.00 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
         </div>
-        <!-- Product3 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-3" class="single-product">
-            <div class="part-1">
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">Galaxy Note10, Note10+ 5G 246Go</h3></a>
-              <h4 class="product-price">799.00 $</h4>
-            </div>
-          </div>
+        <!--Product 7-->
+        <div class="product-box">
+          <img
+            src="../Images/PcGamer-Ryzen.jpg"
+            alt="AirPods"
+            class="product-img"
+          />
+          <h2 class="product-title">
+            Skytech Archangel Gaming Computer PC Desktop – Ryzen
+          </h2>
+          <span class="price">1049.99 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
         </div>
-        <!-- Product4 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-4" class="single-product">
-            <div class="part-1">
-              <span class="new">new</span>
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">Google Pixel 6 128Go</h3></a>
-              <h4 class="product-price">599.00 $</h4>
-            </div>
-          </div>
+        <!--Product 8-->
+        <div class="product-box">
+          <img
+            src="../Images/Zenbook-Pro.webp"
+            alt="MacBook"
+            class="product-img"
+          />
+          <h2 class="product-title">
+            Zenbook Pro Duo 15 OLED (UX582, 11th Gen Intel)
+          </h2>
+          <span class="price">4199.00 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
         </div>
       </div>
-    </div>
-  </section>
-  <!--Laptops-->
-  <section class="section-products">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="header">
-            <h2>Laptops</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Product5 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-5" class="single-product">
-            <div class="part-1">
-              <span class="new">new</span>
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">MacBook Pro 14 po</h3></a>
-              <h4 class="product-price">2 499.00 $</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Product6 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-6" class="single-product">
-            <div class="part-1">
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">iMac 24 po</h3></a>
-              <h4 class="product-price">1 849.00 $</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Product7 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-7" class="single-product">
-            <div class="part-1">
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">Skytech Archangel Gaming Computer PC Desktop – Ryzen</h3></a>
-              <h4 class="product-price">1 049.99 $</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Product8 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-8" class="single-product">
-            <div class="part-1">
-              <span class="new">new</span>
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">Zenbook Pro Duo 15 OLED (UX582, 11th Gen Intel)</h3></a>
-              <h4 class="product-price">4 199.00 $</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+<hr style="width:50% ; margin: auto;"> 
   <!--Accessoires-->
-  <section class="section-products">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="header">
-            <h2>Accessoires</h2>
-          </div>
+  <section class="shop container">
+    <br>
+    <br>
+          <h1 class="section-title">Accessoires</h1>
+          <br>
+      <div class="shop-content">
+        <!--product 9-->
+        <div class="product-box">
+          <img
+            src="/Images/airpods-product.jpg"
+            alt="apple watch"
+            class="product-img"
+          />
+          <h2 class="product-title">AirPods Pro</h2>
+          <span class="price">329.00 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
+        </div>
+        <!--Product 10-->
+        <div class="product-box">
+          <img src="/Images/apple-watch.jpg" alt="iphone 13" class="product-img" />
+          <h2 class="product-title">Apple Watch SE</h2>
+          <span class="price">369.00 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
+        </div>
+        <!--Product 11-->
+        <div class="product-box">
+          <img
+            src="../Images/souris-apple.jpg"
+            alt="AirPods"
+            class="product-img"
+          />
+          <h2 class="product-title">Magic Mouse - Surface Multi-Touch noire</h2>
+          <span class="price">119.00 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
+        </div>
+        <!--Product 12-->
+        <div class="product-box">
+          <img
+            src="../Images/eve-cam.jpg"
+            alt="MacBook"
+            class="product-img"
+          />
+          <h2 class="product-title">Eve Cam</h2>
+          <span class="price">219.95 $</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
         </div>
       </div>
-      <div class="row">
-        <!-- Product9 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-9" class="single-product">
-            <div class="part-1">
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">AirPods Pro</h3></a>
-              <h4 class="product-price">329.00 $</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Product10 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-10" class="single-product">
-            <div class="part-1">
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">Apple Watch SE</h3></a>
-              <h4 class="product-price">369.00 $</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Product11 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-11" class="single-product">
-            <div class="part-1">
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">Magic Mouse - Surface Multi-Touch noire</h3></a>
-              <h4 class="product-price">119.00 $</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Product12 -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-explore-12" class="single-product">
-            <div class="part-1">
-              <span class="new">new</span>
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <a href="#"><h3 class="product-title">Eve Cam</h3></a>
-              <h4 class="product-price">219.95 $</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
   <!--  Footer -->
   <footer>
     <div class="footer-top">
@@ -324,6 +280,8 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script language="JavaScript" type="text/javascript" src="../JS/mainCart.js"></script>
+
 </body>
 
 </html>

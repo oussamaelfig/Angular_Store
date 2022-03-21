@@ -112,6 +112,10 @@ function updatetotal() {
   var cartContent = document.getElementsByClassName("cart-content")[0];
   var cartBoxes = cartContent.getElementsByClassName("cart-box");
   var total = 0;
+  var totalApresTaxes = 0;
+  var montanttTPS = 0;
+  var montantTVQ = 0;
+
   for (var i = 0; i < cartBoxes.length; i++) {
     var cartBox = cartBoxes[i];
     var priceElement = cartBox.getElementsByClassName("cart-price")[0];
@@ -119,8 +123,15 @@ function updatetotal() {
     var price = parseFloat(priceElement.innerText.replace("$", ""));
     var quantity = quantityElement.value;
     total = total + price * quantity;
+    montanttTPS = total * 0.05;
+    montantTVQ = total * 0.1;
+    totalApresTaxes = total + montantTVQ + montanttTPS;
   }
   //If price contain some Cents Value
   total = Math.round(total * 100) / 100;
+  totalApresTaxes = Math.round(totalApresTaxes * 100) / 100;
+  console.log(totalApresTaxes);
   document.getElementsByClassName("total-price")[0].innerText = "$" + total;
+  document.querySelectorAll(".total-price-apres-taxes")[0].innerText =
+    "$" + totalApresTaxes;
 }
