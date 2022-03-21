@@ -100,17 +100,25 @@ h6,
 .total-title {
   font-size: 1rem;
   font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .total-price {
   margin-left: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price-apres-taxes {
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .total {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: 0;
 }
 
 /* .totalHT {
