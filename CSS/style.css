@@ -179,7 +179,76 @@ a {
 
 /*product list*/
 
-a,
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.header-red {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: rgb(224, 97, 97);
+}
+
+.shop {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.shop-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+}
+
+.product-box {
+  position: relative;
+}
+
+.product-box:hover {
+  padding: 10px;
+  border: 1px solid gray;
+  transition: 0.4s;
+}
+
+.product-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-title {
+  bottom: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  bottom: 0;
+  font-weight: 500;
+}
+
+.add-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: gray;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  background: hsl(hue, saturation, lightness);
+}
+
+/* a,
 a:hover {
   text-decoration: none;
   color: inherit;
@@ -234,10 +303,10 @@ a:hover {
 
 .section-products .single-product:hover .part-1::before {
   transform: scale(1.2, 1.2) rotate(5deg);
-}
+} */
 
 /*List of Prodcuts*/
-.section-products #product-1 .part-1::before {
+/* .section-products #product-1 .part-1::before {
   background: url("../Images/apple-watch.jpg") no-repeat center;
   background-size: cover;
   transition: all 0.3s;
@@ -259,10 +328,10 @@ a:hover {
   background: url("../Images/macbook-product.jpg") no-repeat center;
   background-size: cover;
   transition: all 0.3s;
-}
+} */
 /*list of products explore*/
 /*smartphone*/
-.section-products #product-explore-1 .part-1::before {
+/* .section-products #product-explore-1 .part-1::before {
   background: url("../Images/iphone-13-pro-green-select.png") no-repeat center;
   background-size: cover;
   transition: all 0.3s;
@@ -282,9 +351,9 @@ a:hover {
   background: url("../Images/GooglePixel6Pro.png") no-repeat center;
   background-size: cover;
   transition: all 0.3s;
-}
+} */
 /*laptops*/
-.section-products #product-explore-5 .part-1::before {
+/* .section-products #product-explore-5 .part-1::before {
   background: url("../Images/macbook-product.jpg") no-repeat center;
   background-size: cover;
   transition: all 0.3s;
@@ -309,10 +378,10 @@ a:hover {
   background: url("../Images/Zenbook-Pro.webp") no-repeat center;
   background-size: cover;
   transition: all 0.3s;
-}
+} */
 
 /*Accessoire*/
-.section-products #product-explore-9 .part-1::before {
+/* .section-products #product-explore-9 .part-1::before {
   background: url("../Images/airpods-product.jpg") no-repeat center;
   background-size: cover;
   transition: all 0.3s;
@@ -334,7 +403,7 @@ a:hover {
   width: 60%;
   background-size: cover;
   transition: all 0.3s;
-}
+} */
 /****/
 
 .section-products .single-product .part-1 .discount,
