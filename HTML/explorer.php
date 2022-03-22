@@ -18,72 +18,15 @@
   <title>Explorer</title>
 </head>
 
-<body>
-  <!-- navigation bar-->
-  <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html"><img id="logo-comp" class="logo img-responsive"
-          src="../Images/logoEnt1.png" alt="logo" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Explorer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="postuler.html">Postuler</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="signIn.html">Se connecter</a>
-          </li>
-        </ul>
-        <div class="d-flex align-items-center">
-      <!-- Icon -->
-      <button type="button" class="btn btn-light" id="open-cart"><a class="text-reset me-3" href="#!">
-        <i class="fas fa-shopping-cart" id="cart-icon"></i>
-      </a></button>
-      <!--Shopping cart-->
-      <div style="overflow-y: scroll; height:400px;" class="cart" id="panier">
-          <h2 class="cart-title">Votre panier</h2>
-          <!--Contenet cart-->
-          <div class="cart-content">
-          
-          </div>
-          
-          <!--  total -->
-          <div class="total">
-            <div class="totalHT">
-            <div class="total-title">Totale Hors Taxes&#160</div>
-            <div class="total-price">0.00 $</div>
-          </div>
-          <div class="totalTTC">
-            <div class="total-title">Totale (taxes incluses)&#160</div>
-            <div class="total-price-apres-taxes">0.00 $</div>
-          </div>
-          </div>
-          <!--  Button type -->
-          <button type="button" class="btn-buy">Buy now</button>
-          <i class="bi bi-x" id="close-cart"></i>
-      </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+<?php
+  require "head2.php";
+?>
 
   <!--list of products -->
   <!--Smartphones-->
   <section class="shop container">
       <h3 class="header-red">Explorer nos produits</h3>
-      <h1 class="section-title">Smartphones</h1>
+      <h1 class="section-title">Téléphones Intelligents</h1>
       <br>
       <div class="shop-content">
         <!--product 1-->
@@ -137,7 +80,7 @@
 <section class="shop container">
   <br>
   <br>
-        <h1 class="section-title">Laptops</h1>
+        <h1 class="section-title">Ordinateurs et Mac</h1>
         <br>
       <div class="shop-content">
         <!--product 5-->
@@ -197,8 +140,8 @@
         <!--product 9-->
         <div class="product-box">
           <img
-            src="/Images/airpods-product.jpg"
-            alt="apple watch"
+            src="../Images/airpods-product.jpg"
+            alt="Image de AirPods Pro d'Apple"
             class="product-img"
           />
           <h2 class="product-title">AirPods Pro</h2>
@@ -207,7 +150,7 @@
         </div>
         <!--Product 10-->
         <div class="product-box">
-          <img src="/Images/apple-watch.jpg" alt="iphone 13" class="product-img" />
+          <img src="../Images/apple-watch.jpg" alt="Image d'Apple Watch d'Apple" class="product-img" />
           <h2 class="product-title">Apple Watch SE</h2>
           <span class="price">369.00 $</span>
           <i class="fa-solid fa-cart-shopping add-cart"></i>
@@ -275,13 +218,8 @@
         </p>
       </div>
     </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script language="JavaScript" type="text/javascript" src="../JS/mainCart.js"></script>
-
-</body>
+  <?php
+  require "tail2.php";
+?>
 
 </html>

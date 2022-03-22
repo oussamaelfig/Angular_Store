@@ -19,66 +19,10 @@
 </head>
 
 <body>
-  <!-- navigation bar-->
-  <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img id="logo-comp" class="logo img-fluid" src="Images/logoEnt1.png" alt="logo" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="HTML/explorer.html">Explorer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="HTML/postuler.html">Postuler</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="HTML/signIn.html">Se connecter</a>
-          </li>
-        </ul>
-        <div class="d-flex align-items-center">
-      <!-- Icon -->
-      <button type="button" class="btn btn-light" id="open-cart"><a class="text-reset me-3" href="#!">
-        <i class="fas fa-shopping-cart" id="cart-icon"></i>
-      </a></button>
-      <!--Shopping cart-->
-      <div class="cart" id="panier">
-          <h2 class="cart-title">Votre panier</h2>
-          <!--Contenet cart-->
-          <div class="cart-content">
-          
-          </div>
-          
-          <!--  total -->
-          <div class="total">
-            <div class="totalHT">
-            <div class="total-title">Totale Hors Taxes&#160</div>
-            <div class="total-price">0.00 $</div>
-          </div>
-          <div class="totalTTC">
-            <div class="total-title">Totale (taxes incluses)&#160</div>
-            <div class="total-price-apres-taxes">0.00 $</div>
-          </div>
-          </div>
-          <!--  Button type -->
-          <button type="button" class="btn-buy">Buy now</button>
-          <i class="bi bi-x" id="close-cart"></i>
-          <button type="button" class="btn-buy">Vider le panier</button>
-      </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!--Hero-->
+<?php
+  require 'HTML/head.php';
+?>
+  <!--   Hero-->
   <div class="hero vh-100 d-flex align-items-center">
     <div class="container">
       <div class="row">
@@ -187,7 +131,7 @@
         <!--Product 2-->
         <div class="product-box">
           <img src="Images/iphone-13-pro-green-select.png" alt="iphone 13" class="product-img">
-          <h2 class="product-title">iPhone 13 Vert 128Go </h2>
+          <h2 class="product-title">iPhone 13 Vert 256Go </h2>
           <span class="price">1599.00 $</span>
           <i class="fa-solid fa-cart-shopping add-cart"></i>
         </div>
@@ -352,51 +296,9 @@
   </section>
   <hr>
 
-
-  <!--  Footer -->
-  <footer>
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <a href="#"><img class="logo img-fluid" src="Images/logoEnt1.png" alt="logoCompany" /></a>
-          </div>
-          <div class="col-md-4">
-            <h5>Développeurs</h5>
-            <ul>
-              <li>
-                <a href="mailto:el-figha.oussama@courrier.uqam.ca" class="text-white" style="text-decoration: none">
-                  OUSSAMA EL-FIGHA</a>
-              </li>
-              <li>
-                <a href="mailto:plante.nicolas.4@courrier.uqam.ca" class="text-white" style="text-decoration: none">
-                  NICOLAS PLANTE</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-white">
-            <h5>Contact</h5>
-            <p><i class="bi bi-telephone-fill"></i>&nbsp +1(000)000-0000</p>
-            <p><i class="bi bi-building"></i>&nbspMontréal, 994 Rue Rachel Est</p>
-            <p><i class="bi bi-envelope"></i></i>&nbspcompecom@compecom.ca</p>
-          </div>
-        </div>
-      </div>
-      <hr class="mb-4 text-white">
-      <div class="row align-items-center text-white">
-        <p class="text-center">Le projet est développé dans le cadre du cours
-          <a class="link-light" href="http://www.etudier.uqam.ca/cours?sigle=INF3190"
-            style="text-decoration: none"><strong>INF3190</strong> </a>
-          de l'<a class="link-light" href="http://www.uqam.ca" style="text-decoration: none"><strong>UQÀM</strong></a>
-        </p>
-      </div>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript" src="JS/mainCart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+<?php
+  require 'HTML/tail.php';
+?>
 </body>
 
 </html>

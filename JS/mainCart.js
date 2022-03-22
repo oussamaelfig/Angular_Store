@@ -37,6 +37,18 @@ function ready() {
   document
     .getElementsByClassName("btn-buy")[0]
     .addEventListener("click", buyButtonClicked);
+    document
+    .getElementsByClassName("btn-buy")[1]
+    .addEventListener("click", resetButtonClicked);
+}
+
+//reset button
+function resetButtonClicked(){
+  var cartContent = document.getElementsByClassName("cart-content")[0];
+  while (cartContent.hasChildNodes()) {
+    cartContent.removeChild(cartContent.firstChild);
+  }
+  updatetotal();
 }
 
 //Buy Button
