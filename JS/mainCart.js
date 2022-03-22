@@ -135,3 +135,9 @@ function updatetotal() {
   document.querySelectorAll(".total-price-apres-taxes")[0].innerText =
     "$" + totalApresTaxes;
 }
+
+//get coockies
+$.cookie("cookie_name");
+
+//set coockies
+$.cookie("cookie_name", "example");
