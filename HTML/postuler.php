@@ -10,26 +10,26 @@
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <!--Font awesome-->
-   <script src="https://kit.fontawesome.com/c0eabd5a0e.js" crossorigin="anonymous"></script>
- 
+    <script src="https://kit.fontawesome.com/c0eabd5a0e.js" crossorigin="anonymous"></script>
+
 
 <body>
     <?php
         require 'head2.php';
     ?>
-
+    <?php if ($_SERVER['REQUEST_METHOD'] != 'POST'): ?>
     <div class="text-center container-fluid p-5 bg-light">
         <h1>Devenez membre de notre formidable équipe!</h1>
         <p class="muted"><small>Salaire à partir de 0,25$/jour</small></pid>
-        <form name="Post" action="#" onsubmit="return validerForm()" method="post">
+        <form name="Post" id="Form" action="#" onsubmit="return validerForm()" method="post">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-md-6">
                     <div class="mb-4 mt-4">
                         <label for="Nom" class="form-label">Nom*:</label>
                         <input type="text" name="Nom" id="Nom" class="form-control" placeholder="Nom">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-md-6">
                     <div class="mb-4 mt-4">
                         <label for="Prénom" class="form-label">Prénom*:</label>
                         <input type="text" name="Prénom" id="Prénom" class="form-control" placeholder="Prénom">
@@ -105,6 +105,41 @@
             </div>
         </form>
     </div>
+    <?php else :
+    $nom = $_POST['Nom'];
+    $prenom = $_POST['Prénom'];
+    $date = $_POST['datepick'];
+    $courriel = $_POST['Courriel'];
+    $adresse = $_POST['Adresse'];
+    $codePost = $_POST['Postal'];
+    $cv = $_FILES["CV"];
+    $photo = $_FILES["Photo"];
+    ?>
+    <div class="container text-center">
+        <h1>Merci! Voici les infos reçues:</h1>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p>Nom: <?php echo $nom; ?> <br></p>
+                <p>Prénom: <?php echo $prenom; ?> <br></p>
+                <p>Date de naissance: <?php echo $date; ?></p>
+                <p>Courriel: <?php echo $courriel; ?><br></p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p>Adresse: <?php echo $adresse; ?><br></p>
+                <p>Code postal: <?php echo $codePost; ?></p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-6">
+                    <div class="mb-5">
+                        <img src="<?php echo $photo; //Ne marhe pas comme prévu?>" alt="Votre photo">
+                        <br>
+                        <a href="<?php echo $cv; ?>">Vous pouvez visionner votre CV en cliquant ici</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php endif;?>
     <?php
         require 'tail2.php';
     ?>

@@ -1,3 +1,5 @@
+var jsonEmploi = "";
+
 function validerForm(){
     var pnom = document.forms["Post"]["Prénom"];
     var nom = document.forms["Post"]["Nom"];
@@ -10,7 +12,7 @@ function validerForm(){
     //var Photo = document.forms["Post"]["Photo"];
     const dateMin = new Date("01/01/2010");
     var dateE = new Date(dateN.value);
-    const lettreChiffres = /^[0-9a-zA-Z\s]+$/;
+    const lettreChiffres = /^[0-9\sa-zA-Z\sa-zA-Z]+$/;
     const codePostVal = /^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ -]?\d[ABCEGHJ-NPRSTV-Z]\d$/i;
 
     console.log(isNaN(parseInt(pnom.value)));
@@ -57,6 +59,7 @@ function validerForm(){
         return false;
     }
 
+    jsonEmploi = jsonEmploi + JSON.stringify($("#Form").serializeArray());
 
     return true;
 }
