@@ -16,7 +16,7 @@
                     <a class="nav-link" href="HTML/explorer.php">Explorer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">À propos</a>
+                    <a class="nav-link" href="HTML/about.php">À propos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="HTML/postuler.php">Postuler</a>
