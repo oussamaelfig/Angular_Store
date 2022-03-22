@@ -32,7 +32,7 @@
                     </h1>
                     <p class="text-white my-3">
                         Apprenez-en plus sur nos produits de electronique et de nouvelle technologies, nos produits
-                        LastPass et nos offres groupées.
+                        vedettes et nos offres incroyables.
                     </p>
                     <a href="HTML/explorer.php" class="btn btn-outline-light">Explorer</a>
                 </div>
