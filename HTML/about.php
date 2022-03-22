@@ -15,7 +15,7 @@
   <script src="https://kit.fontawesome.com/c0eabd5a0e.js" crossorigin="anonymous"></script>
   <!--CSS-->
   <link rel="stylesheet" href="../CSS/style.css" />
-  <title>Explorer</title>
+  <title>À propos</title>
 </head>
 
 <?php
@@ -25,11 +25,19 @@
 <section class="about">
   <div class="content">
     <img src="../Images/logoEnt.png" alt="logo">
-    <div class="text">
+    <div class="text" style="padding: 30px 0px 75px;
+">
       <h1>À propos de nous</h1>
-      <h5>Lorem ipsum dolor sit amet.</h5>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugiat molestias fugit harum cumque, unde modi in id iusto. Laudantium ratione quae animi impedit accusamus illum, earum eum unde quod illo, possimus, sit ut nisi doloremque a cumque voluptate quasi. Assumenda, aliquid quibusdam. Eos nam rem nulla unde, repudiandae vel?</p>
-      <button type="button">Hire me</button>
+      <h5 style="color: #351500;">Trouvez les meilleures offres de nos derniers soldes au même endroit.</h5>
+      <p>COMPECOM nous sommes une entreprise américaine de vente de matériel électronique grand public, nous sommes présent surtout aux États-Unis et au Canada.
+        <br>
+        Découvrez comment COMPECOM participe au développement de la communauté par le biais de son association avec diverses organisations, qui profitent aux enfants, à la jeunesse et à la famille. Familiarisez-vous avec les programmes de COMPECOM qui encouragent le volontariat des employés, et promeuvent l'apprentissage via la technologie et plus.
+        <br>
+        <br>
+        <strong style="color: #351500;">Trouvez votre place parmi nous.
+</strong>
+      </p>
+      <button type="button">Postuler</button>
     </div>
   </div>
 </section>

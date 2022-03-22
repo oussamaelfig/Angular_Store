@@ -28,95 +28,18 @@
       <div class="row">
         <div class="col-lg-7 mx-auto text-center">
           <h1 class="display-4 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
+            Trouvez les meilleures offres de nos derniers soldes au même endroit.
           </h1>
           <p class="text-white my-3">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Aspernatur quo labore earum officia neque doloribus nesciunt
-            dolore voluptas, expedita consequatur.
+            Apprenez-en plus sur nos produits de electronique et de nouvelle technologies, nos produits LastPass et nos offres groupées.
           </p>
-          <a href="HTML/explorer.html" class="btn btn-outline-light">Explorer</a>
+          <a href="HTML/explorer.php" class="btn btn-outline-light">Explorer</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!--list of products -->
-
-  <!-- <section class="section-products">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="header">
-            <h3>Nouveautés</h3>
-            <h2>Produits Populaires</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row"> -->
-        <!-- Product1 -->
-        <!-- <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-1" class="single-product">
-            <div class="part-1">
-              <img src="Images/iphone-13-pro-green-select.png" alt="">
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping add-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <h3 class="product-title">Apple Watch SE</h3>
-              <h4 class="product-price">369.00 $</h4>
-            </div>
-          </div>
-        </div> -->
-        <!-- Product2 -->
-        <!-- <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-2" class="single-product">
-            <div class="part-1">
-              <span class="new">new</span>
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping add-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <h3 class="product-title">iPhone 13 Vert 128Go </h3>
-              <h4 class="product-price">1599.00 $</h4>
-            </div>
-          </div>
-        </div> -->
-        <!-- Product3 -->
-        <!-- <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-3" class="single-product">
-            <div class="part-1">
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping add-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <h3 class="product-title">AirPods Pro</h3>
-              <h4 class="product-price">329.00 $</h4>
-            </div>
-          </div>
-        </div> -->
-        <!-- Product4 -->
-        <!-- <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-4" class="single-product">
-            <div class="part-1">
-              <span class="new">new</span>
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping add-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <h3 class="product-title">MacBook Pro 14 po </h3>
-              <h4 class="product-price">2 499,00 $</h4>
-            </div>
-          </div>
-        </div> -->
+ 
         <section class="shop container">
           <h3 class="header-red">Nouveautés</h3>
           <h2 class="section-title">Produits Populaires</h2>
@@ -154,54 +77,6 @@
       </div>
     </div>
   </section>
-  <!--Carousel banner text-->
-  <!-- <div class="container">
-    <h1 id="header-carousel">Lorem ipsum dolor sit amet consectetur.</h1>
-<div id="slider" class="carousel slide" data-bs-ride="caroussel">
-     <div class="carousel-inner">
-         <div class="item active">
-             <div class="row">
-                 <div class="col-sm-4">
-                     <div>
-                         <h3>Lorem ipsum dolor sit amet.</h3>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque esse voluptatum, facilis reiciendis, iure ut maxime atque exercitationem dolor itaque voluptate. Consequatur soluta quo illo cumque, distinctio laudantium doloremque facilis!</p>
-                     </div>
-                 </div>
-                 <div class="col-sm-8">
-                    <img src="Images/tv_samsung.png" alt="">
-                 </div>
-             </div>
-         </div>
-         <div class="item">
-             <div class="row">
-                 <div class="col-sm-4">
-                     <div>
-                         <h3>Lorem ipsum dolor sit amet.</h3>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque esse voluptatum, facilis reiciendis, iure ut maxime atque exercitationem dolor itaque voluptate. Consequatur soluta quo illo cumque, distinctio laudantium doloremque facilis!</p>
-                     </div>
-                 </div>
-                 <div class="col-sm-8">
-<img src="Images/airpods-product.jpg" alt="">
-                 </div>
-             </div>
-         </div>
-         <div class="item">
-             <div class="row">
-                 <div class="col-sm-4">
-                     <div>
-                         <h3>Lorem ipsum dolor sit amet.</h3>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque esse voluptatum, facilis reiciendis, iure ut maxime atque exercitationem dolor itaque voluptate. Consequatur soluta quo illo cumque, distinctio laudantium doloremque facilis!</p>
-                     </div>
-                 </div>
-                 <div class="col-sm-8">
-<img src="Images/ps5.webp" alt="">
-                 </div>
-             </div>
-         </div>
-     </div>
-</div>
-</div>
--->
 
   <!-- banner section -->
   <section id="learn" class="p-5 bg-dark">
@@ -210,10 +85,9 @@
         <div class="col-md p-5">
           <h2>Lorem ipsum dolor sit.</h2>
           <p class="lead">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ipsum doloribus delectus ipsam commodi
-            magnam et voluptates ex aliquam ea?
+Faites partie des premiers à obtenir la toute dernière techno ainsi que des produits vendus en exclusivité chez Best Buy.
           </p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sequi cumque, adipisci nulla quaerat nobis.
+          <p>Économisez jusqu’à 300 $ sur une sélection de téléviseurs 4K et 8K Ultra HD.
           </p>
           <a href="#" class="btn btn-light mt-3">
             <i class="bi bi-chevron-right"></i> Lire plus
@@ -236,14 +110,11 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#question-one">
-              Lorem ipsum dolor sit amet ?
+              Comment passer une commande ?
             </button>
           </h2>
           <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
-            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptate, iusto
-              rerum reprehenderit eaque quam ea voluptatum doloremque dolor atque ipsam at et ab odio odit earum! Eos ad
-              animi incidunt, placeat id corporis suscipit quaerat pariatur hic iusto deleniti rerum, cupiditate
-              consequatur! Minima quam itaque culpa enim minus a.</div>
+            <div class="accordion-body">Passer une commande sur COMPECOM est un jeu d’enfant. Ajoutez simplement les articles à votre panier, passez à la caisse, ajoutez les informations relatives à l’expédition et à la méthode de paiement, et passez votre commande. Nous expédions les commandes en ligne partout au Canada et États Unis, et les frais d’expéditions pour la plupart des commandes excédant 35 $ sont gratuits!</div>
           </div>
         </div>
         <!--Item 2-->
@@ -251,14 +122,12 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#question-two">
-              Lorem ipsum dolor sit amet ?
+Retourner ou échanger un produit Best Buy
             </button>
           </h2>
           <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
-            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptate, iusto
-              rerum reprehenderit eaque quam ea voluptatum doloremque dolor atque ipsam at et ab odio odit earum! Eos ad
-              animi incidunt, placeat id corporis suscipit quaerat pariatur hic iusto deleniti rerum, cupiditate
-              consequatur! Minima quam itaque culpa enim minus a.</div>
+            <div class="accordion-body">Si vous avez acheté votre article en magasin, en ligne ou avec l’option Réservez et ramassez, vous pouvez le retourner ou l’échanger dans n’importe quel magasin COMPECOM actuellement ouvert.
+            </div>
           </div>
         </div>
         <!--Item 3-->
@@ -266,14 +135,11 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#question-three">
-              Lorem ipsum dolor sit amet ?
+              Quel est le délai d’expédition?
             </button>
           </h2>
           <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
-            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptate, iusto
-              rerum reprehenderit eaque quam ea voluptatum doloremque dolor atque ipsam at et ab odio odit earum! Eos ad
-              animi incidunt, placeat id corporis suscipit quaerat pariatur hic iusto deleniti rerum, cupiditate
-              consequatur! Minima quam itaque culpa enim minus a.</div>
+            <div class="accordion-body">Notre objectif est de vous faire parvenir vos articles rapidement. Nous faisons appel à différentes compagnies de transport, en fonction de la taille de votre objet, du lieu de livraison et du vendeur.</div>
           </div>
         </div>
         <!-- Item 4-->
@@ -281,14 +147,14 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#question-four">
-              Lorem ipsum dolor sit amet ?
+Si mon colis est perdu, qui dois-je contacter?
             </button>
           </h2>
           <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
-            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptate, iusto
-              rerum reprehenderit eaque quam ea voluptatum doloremque dolor atque ipsam at et ab odio odit earum! Eos ad
-              animi incidunt, placeat id corporis suscipit quaerat pariatur hic iusto deleniti rerum, cupiditate
-              consequatur! Minima quam itaque culpa enim minus a.</div>
+            <div class="accordion-body">Vous pouvez communiquer avec notre équipe du Service à la clientèle (appelez le 1-866-237-8289) et si vous êtes admissible, nous entreprendrons pour vous le suivi de votre commande avec le fournisseur de services d’expédition applicable.
+<h4> Remarque :</h4>
+Les réclamations doivent être faites au plus tard 90 jours après l’expédition de votre commande.
+Postes Canada n’ouvrira pas de réclamation en votre nom, la réclamation doit provenir de l’équipe de l’expérience client de COMPECOM.</div>
           </div>
         </div>
       </div>

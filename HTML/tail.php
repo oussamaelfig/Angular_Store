@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="../index.html"><img class="logo" src="../Images/logoEnt1.png" alt="logoCompany" /></a>
+                        <a href="../index.html"><img class="logo" src="Images/logoEnt1.png" alt="logoCompany" /></a>
                     </div>
                     <div class="col-md-4">
                         <h5>Développeurs</h5>

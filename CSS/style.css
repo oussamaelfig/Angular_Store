@@ -523,7 +523,7 @@ footer h5 {
 .text {
   width: 550px;
   max-width: 100%;
-  padding: 0 10px;
+  padding: 30px 0px 75px;
 }
 
 .content {
@@ -544,7 +544,7 @@ footer h5 {
 }
 
 .text h5 {
-  color: white;
+  color: #351500;
   font-size: 25px;
   margin-bottom: 25px;
   text-transform: capitalize;
