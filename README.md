@@ -16,6 +16,7 @@ Site web commercial responsive ...
 - JAVASCRIPT
 - JQUERY
 - PHP
+- XAMPP
 
 ## Plateforme de développement utilisée
 

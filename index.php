@@ -19,9 +19,10 @@
 </head>
 
 <body>
-  <?php
+    <?php
   require 'HTML/head.php';
   ?>
+    
     <!--   Hero-->
     <div class="hero vh-100 d-flex align-items-center">
         <div class="container">
@@ -40,6 +41,50 @@
         </div>
     </div>
 
+    <!-- Caroussel -->
+    <div id="controleur" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="#"><img src="Images/imac-po.jpg" class="d-block w-100" alt="Photo de iMac 24 pouces"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Le nouvel iMac est en rabais!</h1>
+                    <h5>Profiter de la puissance de la nouvelle puce M1 et d'un tout petit prix!</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img src="Images/switch.jpg" class="d-block w-100" alt="Photo d'iPhone 12"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>iPhone 12 est en solde!</h1>
+                    <h5>Une caméra incroyable et une puce A14 imbattable! Tout ça vous est accessible grâce à un prix
+                        imbattable!</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img src="Images/imac-po.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>iPhone 12 est en solde!</h1>
+                    <h5>Une caméra incroyable et une puce A14 imbattable! Tout ça vous est accessible grâce à un prix
+                        imbattable!</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img src="Images/imac-po.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>iPhone 12 est en solde!</h1>
+                    <h5>Une caméra incroyable et une puce A14 imbattable! Tout ça vous est accessible grâce à un prix
+                        imbattable!</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#controleur" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#controleur" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suvivant</span>
+        </button>
+    </div>
 
     <section class="shop container">
         <h3 class="header-red">Nouveautés</h3>
@@ -86,7 +131,8 @@
                 <div class="col-md p-5">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <p class="lead">
-                        Embelissez votre vie avec des produits technos époustouflant et à la fine pointe de la technologie avec COMPECOM!
+                        Embelissez votre vie avec des produits technos époustouflant et à la fine pointe de la
+                        technologie avec COMPECOM!
                     </p>
                     <p>Économisez jusqu’à 300 $ sur une sélection de téléviseurs 4K et 8K Ultra HD.
                     </p>
@@ -176,7 +222,7 @@
     </section>
     <hr>
 
-  <?php
+    <?php
   require 'HTML/tail.php';
   ?>
 </body>
