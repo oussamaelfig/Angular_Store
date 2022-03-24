@@ -18,8 +18,8 @@
         require 'head2.php'; ?>
     <div class="text-center container-fluid p-5 bg-light">
         <h1>Devenez membre de notre formidable équipe!</h1>
-        <p class="muted"><small>Salaire à partir de 0,25$/jour</small></pid>
-        <form name="Post" id="Form" action="merci.php" onsubmit="return validerForm()" method="post">
+        <p class="muted"><small>Salaire à partir de 0,25$/jour</small></p>
+        <form name="Post" id="Form" action="merci.php" onsubmit="return validerForm()" method="post" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="mb-4 mt-4">
@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-12">
                     <div class="mb-4 mt-4">
-                        <input type="submit" value="Envoyer" class="btn btn-success">
+                        <input type="submit" name="soumettre" value="Envoyer" class="btn btn-success">
                         <input type="reset" value="Effacer" class="btn btn-danger">
                     </div>
                 </div>
