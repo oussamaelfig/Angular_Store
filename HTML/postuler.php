@@ -16,8 +16,7 @@
 <body>
     <?php
         require 'head2.php';
-    ?>
-    <?php if ($_SERVER['REQUEST_METHOD'] != 'POST'): ?>
+        if ($_SERVER['REQUEST_METHOD'] != 'POST'): ?>
     <div class="text-center container-fluid p-5 bg-light">
         <h1>Devenez membre de notre formidable équipe!</h1>
         <p class="muted"><small>Salaire à partir de 0,25$/jour</small></pid>
@@ -112,6 +111,7 @@
     $courriel = $_POST['Courriel'];
     $adresse = $_POST['Adresse'];
     $codePost = $_POST['Postal'];
+    $poste = $_POST['ListePoste'];
     $cv = $_FILES["CV"];
     $photo = $_FILES["Photo"];
     ?>
@@ -127,6 +127,7 @@
             <div class="col-12 col-md-6">
                 <p>Adresse: <?php echo $adresse; ?><br></p>
                 <p>Code postal: <?php echo $codePost; ?></p>
+                <p>Poste choisi: <?php echo $poste; ?></p>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 mb-6">
