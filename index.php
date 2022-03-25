@@ -83,7 +83,7 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md p-5">
-          <h2>Lorem ipsum dolor sit.</h2>
+          <h2 style="color: white;">Bientôt dans nos magasin</h2>
           <p class="lead">
 Faites partie des premiers à obtenir la toute dernière techno ainsi que des produits vendus en exclusivité chez Best Buy.
           </p>

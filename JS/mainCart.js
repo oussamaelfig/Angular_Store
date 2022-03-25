@@ -37,13 +37,13 @@ function ready() {
   document
     .getElementsByClassName("btn-buy")[0]
     .addEventListener("click", buyButtonClicked);
-    document
+  document
     .getElementsByClassName("btn-buy")[1]
     .addEventListener("click", resetButtonClicked);
 }
 
 //reset button
-function resetButtonClicked(){
+function resetButtonClicked() {
   var cartContent = document.getElementsByClassName("cart-content")[0];
   while (cartContent.hasChildNodes()) {
     cartContent.removeChild(cartContent.firstChild);
@@ -147,9 +147,3 @@ function updatetotal() {
   document.querySelectorAll(".total-price-apres-taxes")[0].innerText =
     "$" + totalApresTaxes;
 }
-
-//get coockies
-$.cookie("cookie_name");
-
-//set coockies
-$.cookie("cookie_name", "example");

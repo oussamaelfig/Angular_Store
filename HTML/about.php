@@ -37,7 +37,7 @@
         <strong style="color: #351500;">Trouvez votre place parmi nous.
 </strong>
       </p>
-      <button type="button">Postuler</button>
+      <a href="postuler.php"><button type="button">Postuler</button></a>
     </div>
   </div>
 </section>
