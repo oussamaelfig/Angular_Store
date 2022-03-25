@@ -26,6 +26,11 @@
             $tab = substr($tab, 0, -2); 
             $string = $tab.json_encode($_POST+$_FILES);
             file_put_contents('../JSON/embauche.json', $string."]}", LOCK_EX);
+        }else if($tab == ""){
+            //need 'header' if the json is empty
+            $tab = '{"demandes":[';
+            $string = $tab.json_encode($_POST+$_FILES);
+            file_put_contents('../JSON/embauche.json', $string."]}", LOCK_EX);
         }else{
             //removes last two chars (']}')
             $tab = substr($tab, 0, -2); 

@@ -1,18 +1,14 @@
-var jsonEmploi = "";
-
 function validerForm(){
-    var pnom = document.forms["Post"]["Prénom"];
+    var pnom = document.forms["Post"]["Prenom"];
     var nom = document.forms["Post"]["Nom"];
     var dateN = document.forms["Post"]["datepick"];
     var poste = document.forms["Post"]["ListePoste"];
     var courriel = document.forms["Post"]["Courriel"];
     var adresse = document.forms["Post"]["Adresse"];
     var postal = document.forms["Post"]["Postal"]
-    //var cv = document.forms["Post"]["CV"];
-    //var Photo = document.forms["Post"]["Photo"];
     const dateMin = new Date("01/01/2010");
     var dateE = new Date(dateN.value);
-    const lettreChiffres = /^[0-9\sa-zA-Z\sa-zA-Z]+$/;
+    const lettreChiffres = /^[0-9]+\s[a-zA-Z\s]+$/;
     const codePostVal = /^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ -]?\d[ABCEGHJ-NPRSTV-Z]\d$/i;
 
     console.log(isNaN(parseInt(pnom.value)));
@@ -29,7 +25,7 @@ function validerForm(){
         return false;
     }
 
-    if(dateE.getTime >= dateMin.getTime()){
+    if(dateE.getTime() >= dateMin.getTime()){
         alert("Malheureusement, vous êtes trop jeune");
         dateN.focus();
         return false;
@@ -58,8 +54,6 @@ function validerForm(){
         postal.focus();
         return false;
     }
-
-    jsonEmploi = jsonEmploi + JSON.stringify($("#Form").serializeArray());
 
     return true;
 }
