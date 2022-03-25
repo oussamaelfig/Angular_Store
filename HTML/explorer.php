@@ -179,45 +179,6 @@
         </div>
       </div>
     </section>
-  <!--  Footer -->
-  <footer>
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <a href="../index.html"><img class="logo img-responsive" src="../Images/logoEnt1.png"
-                alt="logoCompany" /></a>
-          </div>
-          <div class="col-md-4">
-            <h5>Développeurs</h5>
-            <ul>
-              <li>
-                <a href="mailto:el-figha.oussama@courrier.uqam.ca" class="text-white" style="text-decoration: none">
-                  OUSSAMA EL-FIGHA</a>
-              </li>
-              <li>
-                <a href="mailto:plante.nicolas.4@courrier.uqam.ca" class="text-white" style="text-decoration: none">
-                  NICOLAS PLANTE</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-white">
-            <h5>Contact</h5>
-            <p><i class="bi bi-telephone-fill"></i>&nbsp +1(000)000-0000</p>
-            <p><i class="bi bi-building"></i>&nbspMontréal, 994 Rue Rachel Est</p>
-            <p><i class="bi bi-envelope"></i></i>&nbspcompecom@compecom.ca</p>
-          </div>
-        </div>
-      </div>
-      <hr class="mb-4 text-white">
-      <div class="row align-items-center text-white">
-        <p class="text-center">Le projet est développé dans le cadre du cours
-          <a class="link-light" href="http://www.etudier.uqam.ca/cours?sigle=INF3190"
-            style="text-decoration: none"><strong>INF3190</strong> </a>
-          de l'<a class="link-light" href="http://www.uqam.ca" style="text-decoration: none"><strong>UQÀM</strong></a>
-        </p>
-      </div>
-    </div>
   <?php
   require "tail2.php";
 ?>

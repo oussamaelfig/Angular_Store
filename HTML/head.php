@@ -48,7 +48,6 @@
                         </div>
                     </div>
                     <!--  Button type -->
-                    <button type="button" class="btn-buy">Passer la commande</button>
                     <i class="bi bi-x" id="close-cart"></i>
                     <button type="button" class="btn-buy">Vider le panier</button>
                 </div>
