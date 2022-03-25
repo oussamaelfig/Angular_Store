@@ -29,8 +29,8 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="mb-4 mt-4">
-                        <label for="Prénom" class="form-label">Prénom*:</label>
-                        <input type="text" name="Prénom" id="Prénom" class="form-control" placeholder="Prénom">
+                        <label for="Prenom" class="form-label">Prénom*:</label>
+                        <input type="text" name="Prenom" id="Prenom" class="form-control" placeholder="Prénom">
                     </div>
                 </div>
             </div>

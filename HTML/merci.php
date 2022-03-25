@@ -20,6 +20,9 @@
         if(!isset($_REQUEST["soumettre"])){
             die("<span style='color:red;'>Erreur: Aucun formulaire soumis</span>"); 
         }
+        $tab = file_get_contents('../JSON/embauche.json');
+        $string = $tab.json_encode($_POST+$_FILES);
+        file_put_contents('../JSON/embauche.json', $string, LOCK_EX);
         if(isset($_FILES["Photo"])){
             $infoFich = $_FILES["Photo"];
             $fileName = $infoFich['name']; // nom du fichier chargé par l,utilisateur
@@ -37,7 +40,7 @@
 
         require 'head2.php';
         $nom = $_POST['Nom'];
-        $prenom = $_POST['Prénom'];
+        $prenom = $_POST['Prenom'];
         $date = $_POST['datepick'];
         $courriel = $_POST['Courriel'];
         $adresse = $_POST['Adresse'];
