@@ -16,25 +16,35 @@
 <body>
     <?php
         
-        //Vérification si le formulaire a été soumis
+        //Check if forms as been submitted
         if(!isset($_REQUEST["soumettre"])){
             die("<span style='color:red;'>Erreur: Aucun formulaire soumis</span>"); 
         }
         $tab = file_get_contents('../JSON/embauche.json');
-        $string = $tab.json_encode($_POST+$_FILES);
-        file_put_contents('../JSON/embauche.json', $string, LOCK_EX);
+        if($tab == '{"demandes":[]}'){
+            //removes last two chars (']}')
+            $tab = substr($tab, 0, -2); 
+            $string = $tab.json_encode($_POST+$_FILES);
+            file_put_contents('../JSON/embauche.json', $string."]}", LOCK_EX);
+        }else{
+            //removes last two chars (']}')
+            $tab = substr($tab, 0, -2); 
+            $string = $tab.",".json_encode($_POST+$_FILES);
+            file_put_contents('../JSON/embauche.json', $string."]}", LOCK_EX);
+        }
+        
         if(isset($_FILES["Photo"])){
             $infoFich = $_FILES["Photo"];
-            $fileName = $infoFich['name']; // nom du fichier chargé par l,utilisateur
-            $tmpFile=$infoFich['tmp_name'];// fichier temporaire après téléversement
+            $fileName = $infoFich['name']; 
+            $tmpFile=$infoFich['tmp_name'];
             $saveDir="../Images/";
             $savedFile="$saveDir"."/$fileName";
         }
 
         if(isset($_FILES["CV"])){
             $infoFich = $_FILES["CV"];
-            $fileName2 = $infoFich['name']; // nom du fichier chargé par l,utilisateur
-            $tmpFile2=$infoFich['tmp_name'];// fichier temporaire après téléversement
+            $fileName2 = $infoFich['name'];
+            $tmpFile2=$infoFich['tmp_name'];
             $savedFile2="$saveDir"."/$fileName2";
         }
 
