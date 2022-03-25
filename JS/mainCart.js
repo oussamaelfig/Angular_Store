@@ -85,6 +85,10 @@ function addCartClicked(event) {
   var price = shopProducts.getElementsByClassName("price")[0].innerText;
   var productImg = shopProducts.getElementsByClassName("product-img")[0].src;
   addProductToCart(title, price, productImg);
+  localStorage.setItem(
+    "ShoppingCart",
+    JSON.stringify(addProductToCart(title, price, productImg))
+  );
   updatetotal();
 }
 
