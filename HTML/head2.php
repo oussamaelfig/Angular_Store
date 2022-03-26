@@ -26,32 +26,11 @@
         </ul>
         <div class="d-flex align-items-center">
       <!-- Icon -->
-      <button type="button" class="btn btn-light" id="open-cart"><a class="text-reset me-3" href="#!">
-        <i class="fas fa-shopping-cart" id="cart-icon"></i>
-      </a></button>
-      <!--Shopping cart-->
-      <div style="overflow-y: scroll; height:400px;" class="cart" id="panier">
-          <h2 class="cart-title">Votre panier</h2>
-          <!--Contenet cart-->
-          <div class="cart-content"></div>
-          
-          <!--  total -->
-          <div class="total">
-            <div class="totalHT">
-            <div class="total-title">Total Hors Taxes&#160</div>
-            <div class="total-price">0.00 $</div>
-          </div>
-          <br>
-          <div class="totalTTC">
-            <div class="total-title">Total (taxes incluses)&#160</div>
-            <div class="total-price-apres-taxes">0.00 $</div>
-          </div>
-          </div>
-          <!--  Button type -->
-          <a href="explorer.php"><button type="button" class="btn-buy">Passer la commande</button></a>
-          <i class="bi bi-x" id="close-cart"></i>
-          <button type="button" class="btn-buy">Vider le panier</button>
-      </div>
+      <button type="button" class="btn btn-light" id="open-cart">
+              <a class="text-reset me-3" href="cart.php">
+                <i class="fas fa-shopping-cart" id="cart-icon"></i> </a
+              ><sup class="cartCount">0</sup>
+            </button>
         </div>
       </div>
     </div>
