@@ -240,6 +240,11 @@ let products = [
   },
 ];
 
+var nomProduit = products.nom;
+var quantityInStock = products.quantité;
+var prixProduit = products.prix;
+var incart = products.incart;
+
 for (let i = 0; i < carts.length; i++) {
   carts[i].addEventListener("click", () => {
     cartNumbers(products[i]);
@@ -267,6 +272,27 @@ function cartNumbers(product) {
     document.querySelector(".cartCount").textContent = 1;
   }
   setItems(product);
+}
+
+//reset button
+function resetButtonClicked() {
+  var cartContent = document.getElementsByClassName("product-add")[0];
+  while (cartContent.hasChildNodes()) {
+    cartContent.removeChild(cartContent.firstChild);
+  }
+  localStorage.clear();
+  location.reload(true);
+}
+
+//Buy Button
+function buyButtonClicked() {
+  alert("Votre commande a été placée");
+  var cartContent = document.getElementsByClassName("product-add")[0];
+  while (cartContent.hasChildNodes()) {
+    cartContent.removeChild(cartContent.firstChild);
+  }
+  localStorage.clear();
+  location.reload(true);
 }
 
 function setItems(product) {
@@ -306,39 +332,64 @@ function totalCost(product) {
 function displayCart() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
-  let productContainer = document.querySelector(".product-container-plus");
+  let productContainer = document.querySelector("tbody.product-add");
   let cartCost = localStorage.getItem("totalCost");
 
   if (cartItems && productContainer) {
     productContainer.innerHTML = "";
     Object.values(cartItems).map((item) => {
       productContainer.innerHTML += `
-      <div class="d-flex justify-content-around">
-          <div class="col-12 col-md-8 product-pic-name">
-            <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-            <img src="${item.photo}" style="width: 100px" alt="" />
-            <span>${item.nom}</span>
-          </div>
-          <div class="price">
-            ${item.prix}
-          </div>
-          <div class="quantity">    
-          <i class="bi bi-arrow-left-circle-fill"></i>
-          <span>${item.incart}</span>
-          <i class="bi bi-arrow-right-circle-fill"></i>
-          </div>
-          <div class="total">$${item.incart * item.prix},00</div>
-        </div>
+      <tr>
+                <th scope="row">
+                  <div class="d-flex align-items-center">
+                    <img src="${
+                      item.photo
+                    }" class="img-fluid rounded-3" style="width: 120px;" alt="Book">
+                    <div class="flex-column ms-4">
+                      <p class="mb-2">${item.nom}</p>
+                    </div>
+                  </div>
+                </th>
+                <td class="align-middle">
+                  <p id="total" class="mb-0" style="font-weight: 500;">${
+                    item.quantité - item.incart
+                  }</p>
+                </td>
+                <td class="align-middle">
+                  <div class="d-flex flex-row">
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      <i class="fas fa-minus"></i>
+                    </button>
+
+                    <input id="form1" min="0" name="quantity" value="${
+                      item.incart
+                    }" type="number"
+                      class="form-control form-control-sm" style="width: 50px;" />
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </td>
+                <td class="align-middle">
+                  <p class="mb-0" style="font-weight: 500;">$${Math.ceil(
+                    item.incart * item.prix
+                  )}</p>
+                </td>
+              </tr>
         `;
     });
 
     productContainer.innerHTML += `
-    <div class="basketTotalContainer">
+    <div class="basketTotalContainer" align="right" style = "width:100%;">
     <h4 class="basketTotalTitle">
-        Total
+        Total (Hors Taxes) = $${Math.ceil(parseInt(cartCost))},00
     </h4>
     <h4 class="basketTotal">
-        $${cartCost},00
+Total (Taxes incluses) = $${Math.ceil(
+      parseInt(cartCost + cartCost * 0.05 + cartCost * 0.1)
+    )},00
     </h4>
 </div>`;
   }
@@ -346,3 +397,12 @@ function displayCart() {
 
 onLoadCartNumbers();
 displayCart();
+
+//Buy button Work
+document
+  .getElementsByClassName("btn-buy")[0]
+  .addEventListener("click", buyButtonClicked);
+//reset button
+document
+  .getElementsByClassName("btn-buy")[1]
+  .addEventListener("click", resetButtonClicked);

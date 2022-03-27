@@ -18,60 +18,47 @@
   <title>Explorer</title>
 </head>
 
+    
 <?php
   require "head2.php";
+  
 ?>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="products-container">
-      <div class="d-flex justify-content-around">
-        <div class="col-12 col-md-8 product-title">PRODUCT</div>
-        <div class="price">PRICE</div>
-        <div class="quantity">QUANTITY</div>
-        <div class="total">TOTAL</div>
-      </div>
-      <div class="product-container-plus">
-        <!--here-->
+<body>
+
+
+<!--Cart items details-->
+<section class="h-100 h-custom">
+  <div class="container h-100 py-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col" style="overflow:scroll; height:500px; overflow-x: hidden;">
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="h5">Panier</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Quantité</th>
+                <th scope="col">Prix</th>
+              </tr>
+            </thead>
+            <tbody class="product-add">
+              <!--ici ou on ajout les elements-->
+              
+            </tbody>
+          </table>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-buy">Acheter</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block btn-buy">Vider le panier</button>
+        </div>
       </div>
     </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  </div>
+</section>
+</div>
+
+
+</body>
 
 
 <?php
