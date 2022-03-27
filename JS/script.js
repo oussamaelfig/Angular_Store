@@ -1,3 +1,7 @@
+var estValide = false;
+var compteur = 0;
+var json_file;
+$.getJSON("../JSON/users.json", function(tab){json_file = tab;});
 function validerForm(){
     var pnom = document.forms["Post"]["Prenom"];
     var nom = document.forms["Post"]["Nom"];
@@ -73,14 +77,50 @@ function validerLogin(){
         pass.focus();
         return false;
     }
-    if(!verifierLoginTemp(id, pass)){
-        alert("Identifiant et/ou mot de passe invalide!")
-        return false;
-    }
-    
-    return true;
-}
 
+    var usersArray = json_file.users;
+    var gerantArray = json_file.admin;
+    for (var i = 0; i < usersArray.length; ++i) {
+        console.log(usersArray[i].username);
+        console.log(usersArray[i].motdepasse);
+        if(id.value === usersArray[i].username && pass.value === usersArray[i].motdepasse){
+            return true;
+        }//estValide est faux apres le premier tour mais la deuxieme fois tout marche wtf
+    }
+    for(var j = 0; j < gerantArray.length; ++j){
+        if(id.value === gerantArray[j].username && pass.value === gerantArray[i].motdepasse){
+            return true;
+        }
+    }
+    alert("Identifiant et/ou mot de passe invalide.");
+    return false;
+}
+/*
+function checkLogin(id, pass){
+    var valide = false;
+    $.getJSON("../JSON/users.json", function(tab){
+        var usersArray = tab.users;
+        var gerantArray = tab.admin;
+        for (var i = 0; i < usersArray.length; ++i) {
+            
+            if(id.value === usersArray[i].username && pass.value === usersArray[i].motdepasse){
+                console.log(usersArray[i].username);
+            console.log(usersArray[i].motdepasse);
+                valide = true;
+                //return valide;
+                break;
+            }//estValide est faux apres le premier tour mais la deuxieme fois tout marche wtf
+        }
+        for(var j = 0; j < gerantArray.length; ++j){
+            if(id.value === gerantArray[j].username && pass.value === gerantArray[i].motdepasse){
+                valide = true;
+                //return valide;
+                break;
+            }
+        }
+    });
+    return valide;
+}*/
 //Fonction temp qui ne fait pas la diff entre users normaux et admin
 function verifierLoginTemp(id, pass){
     var file = '{ '+
