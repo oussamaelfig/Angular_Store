@@ -22,16 +22,34 @@
                     <a class="nav-link" href="HTML/postuler.php">Postuler</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="HTML/signIn.php">Se connecter</a>
+                    <?php if(!isset($value)) {
+                        echo "<a class='nav-link' href='HTML/signIn.php'>Se connecter</a>";
+                    }  
+                    else {
+                        echo "<a class='nav-link disabled' href='HTML/signIn.php'>Se connecter</a>";
+                    }
+                    ?>
+                </li>
+                <li class="nav-item dropdown" style="list-style:none">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Liste des utilisateurs</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Liste des demandes d'emploi</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <div class="d-flex align-items-center">
                 <!-- Icon -->
                 <button type="button" class="btn btn-light" id="open-cart">
-              <a class="text-reset me-3" href="HTML/cart.php">
-                <i class="fas fa-shopping-cart" id="cart-icon"></i> </a
-              ><sup class="cartCount">0</sup>
-            </button>
+                    <a class="text-reset me-3" href="HTML/cart.php">
+                        <i class="fas fa-shopping-cart" id="cart-icon"></i> </a><sup class="cartCount">0</sup>
+                </button>
             </div>
         </div>
     </div>

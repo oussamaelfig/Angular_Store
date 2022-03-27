@@ -20,13 +20,36 @@
         if(!isset($_REQUEST["login"])){
             die("<span style='color:red;'>Erreur: Aucun formulaire soumis</span>"); 
         }
-        $file = file_get_contents("../JSON/users.json");
-        $json_user = json_decode($file);
+        $tabUser = file_get_contents('../JSON/utili.json');
+        //echo $tabUser;
+        $tabAdmin = file_get_contents('../JSON/admin.json');
+        //echo $tabAdmin;
+        $json_users = json_decode($tabUser,true);
+        //echo $tabAdmin;
+        $json_admin = json_decode($tabAdmin,true);
+        //echo $tabAdmin;
         $login = $_POST["NomUser"];
+        //echo $login;
         $pass = $_POST["PassUser"];
-        
-        for($i = 0; $i < count($json_user[0]); ++$i){
-            
+        //echo $pass;
+        if($json_admin['username'] == $login && $json_admin['motdepasse'] == $pass){
+            //echo $pass;
+            define('USER', 'admin');
+            echo "<div class='text-center'>";
+            echo "<h1 class='mt-4 mb-5'>Vous êtes connecté en tant qu'administrateur!</h1>";
+            echo "<p class='mt-4 mb-5'>Vous pouvez maintenant naviger le site et faire vos achat!</p>";
+            echo "<p class='mt-4 mb-5'>Vous pouvez aussi consulter les demandes d'emplois et la liste des utilisateurs.</p>";
+            echo "<p class='mt-4 mb-5'>Mais n'hésitez pas à dépenser aussi!</p>";
+            echo "</div";
+        }else{
+            define('USER', 'base');
+            echo "<div class='text-center'>";
+            echo "<h1 class='mt-4 mb-5'>Vous êtes connecté!</h1>";
+            echo "<p class='mt-4 mb-5'>Vous pouvez maintenant naviger le site et faire vos achat tel que vous l'avez toujours voulu!</p>";
+            echo "<p class='mt-4 mb-5'>N'oubliez pas, la livraison est gratuite pour toute commande de 25 000$ ou plus!!! Quelle aubaine!</p>";
+            echo "<p class='mt-4 mb-5'>N'hésitez pas à dépenser!</p>";
+            echo "</div";
+            echo USER;
         }
         require 'tail2.php';
     ?>

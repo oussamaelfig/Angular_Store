@@ -81,14 +81,12 @@ function validerLogin(){
     var usersArray = json_file.users;
     var gerantArray = json_file.admin;
     for (var i = 0; i < usersArray.length; ++i) {
-        console.log(usersArray[i].username);
-        console.log(usersArray[i].motdepasse);
         if(id.value === usersArray[i].username && pass.value === usersArray[i].motdepasse){
             return true;
         }//estValide est faux apres le premier tour mais la deuxieme fois tout marche wtf
     }
     for(var j = 0; j < gerantArray.length; ++j){
-        if(id.value === gerantArray[j].username && pass.value === gerantArray[i].motdepasse){
+        if(id.value === gerantArray[j].username && pass.value === gerantArray[j].motdepasse){
             return true;
         }
     }

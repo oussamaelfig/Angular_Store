@@ -19,42 +19,12 @@
         require 'head2.php';
         if(isset($_REQUEST["login"])) : 
     ?>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <?php 
-                        $tabUser = file_get_contents('../JSON/utili.json');
-                        $tabAdmin = file_get_contents('../JSON/admin.json');
-                        $json_users = json_decode($tabUser);
-                        $json_admin = json_decode($tabAdmin);
-                        $user = $_POST['NomUser'];
-                        $pass = $_POST['PassUser'];
-                        for($i = 0; $i<count($json_users); ++$i){
-                            if($json_users[i]['username'] == $user &&
-                            $json_users[i]['motdepasse'] == $pass){
-                                define('USER', 'base');
-                                echo "<h1>Vous êtes connecté!</h1>";
-                                echo "<p>Vous pouvex maintenant naviger le site et faire vos achat tel que vous l'avez toujours voulu!</p>";
-                                echo "<p>N'oubliez pas, la livraison est gratuite pour toute commande de 25 000$ ou plus!!! Quel aubaine!</p>";
-                            }else if($json_admin[i]['username'] == $user &&
-                            $json_admin[i]['motdepasse'] == $pass){
-                                define('USER', 'admin');
-                                echo "<h1>Vous êtes connecté en tant qu'administrateur!</h1>";
-                                echo "<p>Vous pouvex maintenant naviger le site et faire vos achat!</p>";
-                                echo "<p>Vous pouvez aussi consulter les demandes d'emplois et la liste des utilisateurs.</p>";
-                                echo "<p>Mais n'hésitez pas à dépenser aussi!</p>";
-                            }
-                        }
-                    ?>
-                </div>
-            </div>
-        </div>
         
     <?php else:?>
     <div class="text-center container-fluid p-5 bg-light">
         <h1>Connectez-vous</h1>
         <p class="muted"><small>Le monde de la techo s'ouvre à vous</small></p>
-        <form name="SignIn" id="SignIn" onsubmit="return validerLogin()" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>' method="post">
+        <form name="SignIn" id="SignIn" onsubmit="return validerLogin()" action='connecte.php' method="post">
             <div class="row">
                 <div class="col-12 col-md-6 mb-4 mt-4">
                     <label for="NomUser" class="form-label">Nom d'utilisateur:</label>
