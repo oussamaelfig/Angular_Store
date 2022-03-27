@@ -40,6 +40,7 @@ h6,
 .cart.active {
   right: 0;
 }
+
 .cart-title {
   text-align: center;
   font-size: 1.5rem;
@@ -47,6 +48,7 @@ h6,
   margin-top: 2rem;
   color: grey;
 }
+
 .cart-box {
   display: grid;
   grid-template-columns: 32% 50% 18%;
@@ -571,11 +573,9 @@ button {
 }
 
 button:hover {
-  transform: scale(1.2);
   background-color: transparent;
   border: 2px solid gray;
   color: gray;
-  transition: 0.4s;
   cursor: pointer;
 }
 
@@ -591,13 +591,14 @@ button:hover {
   .about .content img {
     margin-bottom: 35px;
   }
+
   .text h1 {
     font-size: 60px;
     margin-bottom: 25px;
   }
 }
 
-.caroussel .item{
+.caroussel .item {
   height: 300px;
 }
 
@@ -608,3 +609,9 @@ button:hover {
   min-height: 300px;
 }
 
+/*cart page*/
+@media (min-width: 1025px) {
+  .h-custom {
+    height: 100vh !important;
+  }
+}
