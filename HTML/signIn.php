@@ -11,16 +11,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <!--Font awesome-->
    <script src="https://kit.fontawesome.com/c0eabd5a0e.js" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 
 <body>
     <?php
         require 'head2.php';
+        if(isset($_REQUEST["login"])) : 
     ?>
+        
+    <?php else:?>
     <div class="text-center container-fluid p-5 bg-light">
         <h1>Connectez-vous</h1>
         <p class="muted"><small>Le monde de la techo s'ouvre à vous</small></p>
-        <form name="SignIn" onsubmit="return validerLogin()" action="#" method="post">
+        <form name="SignIn" id="SignIn" onsubmit="return validerLogin()" action='connecte.php' method="post">
             <div class="row">
                 <div class="col-12 col-md-6 mb-4 mt-4">
                     <label for="NomUser" class="form-label">Nom d'utilisateur:</label>
@@ -33,12 +37,13 @@
                 </div>
                 <div class="col-12">
                     <div class="mb-4 mt-4">
-                        <input type="submit" value="Se connecter" class="btn btn-success">
+                        <input type="submit" name="login" value="Se connecter" class="btn btn-success">
                     </div>
                 </div>
             </div>
         </form>
     </div>
+    <?php endif; ?>
     <?php
         require 'tail2.php';
     ?>

@@ -25,6 +25,22 @@
                     <a class="nav-link" href="signIn.php">Se connecter</a>
                 </li>
             </ul>
+<<<<<<< HEAD
+=======
+            <li class="nav-item dropdown" style="list-style:none">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Admin
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="../HTML/utilisateurs.php">Liste des utilisateurs</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../HTML/demandes.php">Liste des demandes d'emploi</a>
+                    </li>
+                </ul>
+            </li>
+>>>>>>> c4dc54cf8aa5c907d125d24f62aa4bffda4be960
             <div class="d-flex align-items-center">
                 <!-- Icon -->
                 <button type="button" class="btn btn-light" id="open-cart">
