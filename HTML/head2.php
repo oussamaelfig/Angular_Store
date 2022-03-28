@@ -31,7 +31,7 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a class="dropdown-item" href="#">Liste des utilisateurs</a>
+                        <a class="dropdown-item" href="utilisateurs.php">Liste des utilisateurs</a>
                     </li>
                     <li>
                         <a class="dropdown-item" href="#">Liste des demandes d'emploi</a>
