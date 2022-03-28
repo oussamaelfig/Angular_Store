@@ -1,6 +1,8 @@
-//Variable qui represente le fichier users.json
+//Variable qui represente les fichiers .json
 var json_file;
 $.getJSON("../JSON/users.json", function(tab){json_file = tab;});
+var json_emplo;
+$.getJSON("../JSON/embauche.json", function(tab){json_emplo = tab;});
 
 //Pour formatter le datatable des utilisateurs
 $(document).ready( function () {
@@ -13,13 +15,21 @@ $(document).ready( function () {
     });
 });
 
-//Pour formatter le datatable du gérants
+//Pour formatter le datatable des postulants
 $(document).ready( function () {
-    $('#datatable-admin').DataTable({
-        "data": json_file.admin,
+    $('#datatable-emplois').DataTable({
+        "data": json_emplo.demandes,
         "columns":[
-            {"data":"username"},
-            {"data":"motdepasse"}
+            {"data":"Nom"},
+            {"data":"Prenom"},
+            {"data":"datepick"},
+            {"data":"ListePoste"},
+            {"data":"Courriel"},
+            {"data":"Adresse"},
+            {"data":"Postal"},
+            {"data":"CV.full_path"},
+            {"data":"Photo.full_path"},
+            {"data":"Commentaires"}
         ]
     });
 });

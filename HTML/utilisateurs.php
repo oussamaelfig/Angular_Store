@@ -31,25 +31,6 @@
                 </tr>
             </thead>
             <tbody></tbody>
-            <!--
-            <tbody>
-                <?php
-                    /*$tabUser = file_get_contents('../JSON/utili.json');
-                    //$tabAdmin = file_get_contents('../JSON/admin.json');
-                    $json_users = json_decode($tabUser,true);
-                    //$json_admin = json_decode($tabAdmin,true);
-                    for($i = 0; $i < 10; ++$i){
-                        $user = $json_users[$i]["username"];
-                        $pass = $json_users[$i]["motdepasse"];
-                        echo "<tr>";
-                        echo "<th>$user</th>";
-                        echo "<th>$pass</th>";
-                        echo "</tr>";
-                    }
-                */
-                ?>
-            </tbody>
-                -->
         </table>
     </div>
     <?php
