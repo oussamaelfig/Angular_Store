@@ -1,7 +1,7 @@
 //Variable qui represente les fichiers .json
 var json_file;
 $.getJSON("../JSON/users.json", function(tab){json_file = tab;});
-var json_emplo;
+var json_user;
 $.getJSON("../JSON/embauche.json", function(tab){json_emplo = tab;});
 
 //Pour formatter le datatable des utilisateurs
