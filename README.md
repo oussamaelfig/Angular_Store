@@ -22,6 +22,13 @@ Site web commercial responsive ...
 
 - Visual Studio Code
 
+## Difficultés rencontrées
+-Conserver le panier au travers des différentes pages
+-Gérer correctement les utilisateurs
+-Lire un json qui est externe au script
+-Gérer les stocks des objets
+-Générer des pages de façon dynamique
+
 ## Développeurs:
 
 OUSSAMA EL-FIGHA | ELFO74030209
