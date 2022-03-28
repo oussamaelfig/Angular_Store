@@ -27,8 +27,24 @@ $(document).ready( function () {
             {"data":"Courriel"},
             {"data":"Adresse"},
             {"data":"Postal"},
-            {"data":"CV.full_path"},
-            {"data":"Photo.full_path"},
+            { "data": "CV.full_path",
+                "render": function(data, type, row, meta){
+                   if(type === 'display'){
+                       data = '<a href="../Images/' + data + '">' + data + '</a>';
+                   }
+       
+                   return data;
+                }
+            },
+            { "data": "Photo.full_path",
+                "render": function(data, type, row, meta){
+                   if(type === 'display'){
+                       data = '<a href="../Images/' + data + '">' + data + '</a>';
+                   }
+       
+                   return data;
+                }
+            },
             {"data":"Commentaires"}
         ]
     });
