@@ -15,7 +15,7 @@
   <script src="https://kit.fontawesome.com/c0eabd5a0e.js" crossorigin="anonymous"></script>
   <!--CSS-->
   <link rel="stylesheet" href="../CSS/style.css" />
-  <title>Explorer</title>
+  <title>Panier</title>
 </head>
 
     

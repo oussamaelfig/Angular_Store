@@ -1,7 +1,30 @@
-var estValide = false;
-var compteur = 0;
+//Variable qui represente le fichier users.json
 var json_file;
 $.getJSON("../JSON/users.json", function(tab){json_file = tab;});
+
+//Pour formatter le datatable des utilisateurs
+$(document).ready( function () {
+    $('#datatable').DataTable({
+        "data": json_file.users,
+        "columns":[
+            {"data":"username"},
+            {"data":"motdepasse"}
+        ]
+    });
+});
+
+//Pour formatter le datatable du gérants
+$(document).ready( function () {
+    $('#datatable-admin').DataTable({
+        "data": json_file.admin,
+        "columns":[
+            {"data":"username"},
+            {"data":"motdepasse"}
+        ]
+    });
+});
+
+//Validation duformulaire pour postuler et vérifier si les conditions sont remplies
 function validerForm(){
     var pnom = document.forms["Post"]["Prenom"];
     var nom = document.forms["Post"]["Nom"];
@@ -62,6 +85,7 @@ function validerForm(){
     return true;
 }
 
+//Validation de l'id et du mot de passe entres par l'utilisateur
 function validerLogin(){
     var id = document.forms["SignIn"]["NomUser"];
     var pass = document.forms["SignIn"]["PassUser"];
@@ -83,7 +107,7 @@ function validerLogin(){
     for (var i = 0; i < usersArray.length; ++i) {
         if(id.value === usersArray[i].username && pass.value === usersArray[i].motdepasse){
             return true;
-        }//estValide est faux apres le premier tour mais la deuxieme fois tout marche wtf
+        }
     }
     for(var j = 0; j < gerantArray.length; ++j){
         if(id.value === gerantArray[j].username && pass.value === gerantArray[j].motdepasse){
@@ -91,72 +115,5 @@ function validerLogin(){
         }
     }
     alert("Identifiant et/ou mot de passe invalide.");
-    return false;
-}
-/*
-function checkLogin(id, pass){
-    var valide = false;
-    $.getJSON("../JSON/users.json", function(tab){
-        var usersArray = tab.users;
-        var gerantArray = tab.admin;
-        for (var i = 0; i < usersArray.length; ++i) {
-            
-            if(id.value === usersArray[i].username && pass.value === usersArray[i].motdepasse){
-                console.log(usersArray[i].username);
-            console.log(usersArray[i].motdepasse);
-                valide = true;
-                //return valide;
-                break;
-            }//estValide est faux apres le premier tour mais la deuxieme fois tout marche wtf
-        }
-        for(var j = 0; j < gerantArray.length; ++j){
-            if(id.value === gerantArray[j].username && pass.value === gerantArray[i].motdepasse){
-                valide = true;
-                //return valide;
-                break;
-            }
-        }
-    });
-    return valide;
-}*/
-//Fonction temp qui ne fait pas la diff entre users normaux et admin
-function verifierLoginTemp(id, pass){
-    var file = '{ '+
-        '"users":['+
-            '{"username":"allosalu","motdepasse":"1234asdf"},'+
-            '{"username":"userDeux","motdepasse":"p1s2d3f4"},'+
-            '{"username":"infowebs","motdepasse":"INF31902"},'+
-            '{"username":"infoJava","motdepasse":"2050inf2"},'+
-            '{"username":"jaimectf","motdepasse":"2171best"},'+
-            '{"username":"cpluscpl","motdepasse":"cPlus232"},'+
-            '{"username":"hellowor","motdepasse":"tech2022"},'+
-            '{"username":"bonjourM","motdepasse":"yeetMe44"},'+
-            '{"username":"confiden","motdepasse":"pass1234"},'+
-            '{"username":"qwertyui","motdepasse":"QwErTy12"}'+
-        '],'+
-    
-        '"admin":[{"username":"administ", "motdepasse":"TpAdmi12"}]'+
-    '}';
-    var json = JSON.parse(file);
-    var usersArray = json.users;
-    var gerantArray = json.admin;
-    var cpt = 0;
-    var estEgaux = false;
-    while(cpt < usersArray.length && !estEgaux){
-        if(usersArray[cpt].username === id.value && usersArray[cpt].motdepasse === pass.value){
-            estEgaux = true;
-        }
-        ++cpt;
-    }
-    while(cpt < gerantArray.length && !estEgaux){
-        if(gerantArray[cpt].username === id.value && gerantArray[cpt].motdepasse === pass.value){
-            estEgaux = true;
-        }
-        ++cpt;
-    }
-    if(estEgaux){
-        return true;
-    }
-
     return false;
 }

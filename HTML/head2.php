@@ -31,10 +31,10 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a class="dropdown-item" href="utilisateurs.php">Liste des utilisateurs</a>
+                        <a class="dropdown-item" href="../HTML/utilisateurs.php">Liste des utilisateurs</a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="#">Liste des demandes d'emploi</a>
+                        <a class="dropdown-item" href="../HTML/demandes.php">Liste des demandes d'emploi</a>
                     </li>
                 </ul>
             </li>
