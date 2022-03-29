@@ -22,27 +22,39 @@
                     <a class="nav-link" href="HTML/postuler.php">Postuler</a>
                 </li>
                 <li class="nav-item">
-                    <?php if(!isset($value)) {
+                    <?php if(!isset($_COOKIE["user"])) {
                         echo "<a class='nav-link' href='HTML/signIn.php'>Se connecter</a>";
                     }  
                     else {
-                        echo "<a class='nav-link disabled' href='HTML/signIn.php'>Se connecter</a>";
+                        echo "<a class='nav-link' href='HTML/signIn.php'>Se déconnecter</a>";
                     }
                     ?>
                 </li>
-                <li class="nav-item dropdown" style="list-style:none">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Admin
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class="dropdown-item" href="HTML/utilisateurs.php">Liste des utilisateurs</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="HTML/demandes.php">Liste des demandes d'emploi</a>
-                        </li>
-                    </ul>
-                </li>
+            </ul>
+            <li class="nav-item dropdown" style="list-style:none">
+                <?php 
+                        if(!isset($_COOKIE["user"]) || $_COOKIE["user"] === "basic"){
+                        echo $_COOKIE["user"];
+                        echo '<a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown">';
+                        }else if ($_COOKIE["user"] === "admin"){
+                            $_COOKIE["user"];
+                            echo '<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">';
+                        }else{
+                            $_COOKIE["user"];
+                            echo '<a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown">';
+                        }
+                    ?>
+                Admin
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="HTML/utilisateurs.php">Liste des utilisateurs</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="HTML/demandes.php">Liste des demandes d'emploi</a>
+                    </li>
+                </ul>
+            </li>
             </ul>
             <div class="d-flex align-items-center">
                 <!-- Icon -->

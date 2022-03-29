@@ -22,11 +22,28 @@
                     <a class="nav-link" href="postuler.php">Postuler</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="signIn.php">Se connecter</a>
+                    <?php if(!isset($_COOKIE["user"])) {
+                        echo "<a class='nav-link' href='../HTML/signIn.php'>Se connecter</a>";
+                    }  
+                    else {
+                        echo "<a class='nav-link' href='../HTML/signIn.php'>Se déconnecter</a>";
+                    }
+                    ?>
                 </li>
             </ul>
             <li class="nav-item dropdown" style="list-style:none">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <?php 
+                  if(!isset($_COOKIE["user"]) || $_COOKIE["user"] === "basic"){
+                    echo $_COOKIE["user"];
+                    echo '<a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown">';
+                  }else if ($_COOKIE["user"] === "admin"){
+                    $_COOKIE["user"];
+                    echo '<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">';
+                  }else{
+                    $_COOKIE["user"];
+                    echo '<a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown">';
+                  }
+                ?>
                     Admin
                 </a>
                 <ul class="dropdown-menu">

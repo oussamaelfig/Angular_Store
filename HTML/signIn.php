@@ -17,9 +17,19 @@
 <body>
     <?php
         require 'head2.php';
-        if(isset($_REQUEST["login"])) : 
+        if(isset($_COOKIE["user"])) : 
     ?>
-        
+    <div class="text-center container-fluid p-5 bg-light">
+        <?php 
+            unset($_COOKIE["user"]);
+            setcookie("user", null, time() - 3600, "/");
+        ?>
+        <h1>Vous êtes déconnecté(e)</h1>
+        <p class="muted">Vous pouvez fermez le navigateur sécuritairement désormais <br>
+        Il n'y a possiblement plus aucun danger de vous faire voler votre identité. <br>
+        <small>Possiblement. Nous ne sommes pas responsable si un de nos employés vole votre identité.</small><br>
+        Merci d'avoir visité notre site et bonne journée.</p>
+    </div>
     <?php else:?>
     <div class="text-center container-fluid p-5 bg-light">
         <h1>Connectez-vous</h1>
