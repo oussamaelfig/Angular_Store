@@ -23,9 +23,9 @@
                 </div>
                 <div class="col-md-4 text-white">
                     <h5>Contact</h5>
-                    <p><i class="bi bi-telephone-fill"></i>&nbsp +1(000)000-0000</p>
-                    <p><i class="bi bi-building"></i>&nbspMontréal, 994 Rue Rachel Est</p>
-                    <p><i class="bi bi-envelope"></i></i>&nbspcompecom@compecom.ca</p>
+                    <p><i class="bi bi-telephone-fill"></i>&nbsp; +1(000)000-0000</p>
+                    <p><i class="bi bi-building"></i>&nbsp; Montréal, 994 Rue Rachel Est</p>
+                    <p><i class="bi bi-envelope"></i>&nbsp; compecom@compecom.ca</p>
                 </div>
             </div>
         </div>
@@ -51,11 +51,11 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
-<script type="text/javascript" src="../JS/mainCart.js"></script>
-<script type="text/javascript" src="../JSON/users.json"></script>
-<script type="text/javascript" src="../JS/script.js"></script>
-<script type="text/javascript" src="../JS/index.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+<script src="../JS/mainCart.js"></script>
+<script src="../JSON/users.json"></script>
+<script src="../JS/script.js"></script>
+<script src="../JS/index.js"></script>
 <script>
 const getDatePickerTitle = elem => {
     // From the label or the aria-label

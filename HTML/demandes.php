@@ -16,37 +16,35 @@
     <script src="https://kit.fontawesome.com/c0eabd5a0e.js" crossorigin="anonymous"></script>
 
 
+
 <body>
-
-
-    <body>
-        <?php
+    <?php
         require 'head2.php';
     ?>
-        <div class="container-fluid text-center">
-            <table id="datatable-emplois" class="table table-striped table-bordered table-hover caption-top">
-                <caption style="text-align:center">Demandes d'emploi</caption>
-                <thead>
-                    <tr>
-                        <th>Nom</th>
-                        <th>Prénom</th>
-                        <th>Date de naisssance</th>
-                        <th>Poste désiré</th>
-                        <th>Courriel</th>
-                        <th>Adresse</th>
-                        <th>Code Postal</th>
-                        <th>CV</th>
-                        <th>Photo</th>
-                        <th>Commentaires</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
-        <?php
+    <div class="container-fluid text-center">
+        <table id="datatable-emplois" class="table table-striped table-bordered table-hover caption-top">
+            <caption style="text-align:center">Demandes d'emploi</caption>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Date de naisssance</th>
+                    <th>Poste désiré</th>
+                    <th>Courriel</th>
+                    <th>Adresse</th>
+                    <th>Code Postal</th>
+                    <th>CV</th>
+                    <th>Photo</th>
+                    <th>Commentaires</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <?php
         require 'tail2.php';
     ?>
 
-    </body>
+</body>
 
 </html>

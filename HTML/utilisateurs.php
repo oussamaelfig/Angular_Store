@@ -15,9 +15,6 @@
 
 
 <body>
-
-
-<body>
     <?php
         require 'head2.php';
     ?>
@@ -36,7 +33,7 @@
     <?php
         require 'tail2.php';
     ?>
-    
+
 </body>
 
 </html>

@@ -18,7 +18,9 @@
 <body>
     <?php
         require 'head2.php';
-    
+        $cookie_name = "user";
+        $cookie_value = "admin";
+        $cookie_option = "/";
         if(!isset($_REQUEST["login"])){
             die("<span style='color:red;'>Erreur: Aucun formulaire soumis</span>"); 
         }
@@ -29,21 +31,21 @@
         $login = $_POST["NomUser"];
         $pass = $_POST["PassUser"];
         if($json_admin['username'] == $login && $json_admin['motdepasse'] == $pass){
-            setcookie("user", "admin", time() + (86400 * 30), "/");
+            setcookie($cookie_name, $cookie_value, time() + (86400 * 30), $cookie_option);
             echo "<div class='text-center'>";
             echo "<h1 class='mt-4 mb-5'>Vous êtes connecté en tant qu'administrateur!</h1>";
             echo "<p class='mt-4 mb-5'>Vous pouvez maintenant naviger le site et faire vos achat!</p>";
             echo "<p class='mt-4 mb-5'>Vous pouvez aussi consulter les demandes d'emplois et la liste des utilisateurs.</p>";
             echo "<p class='mt-4 mb-5'>Mais n'hésitez pas à dépenser aussi!</p>";
-            echo "</div";
+            echo "</div>";
         }else{
-            setcookie("user", "basic", time() + (86400 * 30), "/");
+            setcookie($cookie_name, $cookie_value, time() + (86400 * 30), $cookie_option);
             echo "<div class='text-center'>";
             echo "<h1 class='mt-4 mb-5'>Vous êtes connecté!</h1>";
             echo "<p class='mt-4 mb-5'>Vous pouvez maintenant naviger le site et faire vos achat tel que vous l'avez toujours voulu!</p>";
             echo "<p class='mt-4 mb-5'>N'oubliez pas, la livraison est gratuite pour toute commande de 25 000$ ou plus!!! Quelle aubaine!</p>";
             echo "<p class='mt-4 mb-5'>N'hésitez pas à dépenser!</p>";
-            echo "</div";
+            echo "</div>";
         }
         require 'tail2.php';
     ?>

@@ -9,7 +9,7 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/c0eabd5a0e.js" crossorigin="anonymous"></script>
@@ -21,7 +21,8 @@
     <div class="text-center container-fluid p-5 bg-light">
         <h1>Devenez membre de notre formidable équipe!</h1>
         <p class="muted"><small>Salaire à partir de 0,25$/jour</small></p>
-        <form name="Post" id="Form" action="merci.php" onsubmit="return validerForm()" method="post" enctype="multipart/form-data">
+        <form name="Post" id="Form" action="merci.php" onsubmit="return validerForm()" method="post"
+            enctype="multipart/form-data">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="mb-4 mt-4">
@@ -55,7 +56,7 @@
                             <option>Gérant</option>
                             <option>Développeur Web</option>
                             <option>Développeur</option>
-                            <option>Responsable Marketing</optio>
+                            <option>Responsable Marketing</option>
                         </select>
                     </div>
                 </div>
@@ -108,7 +109,7 @@
     <?php
         require 'tail2.php';
     ?>
-    
+
 </body>
 
 </html>
