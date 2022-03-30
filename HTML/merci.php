@@ -9,6 +9,8 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/c0eabd5a0e.js" crossorigin="anonymous"></script>
 
@@ -69,7 +71,8 @@
     <div class="container text-center">
         <h1>Merci! Voici les infos reçues:</h1>
         <div class="row">
-            <div class="col-md-3"></div> <!--Empty-->
+            <div class="col-md-3"></div>
+            <!--Empty-->
             <div class="col-12 col-md-3">
                 <p>Nom: <?php echo $nom; ?> <br></p>
                 <p>Prénom: <?php echo $prenom; ?> <br></p>
@@ -81,7 +84,8 @@
                 <p>Code postal: <?php echo $codePost; ?></p>
                 <p>Poste choisi: <?php echo $poste; ?></p>
             </div>
-            <div class="col-md-3"></div> <!--Empty-->
+            <div class="col-md-3"></div>
+            <!--Empty-->
             <div class="col-12 mb-3">
                 <div class="mb-3">
                     <?php echo "<img src='".$savedFile."' class='img img-circle center-block'  style='width:200px;' alt='image téléversée'>";?>

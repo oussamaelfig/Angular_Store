@@ -1,70 +1,88 @@
 {
-    "produit":[
-        {"nom":"Samsung Galaxy Note 10",
-        "quantité":"12",
-        "prix":"1799.99$",
-        "description":"Voici le Galaxy Note 10, avec la puissance de note. La puce la plus rapide jamais installée dans un appareil Galaxy. L’écran Dynamic AMOLED 2X avec Vision Booster est l’ennemi numéro 1 des reflets, atteignant 1 750 nits à son maximum.",
-        "photo":"../Images/SamsungGalaxyNote10+.webp"
-        },
-        {"nom":"iPhone 13 Pro",
-            "quantité":"10",
-            "prix":"1399.99$",
-            "description":"Profitez de possibilités spectaculaires avec l'iPhone 13 Pro. Doté de la puce A15 Bionic, de la technologie 5G ultrarapide pour télécharger et diffuser des images, d'un écran Super Retina XDR de 6,1 po ProMotion et du matériau Ceramic Shield résistant aux chutes. Il a aussi le nouveau système de caméras Pro à téléobjectif, large et ultralarge de 12 Mpx, une autonomie de batterie extraordinaire et plus encore.",
-            "photo": "../Images/iphone-13-pro-green-select.png"
-        },
-        {"nom":"iPhone 12",
-            "quantité":"0",
-            "prix":"899.99$",
-            "description": "Que le plaisir commence avec l'iPhone 12. Il a la puissante puce A14 Bionic, la technologie 5G pour télécharger et diffuser des vidéos de grande qualité, un écran Super Retina XDR lumineux de 6,1 po et le matériau Ceramic Shield pour mieux résister aux chutes. Il a aussi le mode nuit sur les deux caméras, Dolby Vision de qualité cinéma, de nouveaux accessoires MagSafe pour la recharge sans fil, et beaucoup plus encore.",
-            "photo":"../Images/iphone12.jpg"
-        },
-        {"nom":"Pixel 6 Pro",
-            "quantité":"20",
-            "prix":"599.99$",
-            "description":"Vivez le moment présent avec le Pixel 6 Pro de Google, un téléphone Google 5G entièrement repensé et équipé. Doté de puissantes caméras, de la sécurité Titan M2 nouvelle génération et du processeur Google Tensor sur mesure, c'est le Pixel le plus intelligent et le plus rapide. Avec des applications et des pages plus rapides, une batterie très durable et une aide proactive, il offre tout ce dont vous avez besoin, quand vous en avez besoin.",
-            "photo":"../Images/GooglePixel6Pro.png"
-        },
-        {"nom":"iMac 24 po",
-            "quantité":"0",
-            "prix":"1199.99$",
-            "description":"Profitez d'une performance fiable et rapide avec l'iMac d'Apple. Doté d'une puce M1 d'Apple et de 8 Go de mémoire vive, il prend en charge facilement le multitâche pour que vous puissiez travailler efficacement sur vos projets. Son écran Retina de 4,5 K avec une gamme de couleurs étendue P3 donne vie à votre contenu avec des détails nets, et il est fourni avec un clavier Magic et une souris Magic pour pouvoir commencer à l'utiliser immédiatement.",
-            "photo":"../Images/imac-po.jpg"
-        },
-        {"nom":"Skytech Archangel Gaming Computer PC Desktop – Ryzen",
-            "quantité":"55",
-            "prix":"1049.99$",
-            "description":"Profitez d'un ordinateur de bureau assez puissant pour exécuter toutes les âche que vous y lancé sans problème. De plus, le RGB de l'ordinateur boost vos performance de 200%!",
-            "photo":"../Images/PcGamer-Ryzen.jpg"
-        },
-        {"nom":"Zenbook Pro Duo 15 OLED (UX582, 11th Gen Intel)",
-            "quantité":"6",
-            "prix":"4199.00",
-            "description":"Suralimentez votre productivité avec le portable tactile DELO ZenBook Pro Duo d'ASUS. Avec ses processeur Core i9-11900H de 2,5 GHz d'Intel, SSD PCIe de 1 To, mémoire vive de 32 Go et carte graphique GeForce RTX 3080 de NVIDIA, il offre des performances fiables. La technologie ScreenPad Plus fait en sorte que l'écran UHD de 15,6 po soit complété par un écran de 14 po pour un partage d'écran étendu d'une seule fenêtre ou de plusieurs applis.",
-            "photo":"../Images/Zenbook-Pro.webp"
-        },
-        {"nom":"Airpods Pro",
-            "quantité":"14",
-            "prix":"329.00$",
-            "description":"Les écouteurs AirPods Pro sont dotés de la technologie de suppression active du bruit pour une expérience sonore immersive. Le mode de transparence vous permet d'entendre votre environnement et les embouts à ajustement personnalisé offrent un confort quotidien pour une utilisation prolongée. Tout comme les AirPods, les AirPods Pro se connectent à votre iPhone ou Apple Watch comme par magie. De plus, ils sont prêts à l'emploi aussitôt déballés..",
-            "photo":"../Images/airpods-product.jpg"
-        },
-        {"nom":"Apple Watch",
-            "quantité":"10",
-            "prix":"369.00$",
-            "description":"Gardez traque de votre santé avec votre Apple Watch. Restez en ligne grâce à la connexion cellulaire et GPS. Elle offre des entraînements de haut niveau des meilleurs entraîneurs au monde pour atteindre vos objectifs personnels et rester motivé(e) en écoutant de la musique, des baladoémissions et des livres audio.",
-            "photo":"../Images/watch.jpg"
-        },
-        {"nom":"Magic Mouse - Surface Multi-Touch noire",
-            "quantité":"10",
-            "prix":"119.00$",
-            "description":"Redessinée, rechargeable, remarquable. Voilà ce que représentent pour vous les accessoires d'Apple : la souris Magic 2 ne fait pas exception. Elle est légère et élégante, pour la déplacer avec moins de résistance, tandis que la surface multi tactile vous permet d'effectuer des gestes simples, comme passer d'une page Web à une autre et faire défiler des documents.",
-            "photo":"../Images/souris-apple.jpg"
-        },
-        {"nom":"Eve Cam",
-            "quantité":"111",
-            "prix":"219.95$",
-            "description":"Surveillez votre maison en tout temps grâce à la caméra sécurisée pour usage intérieur Eve Cam. Recevez des notifications sur votre iPhone dès qu’il se passe quelque chose chez vous, et protégez par le fait même votre vie privée. Eve Cam est pensée exclusivement pour la vidéo sécurisée HomeKit et entièrement conçue pour protéger vos données. Où que vous soyez, Eve Cam vous offre un accès chiffré direct aux images qu’elle capte; vous seul pouvez les voir, qu’il s’agisse d’enregistrements ou d’images en direct. Les images en direct n’atteignent aucun nuage – iCloud ou autre. Seuls les enregistrements sont stockés dans iCloud, sous forme entièrement chiffrée.",
-            "photo":"../Images/eve-cam.jpg"
-        }
-    ]
+  "produit": [
+    {
+      "nom": "APPLE IPHONE 13 256GO",
+      "quantité": 15,
+      "prix": 1599.0,
+      "photo": "../Images/iphone-13-pro-green-select.png",
+      "incart": 0
+    },
+    {
+      "nom": "APPLE IPHONE 12 128GO",
+      "quantité": 40,
+      "prix": 899.99,
+      "photo": "../Images/iphone12.jpg",
+      "incart": 0
+    },
+    {
+      "nom": "GALAXY NOTE10, NOTE10+ 5G 246GO",
+      "quantité": 12,
+      "prix": 799.0,
+      "photo": "../Images/SamsungGalaxyNote10+.webp",
+      "incart": 0
+    },
+    {
+      "nom": "GOOGLE PIXEL 6 128GO",
+      "quantité": 20,
+      "prix": 599.99,
+      "photo": "../Images/GooglePixel6Pro.png",
+      "incart": 0
+    },
+    {
+      "nom": "MACBOOK PRO 14 PO",
+      "quantité": 20,
+      "prix": 2499.0,
+      "photo": "../Images/macbook-product.jpg",
+      "incart": 0
+    },
+    {
+      "nom": "IMAC 24 PO",
+      "quantité": 30,
+      "prix": 1199.99,
+      "photo": "../Images/imac-po.jpg",
+      "incart": 0
+    },
+    {
+      "nom": "SKYTECH ARCHANGEL GAMING COMPUTER PC DESKTOP – RYZEN",
+      "quantité": 55,
+      "prix": 1049.99,
+      "photo": "../Images/PcGamer-Ryzen.jpg",
+      "incart": 0
+    },
+    {
+      "nom": "ZENBOOK PRO DUO 15 OLED (UX582, 11TH GEN INTEL)",
+      "quantité": 6,
+      "prix": 4199.0,
+      "photo": "../Images/Zenbook-Pro.webp",
+      "incart": 0
+    },
+    {
+      "nom": "AIRPODS PRO",
+      "quantité": 14,
+      "prix": 329.0,
+      "photo": "../Images/airpods-product.jpg",
+      "incart": 0
+    },
+    {
+      "nom": "APPLE WATCH SE",
+      "quantité": 10,
+      "prix": 369.0,
+      "photo": "../Images/watch.jpg",
+      "incart": 0
+    },
+    {
+      "nom": "MAGIC MOUSE - SURFACE MULTI-TOUCH NOIRE",
+      "quantité": 10,
+      "prix": 119.0,
+      "photo": "../Images/souris-apple.jpg",
+      "incart": 0
+    },
+    {
+      "nom": "EVE CAM",
+      "quantité": 111,
+      "prix": 219.95,
+      "photo": "../Images/eve-cam.jpg",
+      "incart": 0
+    }
+  ]
 }

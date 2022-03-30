@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/c0eabd5a0e.js" crossorigin="anonymous"></script>
@@ -164,6 +166,7 @@
                                         <p class="price">$899,45</p>
                                         <p><b>Date de sortie: </b>12/03/2020</p>
                                         <p><b>Marque: </b>Apple</p>
+                                        <p><b>Quantité en stock: </b>40</p>
                                         <p><strong>Weight</strong>: 164g<br>
                                             <strong>Dimensions</strong>: 146.7 x 71.5 x 7.4mm<br>
                                             <strong>Display size</strong>: 6.1-inch<br>
@@ -246,6 +249,7 @@
                                         <p class="price">USD $799.00 </p>
                                         <p><b>Date de sortie: </b>26/11/2020</p>
                                         <p><b>Marque: </b>Samsung</p>
+                                        <p><b>Quantité en stock: </b>12</p>
                                         <p><b>Weight: </b> 196g<br>
                                             <b>Dimensions:</b> 162.3 x 77.2 x 7.9 mm<br>
                                             <b>OS:</b> Android 9<br>
@@ -326,6 +330,7 @@
                                         <p class="price">USD $599.00 </p>
                                         <p><b>Date de sortie: </b>20/12/2019</p>
                                         <p><b>Marque: </b>GOOGLE</p>
+                                        <p><b>Quantité en stock: </b>20</p>
                                         <ul>
                                             <li><strong>Écran:</strong> 6.4-inch 2380×1080 90Hz display</li>
                                             <li><strong>Stockage:</strong> 128GB/256GB</li>
@@ -414,6 +419,7 @@
                                         <p class="price">USD $2499.00</p>
                                         <p><b>Date de sortie: </b>21/10/2021</p>
                                         <p><b>Marque: </b>Apple</p>
+                                        <p><b>Quantité en stock: </b>20</p>
                                         <ul>
                                             <li>Apple M1 chip with 8‑core&nbsp;CPU, 8‑core&nbsp;GPU, and 16‑core Neural
                                                 Engine</li>
@@ -489,6 +495,7 @@
                                         <p class="price">USD $1849.00</p>
                                         <p><b>Date de sortie:</b>06/01/2022</p>
                                         <p><b>Marque: </b>Apple</p>
+                                        <p><b>Quantité en stock: </b>30</p>
                                         <p><strong>CPU:</strong> Apple M1 (8-core)<br>
                                             <strong>Graphique:</strong> Integrated 8-core GPU<br>
                                             <strong>RAM:</strong> 16GB Unified LPDDR4 RAM<br>
@@ -564,6 +571,7 @@
                                         <p class="price">USD $1049.99</p>
                                         <p><b>Date de sortie:</b>12/07/2020</p>
                                         <p><b>Marque: </b>RYZEN</p>
+                                        <p><b>Quantité en stock: </b>55</p>
                                         <ul class="i8Z77e">
                                             <li class="TrT0Xe">Processor Model. AMD Ryzen 5 3000 Series.</li>
                                             <li class="TrT0Xe">Processor Model Number. 3600.</li>
@@ -637,6 +645,7 @@
                                         <p class="price">USD $4199.00</p>
                                         <p><b>Date de sortie:</b>12/07/2020</p>
                                         <p><b>Marque: </b>ZENBOOK</p>
+                                        <p><b>Quantité en stock: </b>6</p>
                                         <p>voici <strong>Asus ZenBook Pro Duo (UX582L)</strong><br>
                                             <strong>CPU:</strong> Intel Core i9-10980HK<br>
                                             <strong>Graphics:</strong> GeForce RTX 3070<br>
@@ -732,6 +741,7 @@
                                         <p class="price">USD $329.00</p>
                                         <p><b>Date de sortie:</b>11/04/2021</p>
                                         <p><b>Marque: </b>Apple</p>
+                                        <p><b>Quantité en stock: </b>14</p>
                                         <p><b>Description:</b>Les écouteurs AirPods Pro sont dotés de la technologie de
                                             suppression active du bruit pour une expérience sonore immersive. Le mode de
                                             transparence vous permet d'entendre votre environnement et les embouts à
@@ -804,6 +814,7 @@
                                         <p class="price">USD $369.00</p>
                                         <p><b>Date de sortie:</b>14/05/2020</p>
                                         <p><b>Marque: </b>Apple</p>
+                                        <p><b>Quantité en stock: </b>10</p>
                                         <h4>Description: </h4>
                                         <ul>
                                             <li>GPS, GLONASS, Galileo et QZSS</li>
@@ -888,6 +899,7 @@
                                         <p class="price">USD $119.00 </p>
                                         <p><b>Date de sortie:</b>12/09/2019</p>
                                         <p><b>Marque: </b>Apple</p>
+                                        <p><b>Quantité en stock: </b>10</p>
                                         <p>Magic Mouse est sans fil et rechargeable, avec une conception de pied
                                             optimisée qui lui permet de glisser en douceur sur votre bureau. La surface
                                             Multi-Touch vous permet d'effectuer des gestes simples tels que glisser
@@ -965,9 +977,10 @@
                                         <p class="no-produits text-center">Produit NUM 12</p>
                                         <h2>EVE CAM</h2>
                                         <p>Code du produit: EVE4235346</p>
-                                        <p class="price">USD $15.00</p>
+                                        <p class="price">USD $219.95</p>
                                         <p><b>Date de sortie:</b>07/09/2020</p>
                                         <p><b>Marque</b>Apple</p>
+                                        <p><b>Quantité en stock: </b>111</p>
                                         <ul>
                                             <li>Vidéo sécurisée Apple HomeKit avec vidéo H.264 1080p/24 ips et champ de
                                                 vision de 157°</li>

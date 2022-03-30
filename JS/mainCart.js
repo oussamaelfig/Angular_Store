@@ -1,4 +1,6 @@
+//Cart va être un tableau contenant tout les produits avec leurs indices
 let carts = document.querySelectorAll(".add-cart");
+
 let products = [
   {
     nom: "APPLE IPHONE 13 256GO",
@@ -86,11 +88,7 @@ let products = [
   },
 ];
 
-var nomProduit = products.nom;
-var quantityInStock = products.quantité;
-var prixProduit = products.prix;
-var incart = products.incart;
-
+//À chaque click j'increment le nombre de produit dans le panier et met à jour le prix
 for (let i = 0; i < carts.length; i++) {
   carts[i].addEventListener("click", () => {
     cartNumbers(products[i]);
@@ -98,6 +96,7 @@ for (let i = 0; i < carts.length; i++) {
   });
 }
 
+//fonction qui ompte le nombre de prosuit dans le panier avec le localstorage
 function onLoadCartNumbers() {
   let productNumbers = localStorage.getItem("cartNumbers");
   if (productNumbers) {
@@ -105,6 +104,8 @@ function onLoadCartNumbers() {
   }
 }
 
+//fonction qui ajoute au local storage le nombre
+//de produit selectionne par l'utilisateur à mettre dans le panier
 function cartNumbers(product) {
   console.log("the product", product);
   let productNumbers = localStorage.getItem("cartNumbers");
@@ -120,7 +121,8 @@ function cartNumbers(product) {
   setItems(product);
 }
 
-//reset button
+//Bouton de reinitialisation
+//lorsqu'on reinitialise on met le panier à 0
 function resetButtonClicked() {
   var cartContent = document.getElementsByClassName("product-add")[0];
   while (cartContent.hasChildNodes()) {
@@ -130,7 +132,8 @@ function resetButtonClicked() {
   location.reload(true);
 }
 
-//Buy Button
+//bouttion d'achat
+//à l'achat d'un produit on affiche une alerte avec un messsage et on rememt le panier à 0
 function buyButtonClicked() {
   alert("Votre commande a été placée");
   var cartContent = document.getElementsByClassName("product-add")[0];
@@ -141,6 +144,9 @@ function buyButtonClicked() {
   location.reload(true);
 }
 
+//mettre dans le local storage le nomre de prioduit ainsi
+//que la description et tout les caracteristique du peoduit au localstorage
+//on désincrement la quantit en stock aussi
 function setItems(product) {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
@@ -164,6 +170,7 @@ function setItems(product) {
   localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
 
+//mettre à jour le prix dans le panier dans le localstorage
 function totalCost(product) {
   let cartCost = localStorage.getItem("totalCost");
 
@@ -175,6 +182,8 @@ function totalCost(product) {
   }
 }
 
+//Affichage du panier à chaque fois qu'un utilisateur selectionne un produit
+//afficher ce produit au panier et afficher son pris et ses caracteristiques
 function displayCart() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
@@ -248,11 +257,11 @@ Total (Taxes incluses) = $${
 onLoadCartNumbers();
 displayCart();
 
-//Buy button Work
+//Une fois on clique sur le bouton achat executer la fonction buyButtonClicked
 document
   .getElementsByClassName("btn-buy")[0]
   .addEventListener("click", buyButtonClicked);
-//reset button
+//Une fois on clique sur le bouton reinitialiser le panier executer la fonction buyButtonClicked
 document
   .getElementsByClassName("btn-buy")[1]
   .addEventListener("click", resetButtonClicked);

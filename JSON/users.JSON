@@ -1,16 +1,16 @@
 {
-    "users":[
-        {"username":"allosalu","motdepasse":"1234asdf"},
-        {"username":"userDeux","motdepasse":"p1s2d3f4"},
-        {"username":"infowebs","motdepasse":"INF31902"},
-        {"username":"infoJava","motdepasse":"2050inf2"},
-        {"username":"jaimectf","motdepasse":"2171best"},
-        {"username":"cpluscpl","motdepasse":"cPlus232"},
-        {"username":"hellowor","motdepasse":"tech2022"},
-        {"username":"bonjourM","motdepasse":"yeetMe44"},
-        {"username":"confiden","motdepasse":"pass1234"},
-        {"username":"qwertyui","motdepasse":"QwErTy12"}
-    ],
+  "users": [
+    { "username": "allosalu", "motdepasse": "1234asdf" },
+    { "username": "userDeux", "motdepasse": "p1s2d3f4" },
+    { "username": "infowebs", "motdepasse": "INF31902" },
+    { "username": "infoJava", "motdepasse": "2050inf2" },
+    { "username": "jaimectf", "motdepasse": "2171best" },
+    { "username": "cpluscpl", "motdepasse": "cPlus232" },
+    { "username": "hellowor", "motdepasse": "tech2022" },
+    { "username": "bonjourM", "motdepasse": "yeetMe44" },
+    { "username": "confiden", "motdepasse": "pass1234" },
+    { "username": "qwertyui", "motdepasse": "QwErTy12" }
+  ],
 
-    "admin":[{"username":"administ", "motdepasse":"TpAdmi12"}]
+  "admin": [{ "username": "administ", "motdepasse": "TpAdmi12" }]
 }
