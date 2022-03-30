@@ -41,7 +41,7 @@
                 <br>
                 <strong style="color: #351500;">Trouvez votre place parmi nous.</strong>
             </p>
-            <a href="postuler.php"><button type="button">Postuler</button></a>
+            <button type="button" onclick="location.href='postuler.php'">Postuler</button>
         </div>
     </div>
 </section>
