@@ -37,20 +37,20 @@
                 <img src="../Images/iphone-13-pro-green-select.png" alt="apple watch" class="product-img" />
             </a>
             <!-- Large modal -->
-            <div class="modal fade bd-example-modal-lg-1" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-1" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <iframe width="560" height="315"
                                                     src="https://www.youtube.com/embed/kV__iZuxDGE?autoplay=1?controls=0"
-                                                    title="YouTube video player" frameborder="0"
+                                                    title="YouTube video player"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                     allowfullscreen></iframe>
                                             </div>
@@ -67,12 +67,12 @@
                                                     src="../Images/iphone-13-pro-green-select3.png" alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls1" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
@@ -119,15 +119,15 @@
                 <img src="../Images/iphone12.jpg" alt="iphone 13" class="product-img" />
             </a>
             <!-- Large modal -->
-            <div class="modal fade bd-example-modal-lg-2" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-2" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="../Images/iphone12.jpg"
@@ -146,12 +146,12 @@
                                                     alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls2" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
@@ -198,15 +198,15 @@
                 <img src="../Images/SamsungGalaxyNote10+.webp" alt="AirPods" class="product-img" />
             </a>
             <!-- Large modal -->
-            <div class="modal fade bd-example-modal-lg-3" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-3" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="../Images/SamsungGalaxyNote10+.webp"
@@ -229,12 +229,12 @@
                                                     alt="Fourth slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls3" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls3" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
@@ -283,15 +283,15 @@
                 <img src="../Images/GooglePixel6Pro.png" alt="MacBook" class="product-img" />
             </a>
             <!-- Large modal -->
-            <div class="modal fade bd-example-modal-lg-4" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-4" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls4" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="../Images/GooglePixel6Pro4.png"
@@ -310,12 +310,12 @@
                                                     alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls4" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls4" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
@@ -376,15 +376,15 @@
                 <img src="../Images/macbook-product.jpg" alt="apple watch" class="product-img" />
             </a>
             <!-- Large modal -->
-            <div class="modal fade bd-example-modal-lg-5" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-5" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls5" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="../Images/macbook-product1.jpg"
@@ -399,12 +399,12 @@
                                                     alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls5" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls5" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
@@ -448,15 +448,15 @@
                 <img src="../Images/imac-po.jpg" alt="iphone 13" class="product-img" />
             </a>
             <!--Large modal-->
-            <div class="modal fade bd-example-modal-lg-6" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-6" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="../Images/imac-po.jpg"
@@ -475,12 +475,12 @@
                                                     alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls6" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls6" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
@@ -528,15 +528,15 @@
                 <img src="../Images/PcGamer-Ryzen.jpg" alt="AirPods" class="product-img" />
             </a>
             <!--Large modal-->
-            <div class="modal fade bd-example-modal-lg-7" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-7" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls7" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="../Images/PcGamer-Ryzen1.jpg"
@@ -551,12 +551,12 @@
                                                     alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls7" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls7" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
@@ -602,15 +602,15 @@
                 <img src="../Images/Zenbook-Pro.webp" alt="MacBook" class="product-img" />
             </a>
             <!--Large modal-->
-            <div class="modal fade bd-example-modal-lg-8" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-8" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls8" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="../Images/Zenbook-Pro1.webp"
@@ -625,12 +625,12 @@
                                                     alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls8" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls8" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
@@ -694,15 +694,15 @@
                 <img src="../Images/airpods-product.jpg" alt="Image de AirPods Pro d'Apple" class="product-img" />
             </a>
             <!--Large modal-->
-            <div class="modal fade bd-example-modal-lg-9" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-9" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls9" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="../Images/airpods-product1.jpg"
@@ -721,12 +721,12 @@
                                                     alt="Fourth slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls9" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls9" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
@@ -767,15 +767,15 @@
                 <img src="../Images/apple-watch.jpg" alt="Image d'Apple Watch d'Apple" class="product-img" />
             </a>
             <!--Large modal-->
-            <div class="modal fade bd-example-modal-lg-10" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-10" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls10" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="../Images/apple-watch1.jpg"
@@ -794,12 +794,12 @@
                                                     alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls10" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls10" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
@@ -856,15 +856,15 @@
                 <img src="../Images/souris-apple.jpg" alt="AirPods" class="product-img" />
             </a>
             <!--Large modal-->
-            <div class="modal fade bd-example-modal-lg-11" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-11" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls11" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="../Images/souris-apple1.jpg"
@@ -879,12 +879,12 @@
                                                     alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls11" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls11" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
@@ -926,20 +926,20 @@
                 <img src="../Images/eve-cam.jpg" alt="MacBook" class="product-img" />
             </a>
             <!--Large modal-->
-            <div class="modal fade bd-example-modal-lg-12" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-12" tabindex="-1" role="dialog" aria-label="myLargeModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg" style="min-width:90%">
                     <div class="modal-content">
                         <!--On ajout le contenu du modal window-->
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleControls12" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <iframe width="100%" height="350"
+                                                <iframe style="width:100%;" height="350"
                                                     src="https://www.youtube.com/embed/41Bd15QLcaA"
-                                                    title="YouTube video player" frameborder="0"
+                                                    title="YouTube video player"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                     allowfullscreen></iframe>
                                             </div>
@@ -960,12 +960,12 @@
                                                     alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-prev" href="#carouselExampleControls12" role="button"
                                             data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        <a class="carousel-control-next" href="#carouselExampleControls12" role="button"
                                             data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>

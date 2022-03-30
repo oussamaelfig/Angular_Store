@@ -639,3 +639,8 @@ col-md-7 {
   font-weight: bold;
   padding-top: 20px;
 }
+
+/*youtibe videos*/
+iframe {
+  border: 0px;
+}
