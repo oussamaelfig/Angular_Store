@@ -34,13 +34,10 @@
             <li class="nav-item dropdown" style="list-style:none">
                 <?php 
                   if(!isset($_COOKIE["user"]) || $_COOKIE["user"] === "basic"){
-                    echo $_COOKIE["user"];
                     echo '<a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown">';
                   }else if ($_COOKIE["user"] === "admin"){
-                    $_COOKIE["user"];
                     echo '<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">';
                   }else{
-                    $_COOKIE["user"];
                     echo '<a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown">';
                   }
                 ?>
