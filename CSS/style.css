@@ -272,7 +272,7 @@ a {
 } */
 
 .add-cart:hover {
-  background: hsl(hue, saturation, lightness);
+  background: hsl(0, 0%, 51%);
 }
 
 /* a,
