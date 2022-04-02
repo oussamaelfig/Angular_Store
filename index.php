@@ -176,7 +176,7 @@
     </section>
 
     <!-- Question accordion-->
-    <section id="questions" class="p-5">
+    <section id="questions-accordion" class="p-5">
         <div class="container">
             <h2 class="text-center mb-4">Questions fréquentes</h2>
             <div class="accordion accordion-flush" id="questions">

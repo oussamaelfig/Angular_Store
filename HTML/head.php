@@ -52,7 +52,6 @@
                     </li>
                 </ul>
             </li>
-            </ul>
             <div class="d-flex align-items-center">
                 <!-- Icon -->
                 <button type="button" class="btn btn-light" id="open-cart" onclick="location.href='HTML/cart.php'">
