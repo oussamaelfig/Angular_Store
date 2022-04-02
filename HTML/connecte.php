@@ -20,6 +20,7 @@
         require 'head2.php';
         $cookie_name = "user";
         $cookie_value = "admin";
+        $cookie_basic_value = "basic";
         $cookie_option = "/";
         if(!isset($_REQUEST["login"])){
             die("<span style='color:red;'>Erreur: Aucun formulaire soumis</span>"); 
@@ -39,7 +40,7 @@
             echo "<p class='mt-4 mb-5'>Mais n'hésitez pas à dépenser aussi!</p>";
             echo "</div>";
         }else{
-            setcookie($cookie_name, $cookie_value, time() + (86400 * 30), $cookie_option);
+            setcookie($cookie_name, $cookie_basic_value, time() + (86400 * 30), $cookie_option);
             echo "<div class='text-center'>";
             echo "<h1 class='mt-4 mb-5'>Vous êtes connecté!</h1>";
             echo "<p class='mt-4 mb-5'>Vous pouvez maintenant naviger le site et faire vos achat tel que vous l'avez toujours voulu!</p>";
