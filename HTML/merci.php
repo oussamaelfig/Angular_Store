@@ -20,7 +20,7 @@
         
         //Check if forms as been submitted
         if(!isset($_REQUEST["soumettre"])){
-            die("<span style='color:red;'>Erreur: Aucun formulaire soumis</span>"); 
+            die("<span style='color:red;'>Erreur: Aucun formulaire soumis</span>");
         }
         $tab = file_get_contents('../JSON/embauche.json');
         if($tab == '{"demandes":[]}'){
