@@ -9,11 +9,10 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!--Font awesome-->
-   <script src="https://kit.fontawesome.com/c0eabd5a0e.js" crossorigin="anonymous"></script>
-   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/c0eabd5a0e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 
 <body>
@@ -28,9 +27,10 @@
         ?>
         <h1>Vous êtes déconnecté(e)</h1>
         <p class="muted">Vous pouvez fermez le navigateur sécuritairement désormais <br>
-        Il n'y a possiblement plus aucun danger de vous faire voler votre identité. <br>
-        <small>Possiblement. Nous ne sommes pas responsable si un de nos employés vole votre identité.</small><br>
-        Merci d'avoir visité notre site et bonne journée.</p>
+            Il n'y a possiblement plus aucun danger de vous faire voler votre identité. <br>
+            <small>Possiblement. Nous ne sommes pas responsable si un de nos employés vole votre identité.</small><br>
+            Merci d'avoir visité notre site et bonne journée.
+        </p>
     </div>
     <?php else:?>
     <div class="text-center container-fluid p-5 bg-light">
@@ -59,7 +59,7 @@
     <?php
         require 'tail2.php';
     ?>
-    
+
 
 </body>
 

@@ -1,88 +1,86 @@
-{
-  "produit": [
-    {
-      "nom": "APPLE IPHONE 13 256GO",
-      "quantité": 15,
-      "prix": 1599.0,
-      "photo": "../Images/iphone-13-pro-green-select.png",
-      "incart": 0
-    },
-    {
-      "nom": "APPLE IPHONE 12 128GO",
-      "quantité": 40,
-      "prix": 899.99,
-      "photo": "../Images/iphone12.jpg",
-      "incart": 0
-    },
-    {
-      "nom": "GALAXY NOTE10, NOTE10+ 5G 246GO",
-      "quantité": 12,
-      "prix": 799.0,
-      "photo": "../Images/SamsungGalaxyNote10+.webp",
-      "incart": 0
-    },
-    {
-      "nom": "GOOGLE PIXEL 6 128GO",
-      "quantité": 20,
-      "prix": 599.99,
-      "photo": "../Images/GooglePixel6Pro.png",
-      "incart": 0
-    },
-    {
-      "nom": "MACBOOK PRO 14 PO",
-      "quantité": 20,
-      "prix": 2499.0,
-      "photo": "../Images/macbook-product.jpg",
-      "incart": 0
-    },
-    {
-      "nom": "IMAC 24 PO",
-      "quantité": 30,
-      "prix": 1199.99,
-      "photo": "../Images/imac-po.jpg",
-      "incart": 0
-    },
-    {
-      "nom": "SKYTECH ARCHANGEL GAMING COMPUTER PC DESKTOP – RYZEN",
-      "quantité": 55,
-      "prix": 1049.99,
-      "photo": "../Images/PcGamer-Ryzen.jpg",
-      "incart": 0
-    },
-    {
-      "nom": "ZENBOOK PRO DUO 15 OLED (UX582, 11TH GEN INTEL)",
-      "quantité": 6,
-      "prix": 4199.0,
-      "photo": "../Images/Zenbook-Pro.webp",
-      "incart": 0
-    },
-    {
-      "nom": "AIRPODS PRO",
-      "quantité": 14,
-      "prix": 329.0,
-      "photo": "../Images/airpods-product.jpg",
-      "incart": 0
-    },
-    {
-      "nom": "APPLE WATCH SE",
-      "quantité": 10,
-      "prix": 369.0,
-      "photo": "../Images/watch.jpg",
-      "incart": 0
-    },
-    {
-      "nom": "MAGIC MOUSE - SURFACE MULTI-TOUCH NOIRE",
-      "quantité": 10,
-      "prix": 119.0,
-      "photo": "../Images/souris-apple.jpg",
-      "incart": 0
-    },
-    {
-      "nom": "EVE CAM",
-      "quantité": 111,
-      "prix": 219.95,
-      "photo": "../Images/eve-cam.jpg",
-      "incart": 0
-    }
-  ]
-}
+[
+  {
+    "nom": "APPLE IPHONE 13 256GO",
+    "quantité": 15,
+    "prix": 1599.0,
+    "photo": "../Images/iphone-13-pro-green-select.png",
+    "incart": 0
+  },
+  {
+    "nom": "APPLE IPHONE 12 128GO",
+    "quantité": 40,
+    "prix": 899.99,
+    "photo": "../Images/iphone12.jpg",
+    "incart": 0
+  },
+  {
+    "nom": "GALAXY NOTE10, NOTE10+ 5G 246GO",
+    "quantité": 12,
+    "prix": 799.0,
+    "photo": "../Images/SamsungGalaxyNote10+.webp",
+    "incart": 0
+  },
+  {
+    "nom": "GOOGLE PIXEL 6 128GO",
+    "quantité": 20,
+    "prix": 599.99,
+    "photo": "../Images/GooglePixel6Pro.png",
+    "incart": 0
+  },
+  {
+    "nom": "MACBOOK PRO 14 PO",
+    "quantité": 20,
+    "prix": 2499.0,
+    "photo": "../Images/macbook-product.jpg",
+    "incart": 0
+  },
+  {
+    "nom": "IMAC 24 PO",
+    "quantité": 30,
+    "prix": 1199.99,
+    "photo": "../Images/imac-po.jpg",
+    "incart": 0
+  },
+  {
+    "nom": "SKYTECH ARCHANGEL GAMING COMPUTER PC DESKTOP – RYZEN",
+    "quantité": 55,
+    "prix": 1049.99,
+    "photo": "../Images/PcGamer-Ryzen.jpg",
+    "incart": 0
+  },
+  {
+    "nom": "ZENBOOK PRO DUO 15 OLED (UX582, 11TH GEN INTEL)",
+    "quantité": 6,
+    "prix": 4199.0,
+    "photo": "../Images/Zenbook-Pro.webp",
+    "incart": 0
+  },
+  {
+    "nom": "AIRPODS PRO",
+    "quantité": 14,
+    "prix": 329.0,
+    "photo": "../Images/airpods-product.jpg",
+    "incart": 0
+  },
+  {
+    "nom": "APPLE WATCH SE",
+    "quantité": 10,
+    "prix": 369.0,
+    "photo": "../Images/apple-watch.jpg",
+    "incart": 0
+  },
+  {
+    "nom": "MAGIC MOUSE - SURFACE MULTI-TOUCH NOIRE",
+    "quantité": 10,
+    "prix": 119.0,
+    "photo": "../Images/souris-apple.jpg",
+    "incart": 0
+  },
+  {
+    "nom": "EVE CAM",
+    "quantité": 111,
+    "prix": 219.95,
+    "photo": "../Images/eve-cam.jpg",
+    "incart": 0
+  }
+]

@@ -1,93 +1,31 @@
+import products from "../JSON/produits.json" assert { type: "json" };
+
+//dynamic import
+// setTimeout(() => {
+//   import("../JSON/produits.json", { assert: { type: "json" } }).then((mod) => {
+//     //mod is my module
+//     console.log(mod.default);
+//   });
+// }, 2000);
+
+// console.log(mod.default[3].nom);
+
+//static import
+// import data from "../JSON/produits.json" assert { type: "json" };
+// console.log(data.characters);
+// let products = data.characters;
+
+// var json = JSON.parse(
+//   $.getJSON({
+//     url: "../JSON/produits.json",
+//     async: false,
+//   }).responseText
+// );
+
 //Cart va être un tableau contenant tout les produits avec leurs indices
 let carts = document.querySelectorAll(".add-cart");
 
-let products = [
-  {
-    nom: "APPLE IPHONE 13 256GO",
-    quantité: 15,
-    prix: 1599.0,
-    photo: "../Images/iphone-13-pro-green-select.png",
-    incart: 0,
-  },
-  {
-    nom: "APPLE IPHONE 12 128GO",
-    quantité: 40,
-    prix: 899.99,
-    photo: "../Images/iphone12.jpg",
-    incart: 0,
-  },
-  {
-    nom: "GALAXY NOTE10, NOTE10+ 5G 246GO",
-    quantité: 12,
-    prix: 799.0,
-    photo: "../Images/SamsungGalaxyNote10+.webp",
-    incart: 0,
-  },
-  {
-    nom: "GOOGLE PIXEL 6 128GO",
-    quantité: 20,
-    prix: 599.99,
-    photo: "../Images/GooglePixel6Pro.png",
-    incart: 0,
-  },
-  {
-    nom: "MACBOOK PRO 14 PO",
-    quantité: "20",
-    prix: 2499.0,
-    photo: "../Images/macbook-product.jpg",
-    incart: 0,
-  },
-  {
-    nom: "IMAC 24 PO",
-    quantité: 30,
-    prix: 1199.99,
-    photo: "../Images/imac-po.jpg",
-    incart: 0,
-  },
-  {
-    nom: "SKYTECH ARCHANGEL GAMING COMPUTER PC DESKTOP – RYZEN",
-    quantité: 55,
-    prix: 1049.99,
-    photo: "../Images/PcGamer-Ryzen.jpg",
-    incart: 0,
-  },
-  {
-    nom: "ZENBOOK PRO DUO 15 OLED (UX582, 11TH GEN INTEL)",
-    quantité: 6,
-    prix: 4199.0,
-    photo: "../Images/Zenbook-Pro.webp",
-    incart: 0,
-  },
-  {
-    nom: "AIRPODS PRO",
-    quantité: 14,
-    prix: 329.0,
-    photo: "../Images/airpods-product.jpg",
-    incart: 0,
-  },
-  {
-    nom: "APPLE WATCH SE",
-    quantité: 10,
-    prix: 369.0,
-    photo: "../Images/watch.jpg",
-    incart: 0,
-  },
-  {
-    nom: "MAGIC MOUSE - SURFACE MULTI-TOUCH NOIRE",
-    quantité: 10,
-    prix: 119.0,
-    photo: "../Images/souris-apple.jpg",
-    incart: 0,
-  },
-  {
-    nom: "EVE CAM",
-    quantité: 111,
-    prix: 219.95,
-    photo: "../Images/eve-cam.jpg",
-    incart: 0,
-  },
-];
-
+console.log(products[1].photo);
 //À chaque click j'increment le nombre de produit dans le panier et met à jour le prix
 for (let i = 0; i < carts.length; i++) {
   carts[i].addEventListener("click", () => {
@@ -96,9 +34,9 @@ for (let i = 0; i < carts.length; i++) {
   });
 }
 
-//fonction qui ompte le nombre de prosuit dans le panier avec le localstorage
+//fonction qui ompte le nombre de prosuit dans le panier avec le sessionStorage
 function onLoadCartNumbers() {
-  let productNumbers = localStorage.getItem("cartNumbers");
+  let productNumbers = sessionStorage.getItem("cartNumbers");
   if (productNumbers) {
     document.querySelector(".cartCount").textContent = productNumbers;
   }
@@ -108,14 +46,14 @@ function onLoadCartNumbers() {
 //de produit selectionne par l'utilisateur à mettre dans le panier
 function cartNumbers(product) {
   console.log("the product", product);
-  let productNumbers = localStorage.getItem("cartNumbers");
+  let productNumbers = sessionStorage.getItem("cartNumbers");
 
   productNumbers = parseInt(productNumbers);
   if (productNumbers) {
-    localStorage.setItem("cartNumbers", productNumbers + 1);
+    sessionStorage.setItem("cartNumbers", productNumbers + 1);
     document.querySelector(".cartCount").textContent = productNumbers + 1;
   } else {
-    localStorage.setItem("cartNumbers", 1);
+    sessionStorage.setItem("cartNumbers", 1);
     document.querySelector(".cartCount").textContent = 1;
   }
   setItems(product);
@@ -128,7 +66,7 @@ function resetButtonClicked() {
   while (cartContent.hasChildNodes()) {
     cartContent.removeChild(cartContent.firstChild);
   }
-  localStorage.clear();
+  sessionStorage.clear();
   location.reload(true);
 }
 
@@ -140,15 +78,15 @@ function buyButtonClicked() {
   while (cartContent.hasChildNodes()) {
     cartContent.removeChild(cartContent.firstChild);
   }
-  localStorage.clear();
+  sessionStorage.clear();
   location.reload(true);
 }
 
 //mettre dans le local storage le nomre de prioduit ainsi
-//que la description et tout les caracteristique du peoduit au localstorage
+//que la description et tout les caracteristique du peoduit au sessionStorage
 //on désincrement la quantit en stock aussi
 function setItems(product) {
-  let cartItems = localStorage.getItem("productsInCart");
+  let cartItems = sessionStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
 
   if (cartItems != null) {
@@ -167,28 +105,28 @@ function setItems(product) {
     };
   }
 
-  localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+  sessionStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
 
-//mettre à jour le prix dans le panier dans le localstorage
+//mettre à jour le prix dans le panier dans le sessionStorage
 function totalCost(product) {
-  let cartCost = localStorage.getItem("totalCost");
+  let cartCost = sessionStorage.getItem("totalCost");
 
   if (cartCost != null) {
     cartCost = parseInt(cartCost);
-    localStorage.setItem("totalCost", cartCost + product.prix);
+    sessionStorage.setItem("totalCost", cartCost + product.prix);
   } else {
-    localStorage.setItem("totalCost", product.prix);
+    sessionStorage.setItem("totalCost", product.prix);
   }
 }
 
 //Affichage du panier à chaque fois qu'un utilisateur selectionne un produit
 //afficher ce produit au panier et afficher son pris et ses caracteristiques
 function displayCart() {
-  let cartItems = localStorage.getItem("productsInCart");
+  let cartItems = sessionStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector("tbody.product-add");
-  let cartCost = localStorage.getItem("totalCost");
+  let cartCost = sessionStorage.getItem("totalCost");
 
   if (cartItems && productContainer) {
     productContainer.innerHTML = "";
