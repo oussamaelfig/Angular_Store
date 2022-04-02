@@ -20,13 +20,13 @@
     <title>Panier</title>
 </head>
 
+<body>
 
-<?php
+    <?php
   require "head2.php";
   
 ?>
 
-<body>
 
 
     <!--Cart items details-->
@@ -64,12 +64,11 @@
             </div>
         </div>
     </section>
-    </div>
-</body>
 
 
-<?php
+    <?php
   require "tail2.php";
 ?>
+</body>
 
 </html>

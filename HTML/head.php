@@ -55,9 +55,8 @@
             </ul>
             <div class="d-flex align-items-center">
                 <!-- Icon -->
-                <button type="button" class="btn btn-light" id="open-cart">
-                    <a class="text-reset me-3" href="HTML/cart.php">
-                        <i class="fas fa-shopping-cart" id="cart-icon"></i> </a><sup class="cartCount">0</sup>
+                <button type="button" class="btn btn-light" id="open-cart" onclick="location.href='HTML/cart.php'">
+                    <i class="fas fa-shopping-cart" id="cart-icon"></i><sup class="cartCount">0</sup>
                 </button>
             </div>
         </div>
