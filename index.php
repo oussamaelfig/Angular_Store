@@ -43,7 +43,7 @@
     </div>
 
     <!-- Caroussel -->
-    <div id="controleur" class="carousel slide" data-bs-ride="carousel">
+    <!-- <div id="controleur" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="#"><img src="Images/imac-po.jpg" class="d-block w-100" alt="Photo de iMac 24 pouces"></a>
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="#"><img src="Images/imac-po.jpg" class="d-block w-100" alt="..."></a>
+                <a href="#"><img src="Images/imac-po.jpg" class="d-block w-100" alt="image du produit imac po"></a>
                 <div class="carousel-caption d-none d-md-block">
                     <h1>iPhone 12 est en solde!</h1>
                     <h5>Une caméra incroyable et une puce A14 imbattable! Tout ça vous est accessible grâce à un prix
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="#"><img src="Images/imac-po.jpg" class="d-block w-100" alt="..."></a>
+                <a href="#"><img src="Images/imac-po.jpg" class="d-block w-100" alt="image de produit imac po"></a>
                 <div class="carousel-caption d-none d-md-block">
                     <h1>iPhone 12 est en solde!</h1>
                     <h5>Une caméra incroyable et une puce A14 imbattable! Tout ça vous est accessible grâce à un prix
@@ -85,45 +85,72 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Suvivant</span>
         </button>
-    </div>
+    </div> -->
 
     <section class="shop container">
         <h3 class="header-red">Nouveautés</h3>
         <h2 class="section-title">Produits Populaires</h2>
         <div class="shop-content">
-            <!--product 1-->
-            <div class="product-box">
-                <img src="Images/apple-watch.jpg" alt="apple watch" class="product-img">
-                <h2 class="product-title">Apple Watch SE</h2>
-                <span class="price">369.00 $</span>
-                <i class="fa-solid fa-cart-shopping add-cart"></i>
-            </div>
-            <!--Product 2-->
-            <div class="product-box">
-                <img src="Images/iphone-13-pro-green-select.png" alt="iphone 13" class="product-img">
-                <h2 class="product-title">iPhone 13 Vert 256Go </h2>
-                <span class="price">1599.00 $</span>
-                <i class="fa-solid fa-cart-shopping add-cart"></i>
-            </div>
-            <!--Product 3-->
-            <div class="product-box">
-                <img src="Images/airpods-product.jpg" alt="AirPods" class="product-img">
-                <h2 class="product-title">AirPods Pro</h2>
-                <span class="price">329.00 $</span>
-                <i class="fa-solid fa-cart-shopping add-cart"></i>
-            </div>
-            <!--Product 4-->
-            <div class="product-box">
-                <img src="Images/macbook-product.jpg" alt="MacBook" class="product-img">
-                <h2 class="product-title">MacBook Pro 14 po </h2>
-                <span class="price">2499,00 $</span>
-                <i class="fa-solid fa-cart-shopping add-cart"></i>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!--Slider num 1-->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="Images/apple-watch.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-3">
+                                <img src="Images/airpods-product.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-3">
+                                <img src="Images/eve-cam.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-3">
+                                <img src="Images/imac-po2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin du slider num 1-->
+
+                    <!--Debut slider num 2-->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="Images/iphone-13-pro-green-select.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-3">
+                                <img src="Images/iphone12.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-3">
+                                <img src="Images/macbook-product.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-3">
+                                <img src="Images/Zenbook-Pro.webp" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin de slider num2-->
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </section>
+
+    <!--Button explorer les produits-->
+    <div class="mx-auto" style="width: 200px;">
+        <div class="col-md-12 text-center mb-5">
+            <button type="button" class="btn btn-primary" onclick="location.href='HTML/explorer.php'">Explorer nos
+                produits</button>
+        </div>
     </div>
-    </div>
-    </section>
+
 
     <!-- banner section -->
     <section id="learn" class="p-5 bg-dark">
