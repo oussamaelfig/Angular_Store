@@ -40,12 +40,7 @@
         </div>
     </div>
 </footer>
-<<<<<<< HEAD
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-=======
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="../JS/mainCart.js"></script>
->>>>>>> 15b711194c9c201c7c7e9cb0b7f213abb710af44
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -60,7 +55,9 @@
 <script type="module" src="../JS/mainCart.js"></script>
 <script src="../JSON/users.json"></script>
 <script src="../JS/script.js"></script>
+<script type="module" src="../JS/mainCart.js"></script>
 <script src="../JS/index.js"></script>
+
 <script type="module" src="../JS/test.js"></script>
 <script>
 const getDatePickerTitle = elem => {
