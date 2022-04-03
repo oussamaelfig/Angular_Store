@@ -2,7 +2,7 @@
 
 ## Description du projet :
 
-Site web commercial responsive ...
+Site web commercial responsive qui permet aux utilisateurs connectés d'acheter des articles. Si c'est un admin qui est connécté, il peut consulter la liste des personnes ayant postuler et la liste des utilisateurs. Ces fonctionnalité ne sont pas disponibles pour les visteurs et les utilisateurs connectés. Un visiteur ne peut pas passer la commande.
 
 ## Fonctionnalités implémentées :
 
@@ -13,6 +13,11 @@ Site web commercial responsive ...
 - Ajout de quelques videos dans la presentation détaillé du produits.
 - Création de la page de panier qui permet à l'utilisateur d'ajouter des produits effacer le panier, passer une commande, ou changer la quantité et consulter le prixavant et après taxe.
 - Création d'un panier persistant qui permet de preserver les produits même si on navigue entre les pages ou on la quitte.
+- Validation du formulaire de postulation selon les demandes de l'énoncé.
+- Pour chaque postulation, les infos de la personne, du cv et de la photo sont inscrit dans embauche.json.
+- Validation du login selon les demandes du format de l'identifiant et du mot de passe. Une fois que ces validations sont faite, la vérifiaction si l'identifiant et le mot de passe correspondent à une des possiblité valide qui se trouvent dans user.json. Selon le type d'utilisateurs qui a été entré, le type de user est storé dans un cookie qui est conservé jusqu'à expiration ou jusqu'à ce que l'utilisateur se déconnecte. Cela permet à l'utilisateur d'acheter et d'accéder au menu admin (si c'est l'admin).
+-Consulter les postulations à l'aide d'un datatable si l'utilisateur est un admin. Le user peut cliquer sur le nom du pdf et de la phot pour chaque personne pour pouvoir les consulter dans une nouvelle page.
+-Consulter les utilisateurs qui sont conservé dans user.json à l'aide d'un datatable.
 
 ## Ce qui ne fonctionne pas dans votre projet:
 
@@ -26,7 +31,7 @@ Site web commercial responsive ...
 - JAVASCRIPT
 - JQUERY
 - PHP
-- XAMPP
+- XAMPP pour le serveur local
 
 ## Plateforme de développement utilisée
 
@@ -36,7 +41,7 @@ Site web commercial responsive ...
 
 - Conserver le panier au travers des différentes pages
 - Gérer correctement les utilisateurs
-- Lire un json qui est externe au script
+- Lire un json qui est externe au script avec JS/jQuery
 - Gérer les stocks des objets
 - Générer des pages de façon dynamique
 
