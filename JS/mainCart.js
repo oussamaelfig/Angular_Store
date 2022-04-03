@@ -1,27 +1,5 @@
 import products from "../JSON/produits.json" assert { type: "json" };
 
-//dynamic import
-// setTimeout(() => {
-//   import("../JSON/produits.json", { assert: { type: "json" } }).then((mod) => {
-//     //mod is my module
-//     console.log(mod.default);
-//   });
-// }, 2000);
-
-// console.log(mod.default[3].nom);
-
-//static import
-// import data from "../JSON/produits.json" assert { type: "json" };
-// console.log(data.characters);
-// let products = data.characters;
-
-// var json = JSON.parse(
-//   $.getJSON({
-//     url: "../JSON/produits.json",
-//     async: false,
-//   }).responseText
-// );
-
 //Cart va être un tableau contenant tout les produits avec leurs indices
 let carts = document.querySelectorAll(".add-cart");
 
