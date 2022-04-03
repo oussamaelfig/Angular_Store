@@ -51,10 +51,10 @@
                         </table>
                         <?php
           if(!isset($_COOKIE["user"])){
-            echo '<a href="explorer.php"><button type="button" class="btn btn-primary btn-lg btn-block btn-buy disabled">Acheter (Vous devez être connecté(e))</button></a>';
+            echo '<button type="button" class="btn btn-primary btn-lg btn-block btn-buy disabled">Acheter (Vous devez être connecté(e))</button>';
             echo '<button type="button" class="btn btn-secondary btn-lg btn-block btn-buy disabled">Vider le panier</button>';
           }else{
-            echo '<button type="button" class="btn btn-primary btn-lg btn-block btn-buy">Acheter</button>';
+            echo '<a href="explorer.php"><button type="button" class="btn btn-primary btn-lg btn-block btn-buy">Acheter (Vous devez être connecté(e))</button></a>';
             echo '<button type="button" class="btn btn-secondary btn-lg btn-block btn-buy">Vider le panier</button>';
           }
           ?>
