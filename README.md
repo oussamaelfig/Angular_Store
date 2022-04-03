@@ -16,8 +16,8 @@ Site web commercial responsive qui permet aux utilisateurs connectés d'acheter 
 - Validation du formulaire de postulation selon les demandes de l'énoncé.
 - Pour chaque postulation, les infos de la personne, du cv et de la photo sont inscrit dans embauche.json.
 - Validation du login selon les demandes du format de l'identifiant et du mot de passe. Une fois que ces validations sont faite, la vérifiaction si l'identifiant et le mot de passe correspondent à une des possiblité valide qui se trouvent dans user.json. Selon le type d'utilisateurs qui a été entré, le type de user est storé dans un cookie qui est conservé jusqu'à expiration ou jusqu'à ce que l'utilisateur se déconnecte. Cela permet à l'utilisateur d'acheter et d'accéder au menu admin (si c'est l'admin).
--Consulter les postulations à l'aide d'un datatable si l'utilisateur est un admin. Le user peut cliquer sur le nom du pdf et de la phot pour chaque personne pour pouvoir les consulter dans une nouvelle page.
--Consulter les utilisateurs qui sont conservé dans user.json à l'aide d'un datatable.
+- Consulter les postulations à l'aide d'un datatable si l'utilisateur est un admin. Le user peut cliquer sur le nom du pdf et de la phot pour chaque personne pour pouvoir les consulter dans une nouvelle page.
+- Consulter les utilisateurs qui sont conservé dans user.json à l'aide d'un datatable.
 
 ## Ce qui ne fonctionne pas dans votre projet:
 
