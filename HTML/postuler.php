@@ -82,7 +82,7 @@
                 <div class="col-12 col-md-3">
                     <div class="mb-4 mt-4">
                         <label for="CV" class="form-label">Télécharger votre CV (PDF)*:</label>
-                        <input type="file" name="CV" id="CV" class="form-control" required>
+                        <input type="file" name="CV" id="CV" class="form-control" accept="application/pdf" required>
                     </div>
                 </div>
                 <div class="col-12 col-md-3">
