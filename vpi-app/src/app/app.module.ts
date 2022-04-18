@@ -12,8 +12,13 @@ import { QuestionsAccordionComponent } from './questions-accordion/questions-acc
 import { SliderComponent } from './slider/slider.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
+import { AccueilComponentComponent } from './accueil-component/accueil-component.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
+import { SearchComponent } from './search/search.component';
+import { Ng2OrderModule } from 'ng2-order-pipe';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -27,10 +32,18 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
     SliderComponent,
     FooterComponent,
     AboutComponent,
-    HomeComponent,
+    AccueilComponentComponent,
     CarrouselComponent,
+    SearchComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    Ng2OrderModule,
+    Ng2SearchPipeModule,
+    NgxPaginationModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,31 @@
+<h1>Table des produits</h1>
+<nav class="navbar">
+  <input
+    class="form-control"
+    type="text"
+    name="nomProduit"
+    [(ngModel)]="nomProduit"
+    (ngModelChange)="Search()"
+    placeholder="Entrer le nom du produit à chercher"
+  />
+</nav>
+<table class="table table-bordred">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Nom</th>
+      <th>Prix</th>
+      <th>Ajout au panier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.nom }}</td>
+      <td>{{ product.prix }}$</td>
+      <td>
+        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
