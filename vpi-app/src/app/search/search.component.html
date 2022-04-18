@@ -12,14 +12,24 @@
 <table class="table table-bordred">
   <thead>
     <tr>
-      <th>Code</th>
-      <th>Nom</th>
+      <th (click)="sort('id')">
+        Code Produit &nbsp; <i class="bi bi-funnel-fill"></i>
+      </th>
+      <th (click)="sort('nom')">
+        Nom &nbsp; <i class="bi bi-funnel-fill"></i>
+      </th>
       <th>Prix</th>
       <th>Ajout au panier</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let product of products">
+    <tr
+      *ngFor="
+        let product of products
+          | orderBy: key:reverse
+          | paginate: { itemsPerPage: 5, currentPage: p }
+      "
+    >
       <td>{{ product.id }}</td>
       <td>{{ product.nom }}</td>
       <td>{{ product.prix }}$</td>
@@ -28,4 +38,5 @@
       </td>
     </tr>
   </tbody>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </table>
