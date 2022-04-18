@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from '../products';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-search',
@@ -10,7 +11,8 @@ export class SearchComponent implements OnInit {
   products: any = products;
   nomProduit: any;
   p: number = 1;
-  constructor() {}
+
+  constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
     this.products = products;
@@ -36,5 +38,10 @@ export class SearchComponent implements OnInit {
   sort(key: string) {
     this.key = key;
     this.reverse = !this.reverse;
+  }
+
+  addToCart(product: any) {
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!');
   }
 }

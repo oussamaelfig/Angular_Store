@@ -34,7 +34,25 @@
       <td>{{ product.nom }}</td>
       <td>{{ product.prix }}$</td>
       <td>
-        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+        <!-- <button
+          type="button"
+          (click)="addToCart(product)"
+          class="btn btn-primary"
+        >
+          Ajouter au panier
+        </button> -->
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            (click)="addToCart(product)"
+            value=""
+            id="flexCheckChecked"
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Checked checkbox
+          </label>
+        </div>
       </td>
     </tr>
   </tbody>

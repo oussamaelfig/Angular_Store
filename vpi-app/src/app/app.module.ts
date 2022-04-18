@@ -19,7 +19,7 @@ import { Ng2OrderModule } from 'ng2-order-pipe';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     Ng2SearchPipeModule,
     NgxPaginationModule,
     FormsModule,
-    MatPaginatorModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
