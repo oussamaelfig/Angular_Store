@@ -1,5 +1,5 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-3">
-  <a class="navbar-brand" href="#">VPI</a>
+  <a class="navbar-brand ms-3" href="/accueil">VPI</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -12,30 +12,30 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ms-auto">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/">HOME</a>
+        <a class="nav-link" routerLink="/accueil">Accueil</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/products">EXPLORER</a>
+        <a class="nav-link" routerLink="/products">Explorer</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/search">CHERCHER</a>
+        <a class="nav-link" routerLink="/search">Rechercher</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/about">ABOUT US</a>
+        <a class="nav-link" routerLink="/about">À propos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/postuler">POSTULER</a>
+        <a class="nav-link" routerLink="/postuler">Postuler</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/cart">PANIER</a>
+        <a class="nav-link" routerLink="/cart">Panier</a>
       </li>
     </ul>
     <ul
       class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap"
     >
-      <li class="nav-item">
+      <li class="nav-item me-3">
         <a routerLink="/cart" class="nav-link" href="#"
           ><span class="bi bi-cart-fill" style="color: #ffffff">{{
             itemCount()

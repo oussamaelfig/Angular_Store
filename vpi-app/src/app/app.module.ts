@@ -17,9 +17,9 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
 import { SearchComponent } from './search/search.component';
 import { Ng2OrderModule } from 'ng2-order-pipe';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { FormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { MatTableModule } from '@angular/material/table';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { PostulerComponent } from './postuler/postuler.component';
 
 @NgModule({
@@ -46,6 +46,7 @@ import { PostulerComponent } from './postuler/postuler.component';
     Ng2SearchPipeModule,
     NgxPaginationModule,
     FormsModule,
+    ReactiveFormsModule,
     MatTableModule,
   ],
   providers: [],

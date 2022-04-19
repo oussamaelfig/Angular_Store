@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'postuler',
     component: PostulerComponent
+  },
+  {
+    path: 'accueil',
+    component: AccueilComponentComponent
   }
 ];
 
