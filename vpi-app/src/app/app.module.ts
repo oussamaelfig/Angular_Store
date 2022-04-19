@@ -20,6 +20,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { MatTableModule } from '@angular/material/table';
+import { PostulerComponent } from './postuler/postuler.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { MatTableModule } from '@angular/material/table';
     AccueilComponentComponent,
     CarrouselComponent,
     SearchComponent,
+    PostulerComponent,
   ],
   imports: [
     BrowserModule,

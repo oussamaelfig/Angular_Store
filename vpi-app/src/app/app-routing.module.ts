@@ -7,6 +7,7 @@ import { AccueilComponentComponent } from './accueil-component/accueil-component
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { SearchComponent } from './search/search.component';
+import { PostulerComponent } from './postuler/postuler.component';
 
 const routes: Routes = [
   {
@@ -25,8 +26,19 @@ const routes: Routes = [
     path: 'about',
     component: AboutComponent,
   },
-  { path: 'products/:productId', component: ProductDetailsComponent },
-  { path: 'cart', component: CartComponent },
+  {
+    path: 'products/:productId',
+    component: ProductDetailsComponent
+  },
+
+  {
+    path: 'cart',
+    component: CartComponent
+  },
+  {
+    path: 'postuler',
+    component: PostulerComponent
+  }
 ];
 
 @NgModule({
