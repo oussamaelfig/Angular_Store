@@ -21,6 +21,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { MatTableModule } from '@angular/material/table';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { PostulerComponent } from './postuler/postuler.component';
+import { MerciComponent } from './merci/merci.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { PostulerComponent } from './postuler/postuler.component';
     CarrouselComponent,
     SearchComponent,
     PostulerComponent,
+    MerciComponent,
   ],
   imports: [
     BrowserModule,

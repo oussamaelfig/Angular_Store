@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-postuler',
@@ -12,8 +12,7 @@ export class PostulerComponent implements OnInit {
   prenom = new FormControl('');
   date = new FormControl('');
   courriel = new FormControl('');
-
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -64,5 +63,6 @@ export class PostulerComponent implements OnInit {
     this.validerDate();
     this.validerCourriel();
     //If all vrai -> ecrire dans json
+    this.router.navigateByUrl('/merci');
   }
 }

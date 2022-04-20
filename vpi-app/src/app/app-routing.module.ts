@@ -8,6 +8,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ProductListComponent } from './product-list/product-list.component';
 import { SearchComponent } from './search/search.component';
 import { PostulerComponent } from './postuler/postuler.component';
+import { MerciComponent } from './merci/merci.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'accueil',
     component: AccueilComponentComponent
+  },
+  {
+    path: 'merci',
+    component: MerciComponent
   }
 ];
 
