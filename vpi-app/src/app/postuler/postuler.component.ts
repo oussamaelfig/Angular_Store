@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
+import { BdService } from '../bd.service';
 
 @Component({
   selector: 'app-postuler',
@@ -63,6 +64,9 @@ export class PostulerComponent implements OnInit {
     this.validerDate();
     this.validerCourriel();
     //If all vrai -> ecrire dans json
+
+    //Pour l'instant, la nouvelle page va toujours s'afficher
+    //if statement avec tout le reste.
     this.router.navigateByUrl('/merci');
   }
 }

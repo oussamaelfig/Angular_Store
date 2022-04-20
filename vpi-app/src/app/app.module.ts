@@ -22,6 +22,7 @@ import { MatTableModule } from '@angular/material/table';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { PostulerComponent } from './postuler/postuler.component';
 import { MerciComponent } from './merci/merci.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { MerciComponent } from './merci/merci.component';
     SearchComponent,
     PostulerComponent,
     MerciComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
