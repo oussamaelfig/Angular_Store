@@ -23,6 +23,10 @@ export class PostulerComponent implements OnInit {
       alert("Le nom est invalide");
       return false;
     }
+    if(this.nom.value.length < 4){
+      alert("Le nom est trop court");
+      return false;
+    }
     return true
   }
 
@@ -31,11 +35,23 @@ export class PostulerComponent implements OnInit {
       alert("Le prénom est invalide");
       return false;
     }
+    if(this.prenom.value.length < 4){
+      alert("Le prénom est trop court");
+      return false;
+    }
     return true
   }
 
+  validerCourriel(){
+    if(this.courriel.value == '' || !/^\S+@\S+\.\S+$/.test(this.courriel.value)){
+      alert("Entrez une adresse courriel valide");
+      return false;
+    }
+    return true;
+  }
+
   private validerDate(){
-    if(this.date.value == ''){
+    if(this.date.value == '' ){
       alert("La date de naissance est obligatoire");
       return false;
     }
@@ -46,6 +62,7 @@ export class PostulerComponent implements OnInit {
     this.validerNom();
     this.validerPrenom();
     this.validerDate();
+    this.validerCourriel();
     //If all vrai -> ecrire dans json
   }
 }
