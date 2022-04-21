@@ -101,11 +101,7 @@
     "nom": "AIRPODS PRO",
     "quantite": 14,
     "description": "Les écouteurs AirPods Pro sont dotés de la technologie de suppression active du bruit pour une expérience sonore immersive. Le mode de transparence vous permet d'entendre votre environnement et les embouts à ajustement personnalisé offrent un confort quotidien pour une utilisation prolongée. Tout comme les AirPods, les AirPods Pro se connectent à votre iPhone ou Apple Watch comme par magie. De plus, ils sont prêts à l'emploi aussitôt déballés..",
-    "photo": [
-      "../../assets/Images/airpods-product.jpg",
-      "../../assets/Images/airpods-product1.jpg",
-      "../../assets/Images/airpods-product2.jpg"
-    ],
+    "photo": ["../../assets/Images/airpods-product.jpg"],
     "prix": 329.0
   },
   {
@@ -114,11 +110,7 @@
     "quantite": 10,
     "description": "Gardez traque de votre santé avec votre Apple Watch. Restez en ligne grâce à la connexion cellulaire et GPS. Elle offre des entraînements de haut niveau des meilleurs entraîneurs au monde pour atteindre vos objectifs personnels et rester motivé(e) en écoutant de la musique, des baladoémissions et des livres audio.",
     "incart": 0,
-    "photo": [
-      "../../assets/Images/apple-watch.jpg",
-      "../../assets/Images/apple-watch1.jpg",
-      "../../assets/Images/apple-watch2.jpg"
-    ],
+    "photo": ["../../assets/Images/apple-watch.jpg"],
     "prix": 369.0
   },
   {
@@ -126,11 +118,7 @@
     "nom": "MAGIC MOUSE - SURFACE MULTI-TOUCH NOIRE",
     "quantite": 10,
     "description": "Redessinée, rechargeable, remarquable. Voilà ce que représentent pour vous les accessoires d'Apple : la souris Magic 2 ne fait pas exception. Elle est légère et élégante, pour la déplacer avec moins de résistance, tandis que la surface multi tactile vous permet d'effectuer des gestes simples, comme passer d'une page Web à une autre et faire défiler des documents.",
-    "photo": [
-      "../../assets/Images/souris-apple.jpg",
-      "../../assets/Images/souris-apple1.jpg",
-      "../../assets/Images/souris-apple2.jpg"
-    ],
+    "photo": ["../../assets/Images/souris-apple.jpg"],
     "prix": 119.0
   },
   {
@@ -138,11 +126,7 @@
     "nom": "EVE CAM",
     "quantite": 111,
     "description": "Surveillez votre maison en tout temps grâce à la caméra sécurisée pour usage intérieur Eve Cam. Recevez des notifications sur votre iPhone dès qu’il se passe quelque chose chez vous, et protégez par le fait même votre vie privée. Eve Cam est pensée exclusivement pour la vidéo sécurisée HomeKit et entièrement conçue pour protéger vos données. Où que vous soyez, Eve Cam vous offre un accès chiffré direct aux images qu’elle capte; vous seul pouvez les voir, qu’il s’agisse d’enregistrements ou d’images en direct. Les images en direct n’atteignent aucun nuage – iCloud ou autre. Seuls les enregistrements sont stockés dans iCloud, sous forme entièrement chiffrée.",
-    "photo": [
-      "../../assets/Images/eve-cam.jpg",
-      "../../assets/Images/eve-cam1.jpg",
-      "../../assets/Images/eve-cam2.jpg"
-    ],
+    "photo": ["../../assets/Images/eve-cam.jpg"],
     "prix": 219.95
   }
 ]

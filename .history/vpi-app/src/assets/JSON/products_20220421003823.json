@@ -138,11 +138,7 @@
     "nom": "EVE CAM",
     "quantite": 111,
     "description": "Surveillez votre maison en tout temps grâce à la caméra sécurisée pour usage intérieur Eve Cam. Recevez des notifications sur votre iPhone dès qu’il se passe quelque chose chez vous, et protégez par le fait même votre vie privée. Eve Cam est pensée exclusivement pour la vidéo sécurisée HomeKit et entièrement conçue pour protéger vos données. Où que vous soyez, Eve Cam vous offre un accès chiffré direct aux images qu’elle capte; vous seul pouvez les voir, qu’il s’agisse d’enregistrements ou d’images en direct. Les images en direct n’atteignent aucun nuage – iCloud ou autre. Seuls les enregistrements sont stockés dans iCloud, sous forme entièrement chiffrée.",
-    "photo": [
-      "../../assets/Images/eve-cam.jpg",
-      "../../assets/Images/eve-cam1.jpg",
-      "../../assets/Images/eve-cam2.jpg"
-    ],
+    "photo": ["../../assets/Images/eve-cam.jpg"],
     "prix": 219.95
   }
 ]

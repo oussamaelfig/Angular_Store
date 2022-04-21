@@ -35,6 +35,16 @@
           />
         </div>
         <div class="carousel-item">
+          <iframe
+            width="560"
+            height="315"
+            src="{{ product.photo[3] }}"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
+        <div class="carousel-item">
           <img
             src="{{ product.photo[2] }}"
             class="d-block w-100"
@@ -75,7 +85,7 @@
       <button type="button" (click)="addToCart(product)" class="btn btn-dark">
         Ajouter au panier
       </button>
-      <button type="button" [routerLink]="'/products'" class="btn btn-dark">
+      <button type="button" [routerLink]="'products'" class="btn btn-dark">
         Retour
       </button>
     </div>

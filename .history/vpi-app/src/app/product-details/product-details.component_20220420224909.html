@@ -41,6 +41,17 @@
             alt="image-du-produit"
           />
         </div>
+        <div class="carousel-item">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/UpolBSznWp0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
       <a
         class="carousel-control-prev"
@@ -75,12 +86,9 @@
       <button type="button" (click)="addToCart(product)" class="btn btn-dark">
         Ajouter au panier
       </button>
-      <button type="button" [routerLink]="'/products'" class="btn btn-dark">
+      <button type="button" [routerLink]="'products'" class="btn btn-dark">
         Retour
       </button>
     </div>
-    <br />
-    <br />
-    <br />
   </div>
 </div>

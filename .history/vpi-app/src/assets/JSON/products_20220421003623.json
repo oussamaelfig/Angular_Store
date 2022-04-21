@@ -41,11 +41,7 @@
     "nom": "GOOGLE PIXEL 6 128GO",
     "quantite": 20,
     "description": "Vivez le moment présent avec le Pixel 6 Pro de Google, un téléphone Google 5G entièrement repensé et équipé. Doté de puissantes caméras, de la sécurité Titan M2 nouvelle génération et du processeur Google Tensor sur mesure, c'est le Pixel le plus intelligent et le plus rapide. Avec des applications et des pages plus rapides, une batterie très durable et une aide proactive, il offre tout ce dont vous avez besoin, quand vous en avez besoin.",
-    "photo": [
-      "../../assets/Images/GooglePixel6Pro.png",
-      "../../assets/Images/GooglePixel6Pro1.png",
-      "../../assets/Images/GooglePixel6Pro2.png"
-    ],
+    "photo": ["../../assets/Images/GooglePixel6Pro.png"],
     "prix": 599.99
   },
   {
@@ -53,11 +49,7 @@
     "nom": "MACBOOK PRO 14 PO",
     "quantite": 20,
     "description": "MacBook Air, MacBook Pro, Mac mini, iMac 24 po et nouveaux Mac Studio et Studio display. Épatants de possibilités. Découvrez-les. macOS. Fonctions d’accessibilité. Thunderbolt. Incroyablement puissant.",
-    "photo": [
-      "../../assets/Images/macbook-product.jpg",
-      "../../assets/Images/macbook-product1.jpg",
-      "../../assets/Images/macbook-product2.jpg"
-    ],
+    "photo": ["../../assets/Images/macbook-product.jpg"],
     "prix": 2499.0
   },
   {
@@ -65,11 +57,7 @@
     "nom": "IMAC 24 PO",
     "quantite": 30,
     "description": "Profitez d'une performance fiable et rapide avec l'iMac d'Apple. Doté d'une puce M1 d'Apple et de 8 Go de mémoire vive, il prend en charge facilement le multitâche pour que vous puissiez travailler efficacement sur vos projets. Son écran Retina de 4,5 K avec une gamme de couleurs étendue P3 donne vie à votre contenu avec des détails nets, et il est fourni avec un clavier Magic et une souris Magic pour pouvoir commencer à l'utiliser immédiatement.",
-    "photo": [
-      "../../assets/Images/imac-po.jpg",
-      "../../assets/Images/imac-po1.jpg",
-      "../../assets/Images/imac-po2.jpg"
-    ],
+    "photo": ["../../assets/Images/imac-po.jpg"],
     "prix": 1199.99
   },
   {
@@ -77,11 +65,7 @@
     "nom": "SKYTECH ARCHANGEL GAMING COMPUTER PC DESKTOP – RYZEN",
     "quantite": 55,
     "description": "Profitez d'un ordinateur de bureau assez puissant pour exécuter toutes les âche que vous y lancé sans problème. De plus, le RGB de l'ordinateur boost vos performance de 200%!",
-    "photo": [
-      "../../assets/Images/PcGamer-Ryzen.jpg",
-      "../../assets/Images/PcGamer-Ryzen1.jpg",
-      "../../assets/Images/PcGamer-Ryzen2.jpg"
-    ],
+    "photo": ["../../assets/Images/PcGamer-Ryzen.jpg"],
     "prix": 1049.99
   },
   {
@@ -89,11 +73,7 @@
     "nom": "ZENBOOK PRO DUO 15 OLED (UX582, 11TH GEN INTEL)",
     "quantite": 6,
     "description": "Suralimentez votre productivité avec le portable tactile DELO ZenBook Pro Duo d'ASUS. Avec ses processeur Core i9-11900H de 2,5 GHz d'Intel, SSD PCIe de 1 To, mémoire vive de 32 Go et carte graphique GeForce RTX 3080 de NVIDIA, il offre des performances fiables. La technologie ScreenPad Plus fait en sorte que l'écran UHD de 15,6 po soit complété par un écran de 14 po pour un partage d'écran étendu d'une seule fenêtre ou de plusieurs applis.",
-    "photo": [
-      "../../assets/Images/Zenbook-Pro.webp",
-      "../../assets/Images/Zenbook-Pro1.webp",
-      "../../assets/Images/Zenbook-Pro2.webp"
-    ],
+    "photo": ["../../assets/Images/Zenbook-Pro.webp"],
     "prix": 4199.0
   },
   {
@@ -101,11 +81,7 @@
     "nom": "AIRPODS PRO",
     "quantite": 14,
     "description": "Les écouteurs AirPods Pro sont dotés de la technologie de suppression active du bruit pour une expérience sonore immersive. Le mode de transparence vous permet d'entendre votre environnement et les embouts à ajustement personnalisé offrent un confort quotidien pour une utilisation prolongée. Tout comme les AirPods, les AirPods Pro se connectent à votre iPhone ou Apple Watch comme par magie. De plus, ils sont prêts à l'emploi aussitôt déballés..",
-    "photo": [
-      "../../assets/Images/airpods-product.jpg",
-      "../../assets/Images/airpods-product1.jpg",
-      "../../assets/Images/airpods-product2.jpg"
-    ],
+    "photo": ["../../assets/Images/airpods-product.jpg"],
     "prix": 329.0
   },
   {
@@ -114,11 +90,7 @@
     "quantite": 10,
     "description": "Gardez traque de votre santé avec votre Apple Watch. Restez en ligne grâce à la connexion cellulaire et GPS. Elle offre des entraînements de haut niveau des meilleurs entraîneurs au monde pour atteindre vos objectifs personnels et rester motivé(e) en écoutant de la musique, des baladoémissions et des livres audio.",
     "incart": 0,
-    "photo": [
-      "../../assets/Images/apple-watch.jpg",
-      "../../assets/Images/apple-watch1.jpg",
-      "../../assets/Images/apple-watch2.jpg"
-    ],
+    "photo": ["../../assets/Images/apple-watch.jpg"],
     "prix": 369.0
   },
   {
@@ -126,11 +98,7 @@
     "nom": "MAGIC MOUSE - SURFACE MULTI-TOUCH NOIRE",
     "quantite": 10,
     "description": "Redessinée, rechargeable, remarquable. Voilà ce que représentent pour vous les accessoires d'Apple : la souris Magic 2 ne fait pas exception. Elle est légère et élégante, pour la déplacer avec moins de résistance, tandis que la surface multi tactile vous permet d'effectuer des gestes simples, comme passer d'une page Web à une autre et faire défiler des documents.",
-    "photo": [
-      "../../assets/Images/souris-apple.jpg",
-      "../../assets/Images/souris-apple1.jpg",
-      "../../assets/Images/souris-apple2.jpg"
-    ],
+    "photo": ["../../assets/Images/souris-apple.jpg"],
     "prix": 119.0
   },
   {
@@ -138,11 +106,7 @@
     "nom": "EVE CAM",
     "quantite": 111,
     "description": "Surveillez votre maison en tout temps grâce à la caméra sécurisée pour usage intérieur Eve Cam. Recevez des notifications sur votre iPhone dès qu’il se passe quelque chose chez vous, et protégez par le fait même votre vie privée. Eve Cam est pensée exclusivement pour la vidéo sécurisée HomeKit et entièrement conçue pour protéger vos données. Où que vous soyez, Eve Cam vous offre un accès chiffré direct aux images qu’elle capte; vous seul pouvez les voir, qu’il s’agisse d’enregistrements ou d’images en direct. Les images en direct n’atteignent aucun nuage – iCloud ou autre. Seuls les enregistrements sont stockés dans iCloud, sous forme entièrement chiffrée.",
-    "photo": [
-      "../../assets/Images/eve-cam.jpg",
-      "../../assets/Images/eve-cam1.jpg",
-      "../../assets/Images/eve-cam2.jpg"
-    ],
+    "photo": ["../../assets/Images/eve-cam.jpg"],
     "prix": 219.95
   }
 ]
