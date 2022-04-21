@@ -21,7 +21,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { MatTableModule } from '@angular/material/table';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { PostulerComponent } from './postuler/postuler.component';
-import { MerciComponent } from './merci/merci.component';
+import { HttpClientModule } from  '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 
 @NgModule({
@@ -40,8 +40,7 @@ import { LoginComponent } from './login/login.component';
     CarrouselComponent,
     SearchComponent,
     PostulerComponent,
-    MerciComponent,
-    LoginComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -49,9 +48,10 @@ import { LoginComponent } from './login/login.component';
     Ng2OrderModule,
     Ng2SearchPipeModule,
     NgxPaginationModule,
-    FormsModule,
-    ReactiveFormsModule,
     MatTableModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
