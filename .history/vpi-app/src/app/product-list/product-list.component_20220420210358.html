@@ -1,4 +1,15 @@
-<h3 class="heading">Nos Poduits Disponbles</h3>
+<!-- <h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <h3>
+    <a
+      [title]="product.nom + ' details'"
+      [routerLink]="['/products', product.id]"
+    >
+      {{ product.nom }}
+    </a>
+  </h3>
+</div> -->
 <div class="container">
   <div class="row product">
     <div class="col-sm-4" *ngFor="let product of products">
@@ -19,7 +30,6 @@
           </h5>
         </div>
       </div>
-      <br />
     </div>
   </div>
 </div>

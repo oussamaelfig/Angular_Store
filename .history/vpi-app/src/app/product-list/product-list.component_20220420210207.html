@@ -1,0 +1,32 @@
+<!-- <h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <h3>
+    <a
+      [title]="product.nom + ' details'"
+      [routerLink]="['/products', product.id]"
+    >
+      {{ product.nom }}
+    </a>
+  </h3>
+</div> -->
+
+<div class="col-sm-4" *ngFor="let product of products">
+  <div class="card">
+    <div class="ccc">
+      <p class="text-center">
+        <img src="{{ product.photo }}" class="imw" />
+      </p>
+      <div class="overlay">
+        <div class="text">
+          <a [routerLink]="['/products', product.id]"> Voir détails</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h5 [title]="product.nom + ' details'" class="text-center">
+        {{ product.nom }}
+      </h5>
+    </div>
+  </div>
+</div>

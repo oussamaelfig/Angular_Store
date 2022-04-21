@@ -1,0 +1,60 @@
+<h1>Table des produits</h1>
+<nav class="navbar">
+  <input
+    class="form-control"
+    type="text"
+    name="nomProduit"
+    [(ngModel)]="nomProduit"
+    (ngModelChange)="Search()"
+    placeholder="Entrer le nom du produit à chercher"
+  />
+</nav>
+<table class="table table-bordred">
+  <thead>
+    <tr>
+      <th (click)="sort('id')">
+        Code Produit &nbsp; <i class="bi bi-funnel-fill"></i>
+      </th>
+      <th (click)="sort('nom')">
+        Nom &nbsp; <i class="bi bi-funnel-fill"></i>
+      </th>
+      <th>Prix</th>
+      <th>Ajout au panier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="
+        let product of products
+          | orderBy: key:reverse
+          | paginate: { itemsPerPage: 5, currentPage: p }
+      "
+    >
+      <td>{{ product.id }}</td>
+      <td>{{ product.nom }}</td>
+      <td>{{ product.prix }}$</td>
+      <td>
+        <!-- <button
+          type="button"
+          (click)="addToCart(product)"
+          class="btn btn-primary"
+        >
+          Ajouter au panier
+        </button> -->
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            (click)="addToCart(product)"
+            value=""
+            id="flexCheckChecked"
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Checked checkbox
+          </label>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</table>

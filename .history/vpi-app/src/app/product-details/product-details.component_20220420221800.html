@@ -19,19 +19,17 @@
   <div class="product_info">
     <div class="seller_info"></div>
     <div class="product_title">{{ product.nom }}</div>
-    <div class="product_model">ID du produit: {{ product.id }}</div>
+    <div class="product_model">SKU: {{ product.id }}</div>
     <div class="product_price">{{ product.prix | currency }}</div>
     <div class="product_descr">
       {{ product.description }}
     </div>
     <div class="product_quantity">Quantité :{{ product.quantite }}</div>
-    <div class="d-flex flex-row" style="gap: 5px">
-      <button type="button" (click)="addToCart(product)" class="btn btn-dark">
-        Ajouter au panier
-      </button>
-      <button type="button" [routerLink]="'products'" class="btn btn-dark">
-        Retour
-      </button>
-    </div>
+    <button type="button" (click)="addToCart(product)" class="btn btn-primary">
+      Buy
+    </button>
+    <button type="button" [routerLink]="'products'" class="btn btn-primary">
+      Retour
+    </button>
   </div>
 </div>
