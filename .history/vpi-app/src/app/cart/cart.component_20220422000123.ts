@@ -12,7 +12,5 @@ export class CartComponent implements OnInit {
 
   constructor(private cartService: CartService) {}
 
-  ngOnInit(): void {
-    this.items = JSON.parse(localStorage.getItem('products')!);
-  }
+  ngOnInit(): void {}
 }

@@ -7,13 +7,12 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
+  nbItems: Number;
   constructor(private cartService: CartService) {}
 
-  ngOnInit(): void {
-    this.itemCount = JSON.parse(localStorage.getItem('nbItems')!);
-  }
+  ngOnInit(): void {}
 
-  itemCount() {
+  nbItems = function () {
     return this.cartService.itemsCount();
-  }
+  };
 }

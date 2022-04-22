@@ -10,10 +10,10 @@ export class NavbarComponent implements OnInit {
   constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
-    this.itemCount = JSON.parse(localStorage.getItem('nbItems')!);
+    this.nbItems = JSON.parse(localStorage.getItem('nbItems')!);
   }
 
-  itemCount() {
+  nbItems: Number = () => {
     return this.cartService.itemsCount();
-  }
+  };
 }

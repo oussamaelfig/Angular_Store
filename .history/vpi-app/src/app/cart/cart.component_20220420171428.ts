@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { json } from 'body-parser';
 import { CartService } from '../services/cart.service';
 
 @Component({
@@ -12,7 +11,5 @@ export class CartComponent implements OnInit {
 
   constructor(private cartService: CartService) {}
 
-  ngOnInit(): void {
-    this.items = JSON.parse(localStorage.getItem('products')!);
-  }
+  ngOnInit(): void {}
 }
