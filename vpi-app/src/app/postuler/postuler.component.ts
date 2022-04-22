@@ -59,7 +59,7 @@ export class PostulerComponent implements OnInit {
   }
 
   test(){
-    this.bd.getUser();
+    console.log(this.bd.getUser());
   }
 
   validerPostuler(){
