@@ -74,6 +74,7 @@ export class BdService {
 
   //appelle getData() afin d'avoir une liste de produits json
   getProduits(){
+    return this.getData("products.json");
     /*this.getData("products.json").subscribe((res)=>{
       this.produits = res;
     })
@@ -84,7 +85,14 @@ export class BdService {
   }
 
   getPanier(){
-
+    let listePro:any;
+    let proCart:any;
+    this.getProduits().subscribe((res)=>{
+      listePro = res;
+      console.log(listePro.body);
+    });
+    proCart = this.lstpanier.filter(listePro);
+    return proCart;
     //apelle getProduit() pour avoir une liste des produits
     //retourne ceux qui se trouvent dans le lstpanier ()
   }
