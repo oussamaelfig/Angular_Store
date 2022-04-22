@@ -23,6 +23,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { PostulerComponent } from './postuler/postuler.component';
 import { HttpClientModule } from  '@angular/common/http';
 import { LoginComponent } from './login/login.component';
+//import { Observable, throwError } from 'rxjs';
+//import { map, catchError} from 'rxjs/operators';
+
 
 @NgModule({
   declarations: [
@@ -51,7 +54,8 @@ import { LoginComponent } from './login/login.component';
     MatTableModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    //Observable
   ],
   providers: [],
   bootstrap: [AppComponent],

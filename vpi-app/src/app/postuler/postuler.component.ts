@@ -13,7 +13,7 @@ export class PostulerComponent implements OnInit {
   prenom = new FormControl('');
   date = new FormControl('');
   courriel = new FormControl('');
-  constructor(private router: Router) { }
+  constructor(private router: Router, private bd:BdService) { }
 
   ngOnInit(): void {
   }
@@ -56,6 +56,10 @@ export class PostulerComponent implements OnInit {
       return false;
     }
     return true;
+  }
+
+  test(){
+    this.bd.getUser();
   }
 
   validerPostuler(){

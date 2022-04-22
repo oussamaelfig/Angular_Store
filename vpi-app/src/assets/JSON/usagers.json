@@ -1,5 +1,4 @@
-{
-  "users": [
+[
     { "username": "allosalu", "motdepasse": "1234asdf", "id":"2" ,"nom":"De Vinci","prenom":"Léonard","role": "user"},
     { "username": "userDeux", "motdepasse": "p1s2d3f4", "id":"3" ,"nom":"D'Arc","prenom":"Jeanne","role": "user"},
     { "username": "infowebs", "motdepasse": "INF31902", "id":"4" ,"nom":"Curie","prenom":"Marie","role": "user"},
@@ -10,5 +9,5 @@
     { "username": "bonjourM", "motdepasse": "yeetMe44", "id":"9" ,"nom":"Laurier","prenom":"Wilfrid","role": "user"},
     { "username": "confiden", "motdepasse": "pass1234", "id":"10" ,"nom":"Trudeau","prenom":"Justin","role": "user"},
     { "username": "administ", "motdepasse": "TpAdmi12", "id":"1" ,"nom":"Windsor","prenom":"Elisabeth","role": "admin"}
-  ]
-}
+]
+
