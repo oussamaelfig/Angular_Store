@@ -63,9 +63,9 @@ export class BdService {
     })
     return this.users;
     */
-    this.getData("usagers.json").then((requesteddata) => { console.log(requesteddata);this.users = requesteddata;return(this.users); });
-    console.log(this.users);
-    return this.users;
+    this.getData("usagers.json").then((requesteddata) => { console.log(requesteddata);this.users = requesteddata; return(this.users); });
+    //console.log(this.users);
+    //return this.users;
   }
 
   //appelle getData() afin d'avoir une liste de produits json
@@ -73,8 +73,11 @@ export class BdService {
     /*this.getData("products.json").subscribe((res)=>{
       this.produits = res;
     })
+
     return this.produits;
-  */}
+    */
+    this.getData("products.json").then((requesteddata) => { console.log(requesteddata);this.produits = requesteddata; return(this.produits); });
+  }
 
   getPanier(){
 
@@ -83,9 +86,12 @@ export class BdService {
   }
 
   //ajoute le produit si celui-ci n'est pas dans le panier. Sinon on le supprime du panier
-  togglePanier(cpr:string){}
+  togglePanier(cpr:string){
+
+  }
 
   getCandidats(){
-    return this.candidats;
+    this.getData("candidats.json").then((requesteddata) => { console.log(requesteddata);this.candidats = requesteddata; return(this.candidats); });
+    //return this.candidats;
   }
 }
