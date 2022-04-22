@@ -58,8 +58,19 @@ export class PostulerComponent implements OnInit {
     return true;
   }
 
-  test(){
-    console.log(this.bd.getUser());
+  users:any = this.bd.getUser().subscribe((res)=>{
+      this.users = res;
+      console.log(this.users.body);
+      return res.body;
+    });
+
+  setUser(){
+    this.bd.getUser().subscribe((res)=>{
+      this.users = res;
+      console.log(this.users.body);
+      return res.body;
+    });
+    console.log(this.users.body)
   }
 
   validerPostuler(){

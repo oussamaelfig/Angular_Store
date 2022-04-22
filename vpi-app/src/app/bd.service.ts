@@ -4,7 +4,6 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError} from 'rxjs/operators';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -15,35 +14,33 @@ export class BdService {
   //liste des codes qui se trouvent dans le panier
   lstpanier:any[]=[];
 
-  constructor(protected http: HttpClient) { }
-
-  async getData(filename:string): Promise<any[]>{
+  constructor(protected http: HttpClient) {
+    /*this.getData("usagers.json").subscribe((res)=>{
+      this.users = res
+      console.log(this.users)
+    });*/
+  }
+  getData(filename:string):Observable<HttpResponse<any>> {
     let urlP = "http://localhost:3001/getjson?f=";
     let url = urlP.concat(filename);
-    let requesteddata:any = await this.http.get<any[]>(url, { "responseType": "json" }).toPromise();
-    console.log("callhttpgetpromise");
-    console.log(requesteddata);
-    return (await requesteddata);
+    let data:any = this.http.get(url,{observe : 'response' });
+    return (data);
   }
 
-  /*
+/*
   //retourne un tableau de json avec le endpoint /getjson de GET
   getData(filename:string){
-    /*
     let data:any;
     let urlP = "http://localhost:3001/getjson?f=";
     let url = urlP.concat(filename);
     console.log(url);
-    this.http.get(url).subscribe((res)=>{
+    return this.http.get(url)/*.subscribe((res)=>{
       data = res
       console.log(data)
-      return data;
-    })* /
-    let urlP = "http://localhost:3001/getjson?f=";
-    let url = urlP.concat(filename);
-    return this.http.get(url);
-  }*/
-
+    })
+    return data;
+  }
+*/
   //enregistre data sur le fichier filename avec le endpoint /postjson de POST
   postData(filename:string, data:any[]):any{
     let url = "http://localhost:3001/postData";
@@ -53,20 +50,27 @@ export class BdService {
   }
 
   //met à jour la liste des produit dispo selon ce qui est dans le panier
-  updateProduits(){}
+  updateProduits(){
 
-  getUser(){
+  }
+
+  getUser():Observable<HttpResponse<any>>{
+    return this.getData("usagers.json");
+  }
     /*
     this.getData("usagers.json").subscribe((res)=>{
       this.users = res
       console.log(this.users)
     })
     return this.users;
-    */
-    this.getData("usagers.json").then((requesteddata) => { console.log(requesteddata);this.users = requesteddata; return(this.users); });
-    //console.log(this.users);
-    //return this.users;
-  }
+    *//*
+    this.getData("usagers.json").subscribe((res)=>{
+      this.users = res
+      console.log(this.users)
+    });*/
+    //User est initialisé dans le constructeur car cette liste ne changera pas.
+    //this.users;
+
 
   //appelle getData() afin d'avoir une liste de produits json
   getProduits(){
@@ -76,7 +80,7 @@ export class BdService {
 
     return this.produits;
     */
-    this.getData("products.json").then((requesteddata) => { console.log(requesteddata);this.produits = requesteddata; return(this.produits); });
+    //return = this.getData("products.json").then((requesteddata) => { console.log(requesteddata);this.produits = requesteddata; return(this.produits); });
   }
 
   getPanier(){
@@ -91,7 +95,7 @@ export class BdService {
   }
 
   getCandidats(){
-    this.getData("candidats.json").then((requesteddata) => { console.log(requesteddata);this.candidats = requesteddata; return(this.candidats); });
+    //this.getData("candidats.json").then((requesteddata) => { console.log(requesteddata);this.candidats = requesteddata; return(this.candidats); });
     //return this.candidats;
   }
 }
