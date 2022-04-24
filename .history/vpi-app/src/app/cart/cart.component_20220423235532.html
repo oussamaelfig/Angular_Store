@@ -10,9 +10,13 @@
 <div class="container h-100 py-5">
   <div class="row d-flex justify-content-center align-items-center h-100">
     <div class="col-10">
-      <div class="card rounded-3 mb-4" *ngFor="let item of items">
+      <div
+        class="card rounded-3 mb-4"
+        *ngFor="let item of items; let index = i"
+      >
         <div class="card-body p-4">
           <div class="row d-flex justify-content-between align-items-center">
+            <i (click)="onDelete(i)">X</i>
             <div class="col-md-2 col-lg-2 col-xl-2">
               <img
                 src="{{ item.photo[0] }}"

@@ -82,12 +82,9 @@ export class BdService {
 
   //Product service
   addToCart(product: Product) {
-    const productExistInCart = this.items.find(({ id }) => id === product.id); // find product by name
-    if (!productExistInCart) {
-      this.items.push(product);
-      localStorage.setItem('products', JSON.stringify(this.items));
-      localStorage.setItem('nbItems', JSON.stringify(this.items.length));
-    }
+    this.items.push(product);
+    localStorage.setItem('products', JSON.stringify(this.items));
+    localStorage.setItem('nbItems', JSON.stringify(this.items.length));
   }
 
   getItems() {

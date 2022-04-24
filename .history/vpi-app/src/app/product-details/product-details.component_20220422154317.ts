@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+import { CartService } from '../services/cart.service';
 import { Product, products } from '../products';
-import { BdService } from '../bd.service';
 
 @Component({
   selector: 'app-product-details',
@@ -11,7 +11,12 @@ import { BdService } from '../bd.service';
 })
 export class ProductDetailsComponent implements OnInit {
   product: Product | undefined;
-  constructor(private route: ActivatedRoute, private bdService: BdService) {}
+  items = this.cartService.itemsCount();
+
+  constructor(
+    private route: ActivatedRoute,
+    private cartService: CartService
+  ) {}
 
   ngOnInit(): void {
     // First get the product id from the current route.
@@ -22,10 +27,11 @@ export class ProductDetailsComponent implements OnInit {
     this.product = products.find(
       (product: { id: number }) => product.id === productIdFromRoute
     );
+    this.items = JSON.parse(localStorage.getItem('nbItems')!);
   }
 
   addToCart(product: any) {
-    this.bdService.addToCart(product);
+    this.cartService.addToCart(product);
     window.alert('Your product has been added to the cart!');
   }
 }

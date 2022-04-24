@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BdService } from '../bd.service';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,11 +7,13 @@ import { BdService } from '../bd.service';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  constructor(private bdService: BdService) {}
+  constructor(private cartService: CartService) {}
 
   ngOnInit(): void {}
 
-  itemCount() {
-    return this.bdService.itemsCount();
-  }
+  items = this.cartService.itemsCount();
+
+  // itemCount() {
+  //   return this.cartService.itemsCount();
+  // }
 }

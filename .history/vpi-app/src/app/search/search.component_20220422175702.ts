@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BdService } from '../bd.service';
 import { products } from '../products';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-search',

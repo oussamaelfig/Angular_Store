@@ -88,6 +88,7 @@ export class BdService {
       localStorage.setItem('products', JSON.stringify(this.items));
       localStorage.setItem('nbItems', JSON.stringify(this.items.length));
     }
+    product.prix -= 1;
   }
 
   getItems() {

@@ -9,10 +9,14 @@ import { BdService } from '../bd.service';
 })
 export class CartComponent implements OnInit {
   items = this.bdService.getItems();
-
+  
   constructor(private bdService: BdService) {}
 
   ngOnInit(): void {
     this.items = JSON.parse(localStorage.getItem('products')!);
+  }
+
+  onDelete(i:number){
+    this.items.splice(i, 1);
   }
 }

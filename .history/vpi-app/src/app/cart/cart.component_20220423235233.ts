@@ -15,4 +15,8 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
     this.items = JSON.parse(localStorage.getItem('products')!);
   }
+
+  onDelete(i: number) {
+    this.items.splice(i, 1);
+  }
 }

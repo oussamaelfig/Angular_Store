@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BdService } from '../bd.service';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-navbar',

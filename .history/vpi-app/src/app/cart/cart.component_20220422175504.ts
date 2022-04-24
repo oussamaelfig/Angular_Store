@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { json } from 'body-parser';
 import { BdService } from '../bd.service';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-cart',

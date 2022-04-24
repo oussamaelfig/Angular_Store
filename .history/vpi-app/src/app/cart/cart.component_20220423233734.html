@@ -1,12 +1,5 @@
 <h3>Cart</h3>
 
-<div class="empty" *ngIf="items.length < 1">
-  <div class="info">
-    <h4>Votre panier est vide</h4>
-    <a routerLink="explorer" class="btn btn-success">Explorer les produits</a>
-  </div>
-</div>
-
 <div class="container h-100 py-5">
   <div class="row d-flex justify-content-center align-items-center h-100">
     <div class="col-10">
@@ -15,7 +8,7 @@
           <div class="row d-flex justify-content-between align-items-center">
             <div class="col-md-2 col-lg-2 col-xl-2">
               <img
-                src="{{ item.photo[0] }}"
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
                 class="img-fluid rounded-3"
                 alt="Cotton T-shirt"
               />
@@ -35,7 +28,7 @@
                 id="form1"
                 min="0"
                 name="quantity"
-                value="0"
+                value="2"
                 type="number"
                 class="form-control form-control-sm"
               />
