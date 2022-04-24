@@ -72,7 +72,7 @@ export class BdService {
   //this.users;
 
   //appelle getData() afin d'avoir une liste de produits json
-  getProduits(): Observable<HttpResponse<any>> {
+  getProduits() {
     return this.getData('products.json');
     /*this.getData("products.json").subscribe((res)=>{
       this.produits = res;

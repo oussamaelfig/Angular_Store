@@ -72,7 +72,7 @@ export class BdService {
   //this.users;
 
   //appelle getData() afin d'avoir une liste de produits json
-  getProduits(): Observable<HttpResponse<any>> {
+  getProduits() {
     return this.getData('products.json');
     /*this.getData("products.json").subscribe((res)=>{
       this.produits = res;
@@ -106,9 +106,8 @@ export class BdService {
 
   //Product service
   addToCart(product: Product) {
-    const found = this.items.find(
-      (item: any) => JSON.stringify(item) === JSON.stringify(product)
-    );
+     const found = this.items.find(
+      item => JSON.stringify(item) === JSON.stringify(product)
     if (!found) {
       this.items.push(product);
       localStorage.setItem('products', JSON.stringify(this.items));
@@ -122,7 +121,7 @@ export class BdService {
 
   itemsCount() {
     localStorage.setItem('nbItems', JSON.stringify(this.items.length));
-    return JSON.stringify(this.items.length);
+    return this.items.length;
   }
 
   clearCart() {
