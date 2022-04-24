@@ -122,7 +122,7 @@ export class BdService {
 
   itemsCount() {
     localStorage.setItem('nbItems', JSON.stringify(this.items.length));
-    return JSON.stringify(this.items.length);
+    return this.items.length;
   }
 
   clearCart() {
