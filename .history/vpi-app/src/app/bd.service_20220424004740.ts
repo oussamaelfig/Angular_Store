@@ -13,9 +13,13 @@ export class BdService {
   private candidats: any = (listeCandidat as any).default;
   private produits: any = [];
   //liste des codes qui se trouvent dans le panier
-  lstpanier: any[] = [];
-  items: any;
+  lstpanier: Product[] = [];
+  lstProduits: Product[] = [];
 
+  fileName = {
+    Produits: 'produits',
+    panier: 'panier',
+  };
   constructor(protected http: HttpClient) {
     /*this.getData("usagers.json").subscribe((res)=>{
       this.users = res
@@ -52,7 +56,9 @@ export class BdService {
   }
 
   //met à jour la liste des produit dispo selon ce qui est dans le panier
-  updateProduits() {}
+  async updateProduits() {
+    this.lstProduits = await this.getData(this.fileName.Produits);
+  }
 
   getUser(): Observable<HttpResponse<any>> {
     return this.getData('usagers.json');
@@ -97,7 +103,22 @@ export class BdService {
   }
 
   //ajoute le produit si celui-ci n'est pas dans le panier. Sinon on le supprime du panier
-  togglePanier(cpr: string) {}
+  togglePanier(cpr: number) {
+    try {
+      await this.updatePanier();
+      if (this.lstPanier.some((item) => item.cpr == cpr)) {
+        this.lstPanier = this.lstPanier.filter((item) => item.cpr != cpr);
+      } else {
+        const livre = this.getLivres().find((item) => item.cpr == cpr);
+        this.lstPanier.push(livre);
+      }
+
+      this.postData(this.fileName.panier, this.lstPanier);
+      await this.updatePanier();
+    } catch (error) {
+      // do ntg
+    }
+  }
 
   getCandidats() {
     //this.getData("candidats.json").then((requesteddata) => { console.log(requesteddata);this.candidats = requesteddata; return(this.candidats); });
@@ -105,27 +126,27 @@ export class BdService {
   }
 
   //Product service
-  addToCart(product: Product) {
-    const productExistInCart = this.items.find(({ id }) => id === product.id); // find product by name
-    if (!productExistInCart) {
-      this.items.push(product);
-      localStorage.setItem('products', JSON.stringify(this.items));
-      localStorage.setItem('nbItems', JSON.stringify(this.items.length));
-    }
-  }
+  // addToCart(product: Product) {
+  //   const productExistInCart = this.items.find(({ id }) => id === product.id); // find product by name
+  //   if (!productExistInCart) {
+  //     this.items.push(product);
+  //     localStorage.setItem('products', JSON.stringify(this.items));
+  //     localStorage.setItem('nbItems', JSON.stringify(this.items.length));
+  //   }
+  // }
 
-  getItems() {
-    return this.items;
-  }
+  // getItems() {
+  //   return this.items;
+  // }
 
-  itemsCount() {
-    localStorage.setItem('nbItems', JSON.stringify(this.items.length));
-    return this.items.length;
-  }
+  // itemsCount() {
+  //   localStorage.setItem('nbItems', JSON.stringify(this.items.length));
+  //   return this.items.length;
+  // }
 
-  clearCart() {
-    localStorage.removeItem('products');
-    this.items = [];
-    return this.items;
-  }
+  // clearCart() {
+  //   localStorage.removeItem('products');
+  //   this.items = [];
+  //   return this.items;
+  // }
 }

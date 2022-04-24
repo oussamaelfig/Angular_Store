@@ -3,7 +3,6 @@ import * as listeCandidat from '../assets/JSON/candidats.json';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-import { Product } from './products';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +13,6 @@ export class BdService {
   private produits: any = [];
   //liste des codes qui se trouvent dans le panier
   lstpanier: any[] = [];
-  items: any;
 
   constructor(protected http: HttpClient) {
     /*this.getData("usagers.json").subscribe((res)=>{
@@ -105,27 +103,27 @@ export class BdService {
   }
 
   //Product service
-  addToCart(product: Product) {
-    const productExistInCart = this.items.find(({ id }) => id === product.id); // find product by name
-    if (!productExistInCart) {
-      this.items.push(product);
-      localStorage.setItem('products', JSON.stringify(this.items));
-      localStorage.setItem('nbItems', JSON.stringify(this.items.length));
-    }
-  }
+  // addToCart(product: Product) {
+  //   const productExistInCart = this.items.find(({ id }) => id === product.id); // find product by name
+  //   if (!productExistInCart) {
+  //     this.items.push(product);
+  //     localStorage.setItem('products', JSON.stringify(this.items));
+  //     localStorage.setItem('nbItems', JSON.stringify(this.items.length));
+  //   }
+  // }
 
-  getItems() {
-    return this.items;
-  }
+  // getItems() {
+  //   return this.items;
+  // }
 
-  itemsCount() {
-    localStorage.setItem('nbItems', JSON.stringify(this.items.length));
-    return this.items.length;
-  }
+  // itemsCount() {
+  //   localStorage.setItem('nbItems', JSON.stringify(this.items.length));
+  //   return this.items.length;
+  // }
 
-  clearCart() {
-    localStorage.removeItem('products');
-    this.items = [];
-    return this.items;
-  }
+  // clearCart() {
+  //   localStorage.removeItem('products');
+  //   this.items = [];
+  //   return this.items;
+  // }
 }

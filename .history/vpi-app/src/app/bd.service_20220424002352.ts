@@ -3,7 +3,6 @@ import * as listeCandidat from '../assets/JSON/candidats.json';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-import { Product } from './products';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +13,6 @@ export class BdService {
   private produits: any = [];
   //liste des codes qui se trouvent dans le panier
   lstpanier: any[] = [];
-  items: any;
 
   constructor(protected http: HttpClient) {
     /*this.getData("usagers.json").subscribe((res)=>{
