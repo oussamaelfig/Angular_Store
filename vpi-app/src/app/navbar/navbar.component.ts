@@ -11,6 +11,10 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  valider(){
+    this.bdService.verifierConnectUser();
+  }
+
   itemCount() {
     return this.bdService.itemsCount();
   }

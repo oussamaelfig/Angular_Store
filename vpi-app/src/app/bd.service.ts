@@ -4,6 +4,7 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import { Product } from './products';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +17,7 @@ export class BdService {
   lstpanier: any[] = [];
   items: any;
 
-  constructor(protected http: HttpClient) {
+  constructor(protected http: HttpClient, private router:Router) {
     /*this.getData("usagers.json").subscribe((res)=>{
       this.users = res
       console.log(this.users)
@@ -58,6 +59,7 @@ export class BdService {
     return this.getData('usagers.json');
   }
 
+  //retourne un observable qui correspond a la liste de produit
   getProduits(): Observable<HttpResponse<any>> {
     return this.getData('products.json');
   }
@@ -108,5 +110,15 @@ export class BdService {
     localStorage.removeItem('products');
     this.items = [];
     return this.items;
+  }
+
+  verifierConnectUser(){
+    if(localStorage.getItem("utilisateur") != null){
+
+      localStorage.removeItem("utilisateur");
+    }else{
+      console.log("yeet")
+      this.router.navigateByUrl('/connecter');
+    }
   }
 }
