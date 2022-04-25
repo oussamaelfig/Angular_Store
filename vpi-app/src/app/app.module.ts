@@ -24,6 +24,9 @@ import { PostulerComponent } from './postuler/postuler.component';
 import { HttpClientModule } from  '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { SuccessComponent } from './success/success.component';
+import { RouterModule } from '@angular/router';
+import { Observable } from 'rxjs';
+import { LogoutComponent } from './logout/logout.component';
 //import { Observable, throwError } from 'rxjs';
 //import { map, catchError} from 'rxjs/operators';
 
@@ -45,7 +48,8 @@ import { SuccessComponent } from './success/success.component';
     SearchComponent,
     PostulerComponent,
     LoginComponent,
-    SuccessComponent
+    SuccessComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,7 @@ import { SuccessComponent } from './success/success.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    //Observable
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent],

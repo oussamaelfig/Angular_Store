@@ -56,7 +56,6 @@ export class LoginComponent implements OnInit {
             }else if(this.users[cpt].role == "admin"){
               localStorage.setItem(this.utilisS, "admin")
             }
-            alert("you good");
             this.router.navigateByUrl('/succes');
             return true;
         }
