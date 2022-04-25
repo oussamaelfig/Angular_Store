@@ -57,30 +57,9 @@ export class BdService {
   getUser(): Observable<HttpResponse<any>> {
     return this.getData('usagers.json');
   }
-  /*
-    this.getData("usagers.json").subscribe((res)=>{
-      this.users = res
-      console.log(this.users)
-    })
-    return this.users;
-    */ /*
-    this.getData("usagers.json").subscribe((res)=>{
-      this.users = res
-      console.log(this.users)
-    });*/
-  //User est initialisé dans le constructeur car cette liste ne changera pas.
-  //this.users;
 
-  //appelle getData() afin d'avoir une liste de produits json
   getProduits(): Observable<HttpResponse<any>> {
     return this.getData('products.json');
-    /*this.getData("products.json").subscribe((res)=>{
-      this.produits = res;
-    })
-
-    return this.produits;
-    */
-    //return = this.getData("products.json").then((requesteddata) => { console.log(requesteddata);this.produits = requesteddata; return(this.produits); });
   }
 
   getPanier() {
