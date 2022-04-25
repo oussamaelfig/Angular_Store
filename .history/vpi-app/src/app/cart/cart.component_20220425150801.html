@@ -1,0 +1,52 @@
+<h3>Cart</h3>
+
+<div class="empty-cart center">
+  <div class="center">
+    <div class="empty" *ngIf="items.length < 1">
+      <div class="info">
+        <h4>Votre panier est vide</h4>
+        <a routerLink="/products" class="btn btn-success"
+          >Explorer les produits</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container h-100 py-5">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-10">
+      <div class="card rounded-3 mb-4" *ngFor="let item of filterItemsOfType()">
+        <div class="card-body p-4">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-md-2 col-lg-2 col-xl-2">
+              <img
+                src="{{ item.photo[0] }}"
+                class="img-fluid rounded-3"
+                alt="Cotton T-shirt"
+              />
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-3">
+              <p class="lead fw-normal mb-2">{{ item.nom }}</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+              <h5 class="mb-0">{{ item.prix | currency }}</h5>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+              <p>2</p>
+            </div>
+            <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+              <button
+                type="button"
+                class="btn btn-outline-danger"
+                (click)="removeItems(item.nom)"
+              >
+                <i class="bi bi-trash"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

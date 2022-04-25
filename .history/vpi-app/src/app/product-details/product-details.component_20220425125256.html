@@ -1,0 +1,90 @@
+<!-- <h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.nom }}</h3>
+  <h4>{{ product.prix | currency }}</h4>
+  <p>{{ product.description }}</p>
+</div>
+<button type="button" (click)="addToCart(product)" class="btn btn-primary">
+  Buy
+</button>
+<button type="button" [routerLink]="'products'" class="btn btn-primary">
+  Retour
+</button> -->
+
+<div class="body" *ngIf="product">
+  <div class="product_img">
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="{{ product.photo[0] }}"
+            class="d-block w-100"
+            alt="image-du-produit"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{{ product.photo[1] }}"
+            class="d-block w-100"
+            alt="image-du-produit"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{{ product.photo[2] }}"
+            class="d-block w-100"
+            alt="image-du-produit"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only" style="color: black">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only" style="color: black">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="product_info">
+    <div class="seller_info"></div>
+    <div class="product_title">{{ product.nom }}</div>
+    <div class="product_model">ID du produit: {{ product.id }}</div>
+    <div class="product_price">{{ product.prix | currency }}</div>
+    <div class="product_descr">
+      {{ product.description }}
+    </div>
+    <div class="product_quantity">Quantité :{{ product.quantite }}</div>
+    <div class="d-flex flex-row" style="gap: 5px">
+      <button
+        type="button"
+        (click)="togglePanier(product)"
+        class="btn btn-dark"
+      >
+        Ajouter au panier
+      </button>
+      <button type="button" [routerLink]="'/products'" class="btn btn-dark">
+        Retour
+      </button>
+    </div>
+    <br />
+    <br />
+    <br />
+  </div>
+</div>
