@@ -1,0 +1,19 @@
+<div *ngIf="role == 'user'" class="text-center mt-5 pb-5 mb-5 me-3 ms-3">
+  <h1 class="text-info">Vous êtes connecté(e)!</h1>
+  <p class='mt-4 mb-4'>Vous pouvez maintenant naviger le site et faire vos achat
+    tel que vous l'avez toujours voulu!</p>
+  <p class='mt-4 mb-4'>N'oubliez pas, la livraison est gratuite pour toute
+    commande de 25 000$ ou plus!!! Quelle aubaine!</p>
+  <p class='mt-4 mb-4 text-success'>N'hésitez pas à dépenser!</p>
+  <button type="button" (click)="ngGo()" class="btn btn-secondary mb-3">Explorez nos produits</button>
+  <img src="../../assets/Images/celebration.jpg" alt="image de célébration" class="mb-2">
+</div>
+<div *ngIf="role == 'admin'" class="text-center mt-5 pb-5 mb-5 me-3 ms-3">
+  <h1 class="text-info">Vous êtes connecté(e) comme administrateur!</h1>
+  <p class='mt-4 mb-4'>Vous pouvez maintenant naviger le site et consulter la liste des candidats et consulter les usagers!</p>
+  <p class='mt-4 mb-4'>N'oubliez pas, la livraison est gratuite pour toute
+    commande de 25 000$ ou plus!!! Quelle aubaine!</p>
+  <p class='mt-4 mb-4'>N'hésitez pas à dépenser même si vous travaillez pour nous!</p>
+  <p class='mt-4 mb-4 text-success'>On adore l'argent!</p>
+  <img src="../../assets/Images/celebration.jpg" alt="image de célébration" class="mb-2">
+</div>

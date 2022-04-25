@@ -6,4 +6,6 @@ img{
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  filter: grayscale(50%);
+  filter: blur(5px);
 }
