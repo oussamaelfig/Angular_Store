@@ -37,16 +37,7 @@ export class LoginComponent implements OnInit {
     console.log(this.users.body)
   }
 
-  /*Verifie si il y a un user de connecter. Si non connecter,
-  route vers le login sinon, on delete le cookie et ecran dit que la
-  deconnexion s'est fait.*/
-  verifierConnectUser(){
-    if(localStorage.getItem(this.utilisS) != undefined){
-      localStorage.removeItem(this.utilisS);
-    }else{
-      this.router.navigateByUrl('/login');
-    }
-  }
+
 
   //méthode pour ce connecter en verifiant les infos entrees par user
   //avec celle qui ce trouve dans le json sur le serveur tpapp au port 3001
@@ -65,9 +56,8 @@ export class LoginComponent implements OnInit {
             }else if(this.users[cpt].role == "admin"){
               localStorage.setItem(this.utilisS, "admin")
             }
-            //set cookie avec le role
-            //renvoyer vers la nouvelle page.
             alert("you good");
+            this.router.navigateByUrl('/succes');
             return true;
         }
         ++cpt;

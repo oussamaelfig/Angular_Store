@@ -112,9 +112,11 @@ export class BdService {
     return this.items;
   }
 
+  /*Verifie si il y a un user de connecter. Si non connecter,
+  route vers le login sinon, on delete le cookie et ecran dit que la
+  deconnexion s'est fait.*/
   verifierConnectUser(){
     if(localStorage.getItem("utilisateur") != null){
-
       localStorage.removeItem("utilisateur");
     }else{
       console.log("yeet")

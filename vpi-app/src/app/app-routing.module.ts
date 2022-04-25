@@ -10,6 +10,7 @@ import { SearchComponent } from './search/search.component';
 import { PostulerComponent } from './postuler/postuler.component';
 import { MerciComponent } from './merci/merci.component';
 import { LoginComponent } from './login/login.component';
+import { SuccessComponent } from './success/success.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path: 'connecter',
     component: LoginComponent
+  },
+  {
+    path: 'succes',
+    component: SuccessComponent
   }
 ];
 
