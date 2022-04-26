@@ -115,7 +115,7 @@ export class BdService {
       );
     } else {
       window.alert('vous avez déjà ajouté ce produit');
-      this.lstpanier.filter(function (el) {
+      var filtered = this.lstpanier.filter(function (el) {
         return el.id != product.id;
       });
     }

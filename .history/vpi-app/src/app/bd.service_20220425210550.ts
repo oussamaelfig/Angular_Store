@@ -107,17 +107,16 @@ export class BdService {
     const found = this.lstpanier.find(
       (item: any) => JSON.stringify(item) === JSON.stringify(product)
     );
+    let qty = this.lstpanier.find((x) => x.id == product.id)?.quantite;
+
     if (!found) {
-      product.quantite--;
       this.lstpanier.push(product);
       window.alert(
         'Votre produit a été ajouté, aller explorer d autres produits ou aller terminer vos achats dans le panier'
       );
     } else {
       window.alert('vous avez déjà ajouté ce produit');
-      this.lstpanier.filter(function (el) {
-        return el.id != product.id;
-      });
+      qty = qty - 1;
     }
   }
 

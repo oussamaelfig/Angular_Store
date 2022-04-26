@@ -8,7 +8,6 @@ import { products } from '../products';
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent implements OnInit {
-  items = this.bdService.getItems();
   products: any = products;
   nomProduit: any;
   p: number = 1;

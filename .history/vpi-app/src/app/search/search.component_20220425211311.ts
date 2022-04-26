@@ -8,7 +8,6 @@ import { products } from '../products';
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent implements OnInit {
-  items = this.bdService.getItems();
   products: any = products;
   nomProduit: any;
   p: number = 1;
@@ -43,6 +42,5 @@ export class SearchComponent implements OnInit {
 
   addToCart(product: any) {
     this.bdService.togglePanier(product);
-    localStorage.setItem('products', JSON.stringify(this.items));
   }
 }

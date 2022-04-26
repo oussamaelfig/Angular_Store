@@ -9,6 +9,7 @@ import { products } from '../products';
 })
 export class SearchComponent implements OnInit {
   items = this.bdService.getItems();
+
   products: any = products;
   nomProduit: any;
   p: number = 1;

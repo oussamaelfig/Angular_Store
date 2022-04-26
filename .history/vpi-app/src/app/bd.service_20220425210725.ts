@@ -107,6 +107,7 @@ export class BdService {
     const found = this.lstpanier.find(
       (item: any) => JSON.stringify(item) === JSON.stringify(product)
     );
+
     if (!found) {
       product.quantite--;
       this.lstpanier.push(product);
@@ -115,9 +116,6 @@ export class BdService {
       );
     } else {
       window.alert('vous avez déjà ajouté ce produit');
-      this.lstpanier.filter(function (el) {
-        return el.id != product.id;
-      });
     }
   }
 
