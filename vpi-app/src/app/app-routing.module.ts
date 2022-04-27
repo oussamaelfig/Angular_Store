@@ -12,6 +12,7 @@ import { MerciComponent } from './merci/merci.component';
 import { LoginComponent } from './login/login.component';
 import { SuccessComponent } from './success/success.component';
 import { LogoutComponent } from './logout/logout.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   {
@@ -62,7 +63,12 @@ const routes: Routes = [
   {
     path: 'logout',
     component: LogoutComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
+
 ];
 
 @NgModule({

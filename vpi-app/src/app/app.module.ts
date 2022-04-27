@@ -27,6 +27,9 @@ import { SuccessComponent } from './success/success.component';
 import { RouterModule } from '@angular/router';
 import { Observable } from 'rxjs';
 import { LogoutComponent } from './logout/logout.component';
+import { AdminComponent } from './admin/admin.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { Observable, throwError } from 'rxjs';
 //import { map, catchError} from 'rxjs/operators';
 
@@ -50,6 +53,7 @@ import { LogoutComponent } from './logout/logout.component';
     LoginComponent,
     SuccessComponent,
     LogoutComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,7 +65,9 @@ import { LogoutComponent } from './logout/logout.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    MatPaginatorModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

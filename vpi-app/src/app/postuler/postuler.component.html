@@ -13,7 +13,7 @@
       </div>
       <div class="col-12 col-md-6">
         <div class="mb-4 mt-4">
-          <label>
+          <label class="form-label">
             Prénom*:<br />
             <input type="text" [formControl]="prenom" class="form-control entree" placeholder="Prénom">
           </label>
@@ -21,7 +21,7 @@
       </div>
       <div class="col-12 col-md-6">
         <div class="mb-4 mt-4">
-          <label>
+          <label class="form-label">
             Date de naissance*:<br />
             <input type="date" [formControl]="date" class="form-control entree" placeholder="AAAA-MM-JJ">
           </label>
@@ -29,14 +29,13 @@
       </div>
       <div class="col-12 col-md-6">
         <div class="mb-4 mt-4">
-          <label>
+          <label class="form-label">
             Courriel*:<br />
             <input type="email" [formControl]="courriel" class="form-control entree" placeholder="exemple@abcd.ca">
           </label>
         </div>
       </div>
     </div>
-
     <div>
       <button (click)="validerPostuler()" class="btn btn-success mb-5">Soumettre</button>
     </div>

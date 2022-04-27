@@ -45,12 +45,18 @@ export class BdService {
   }
 */
   //enregistre data sur le fichier filename avec le endpoint /postjson de POST
-  postData(filename: string, data: any[]): any {
-    let url = 'http://localhost:3001/postData';
-    const headers = { 'content-type': 'application/json' };
-    let body = this.getData(filename);
-    return this.http.post(url + '/postjson', body, { headers: headers });
+  postData(datatosave: any,filename:string) {
+    let posturl: string = "http://localhost:3001/postjson";
+    const params = {
+      'data': JSON.stringify(datatosave),
+      'file': filename
+    };
+    console.log("datatosave");
+    console.log(datatosave);
+    console.log(params);
+     return this.http.post<any>(posturl,params);
   }
+
 
   //met à jour la liste des produit dispo selon ce qui est dans le panier
   updateProduits() {}
