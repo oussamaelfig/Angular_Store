@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -25,11 +24,11 @@ import { HttpClientModule } from  '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { SuccessComponent } from './success/success.component';
 import { RouterModule } from '@angular/router';
-import { Observable } from 'rxjs';
 import { LogoutComponent } from './logout/logout.component';
 import { AdminComponent } from './admin/admin.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSortModule } from '@angular/material/sort';
 //import { Observable, throwError } from 'rxjs';
 //import { map, catchError} from 'rxjs/operators';
 
@@ -67,7 +66,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     RouterModule,
     MatPaginatorModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSortModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],
