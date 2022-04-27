@@ -9,3 +9,7 @@ ul{
 table {
   width: 100%;
 }
+
+#delete{
+  font-weight: bold;
+}

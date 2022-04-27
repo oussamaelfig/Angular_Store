@@ -58,7 +58,7 @@ export class AdminComponent implements OnInit, AfterViewInit{
   constructor(private bd:BdService) {}
 
   //Pour material table
-  colonneAfficher:string[] = ['id', 'username', 'motdepasse', 'nom', 'prenom', 'role'];
+  colonneAfficher:string[] = ['id', 'username', 'motdepasse', 'nom', 'prenom', 'role', 'delete'];
 
 
 
