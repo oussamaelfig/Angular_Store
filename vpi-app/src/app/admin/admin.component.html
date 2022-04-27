@@ -60,43 +60,43 @@
     </div>
   </form>
   <h2 class="text-secondary pt-5">Option 2 - Consulter la liste des usagers</h2>
+  <p>{{dataSource}}</p>
   <div class="mat-elevation-z8">
-  <table class="table table-striped table-hover" mat-table [dataSource]="users">
+  <table class="table table-striped table-hover" mat-table [dataSource]="users.body"matSort>
 
     <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef class="text-center"> Id </th>
+      <th mat-header-cell *matHeaderCellDef class="text-center" mat-sort-header> Id </th>
       <td mat-cell *matCellDef="let usager"> {{usager.id}} </td>
     </ng-container>
 
     <ng-container matColumnDef="username">
-      <th mat-header-cell *matHeaderCellDef class="text-center"> Identifiant </th>
+      <th mat-header-cell *matHeaderCellDef class="text-center" mat-sort-header> Identifiant </th>
       <td mat-cell *matCellDef="let usager"> {{usager.username}} </td>
     </ng-container>
 
     <ng-container matColumnDef="motdepasse">
-      <th mat-header-cell *matHeaderCellDef class="text-center"> Mot de passe </th>
+      <th mat-header-cell *matHeaderCellDef class="text-center" mat-sort-header> Mot de passe </th>
       <td mat-cell *matCellDef="let usager"> {{usager.motdepasse}} </td>
     </ng-container>
 
     <ng-container matColumnDef="nom">
-      <th mat-header-cell *matHeaderCellDef class="text-center"> Nom </th>
+      <th mat-header-cell *matHeaderCellDef class="text-center" mat-sort-header> Nom </th>
       <td mat-cell *matCellDef="let usager"> {{usager.nom}} </td>
     </ng-container>
 
     <ng-container matColumnDef="prenom">
-      <th mat-header-cell *matHeaderCellDef class="text-center"> Prénom </th>
+      <th mat-header-cell *matHeaderCellDef class="text-center" mat-sort-header> Prénom </th>
       <td mat-cell *matCellDef="let usager"> {{usager.prenom}} </td>
     </ng-container>
 
     <ng-container matColumnDef="role">
-      <th mat-header-cell *matHeaderCellDef class="text-center"> Rôle </th>
+      <th mat-header-cell *matHeaderCellDef class="text-center" mat-sort-header> Rôle </th>
       <td mat-cell *matCellDef="let usager"> {{usager.role}} </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="colonneAfficher"></tr>
     <tr mat-row *matRowDef="let row; columns: colonneAfficher;"></tr>
-    <mat-paginator #paginator [pageSize]="2" [pageSizeOptions]="[2, 4, 6]"
-showFirstLastButtons></mat-paginator>
+    <mat-paginator [pageSizeOptions]="[5, 10, 30, 50]"></mat-paginator>
   </table>
   </div>
 </div>
