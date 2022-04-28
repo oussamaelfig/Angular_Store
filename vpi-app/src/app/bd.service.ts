@@ -104,8 +104,7 @@ export class BdService {
   }
 
   getCandidats() {
-    //this.getData("candidats.json").then((requesteddata) => { console.log(requesteddata);this.candidats = requesteddata; return(this.candidats); });
-    //return this.candidats;
+    return this.getData('candidats.json');
   }
 
   //Product service

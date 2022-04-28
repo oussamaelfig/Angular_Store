@@ -94,8 +94,8 @@
 
       <ng-container matColumnDef="delete">
         <mat-header-cell  *matHeaderCellDef id="delete"> Supprimer </mat-header-cell>
-        <mat-cell *matCellDef="let row" >
-             <button mat-button class="btn btn-danger">Supprimer</button>
+        <mat-cell *matCellDef="let usager" >
+             <button mat-button class="btn btn-danger" (click)="retirer(usager)">Supprimer</button>
         </mat-cell>
       </ng-container>
 
@@ -114,24 +114,12 @@
         <th>Courriel</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
+    <tbody >
+      <tr *ngFor="let c of candidats">
+        <td>{{c.nom}}</td>
+        <td>{{c.prenom}}</td>
+        <td>{{c.date}}</td>
+        <td>{{c.courriel}}</td>
       </tr>
     </tbody>
   </table>

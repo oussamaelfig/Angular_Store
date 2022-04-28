@@ -17,8 +17,9 @@ export class AdminComponent implements OnInit, AfterViewInit{
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
+  savestatus = "";
+  candidats:any;
   users:any;
-
   dataSource:any
 
   observer2:any = this.bd.getUser().subscribe((res) => {
@@ -35,6 +36,14 @@ export class AdminComponent implements OnInit, AfterViewInit{
   observer:any = this.bd.getUser().subscribe((res) => {
     this.users = res.body;
     console.log(this.users);
+    console.log(this.dataSource);
+    //this.dataSource.sort = this.sort;
+  });
+
+  //aller chercher les candidats ds tpapp
+  observer3:any = this.bd.getCandidats().subscribe((res) => {
+    this.candidats = res.body.data;
+    console.log(this.candidats);
     console.log(this.dataSource);
     //this.dataSource.sort = this.sort;
   });
@@ -60,7 +69,24 @@ export class AdminComponent implements OnInit, AfterViewInit{
   //Pour material table
   colonneAfficher:string[] = ['id', 'username', 'motdepasse', 'nom', 'prenom', 'role', 'delete'];
 
-
+  retirer(user:Usager){
+    console.log(user);
+    console.log(this.users[3].id);
+    for(let i = 0; i < this.users.length; ++i){
+      if(this.users[i].id == user.id){
+        console.log(user);
+        console.log(this.users[3].id);
+        this.users.splice(i,1); //retire l'element du tab. A post sur le serveur.
+        let datatosave = this.users;
+        let filename = "usagers.json";
+        let obs = this.bd.postData(datatosave, filename)
+          .subscribe(
+          (data: any) => this.savestatus = data
+        );
+        console.log(this.users);
+      }
+    }
+  }
 
   ngOnInit(){}
   //fonction creer usager

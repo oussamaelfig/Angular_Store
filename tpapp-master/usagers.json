@@ -1,12 +1,1 @@
-[
-    { "username": "allosalu", "motdepasse": "1234asdf", "id":"2" ,"nom":"De Vinci","prenom":"Léonard","role": "user"},
-    { "username": "userDeux", "motdepasse": "p1s2d3f4", "id":"3" ,"nom":"D'Arc","prenom":"Jeanne","role": "user"},
-    { "username": "infowebs", "motdepasse": "INF31902", "id":"4" ,"nom":"Curie","prenom":"Marie","role": "user"},
-    { "username": "infoJava", "motdepasse": "2050inf2", "id":"5" ,"nom":"Eiffel","prenom":"Gustave","role": "user"},
-    { "username": "jaimectf", "motdepasse": "2171best", "id":"6" ,"nom":"César","prenom":"Jules","role": "user"},
-    { "username": "cpluscpl", "motdepasse": "cPlus232", "id":"7" ,"nom":"Washington","prenom":"Georges","role": "user"},
-    { "username": "hellowor", "motdepasse": "tech2022", "id":"8" ,"nom":"Cartier","prenom":"Jaques","role": "user"},
-    { "username": "bonjourM", "motdepasse": "yeetMe44", "id":"9" ,"nom":"Laurier","prenom":"Wilfrid","role": "user"},
-    { "username": "confiden", "motdepasse": "pass1234", "id":"10" ,"nom":"Trudeau","prenom":"Justin","role": "user"},
-    { "username": "administ", "motdepasse": "TpAdmi12", "id":"1" ,"nom":"Windsor","prenom":"Elisabeth","role": "admin"}
-]
+[{"username":"allosalu","motdepasse":"1234asdf","id":"2","nom":"De Vinci","prenom":"Léonard","role":"user"},{"username":"userDeux","motdepasse":"p1s2d3f4","id":"3","nom":"D'Arc","prenom":"Jeanne","role":"user"},{"username":"infowebs","motdepasse":"INF31902","id":"4","nom":"Curie","prenom":"Marie","role":"user"},{"username":"jaimectf","motdepasse":"2171best","id":"6","nom":"César","prenom":"Jules","role":"user"},{"username":"cpluscpl","motdepasse":"cPlus232","id":"7","nom":"Washington","prenom":"Georges","role":"user"},{"username":"hellowor","motdepasse":"tech2022","id":"8","nom":"Cartier","prenom":"Jaques","role":"user"},{"username":"bonjourM","motdepasse":"yeetMe44","id":"9","nom":"Laurier","prenom":"Wilfrid","role":"user"},{"username":"confiden","motdepasse":"pass1234","id":"10","nom":"Trudeau","prenom":"Justin","role":"user"},{"username":"administ","motdepasse":"TpAdmi12","id":"1","nom":"Windsor","prenom":"Elisabeth","role":"admin"}]
