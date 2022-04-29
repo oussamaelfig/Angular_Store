@@ -4,10 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import {
-  ProductDetailsComponent,
-  SafePipe,
-} from './product-details/product-details.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { BannerComponent } from './banner/banner.component';
 import { QuestionsAccordionComponent } from './questions-accordion/questions-accordion.component';

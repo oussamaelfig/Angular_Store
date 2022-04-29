@@ -136,6 +136,7 @@
       "../../assets/Images/apple-watch2.jpg"
     ],
     "video": "https://www.youtube.com/embed/LLHpq_WSvhk",
+
     "prix": 369.0
   },
   {
@@ -148,7 +149,8 @@
       "../../assets/Images/souris-apple1.jpg",
       "../../assets/Images/souris-apple2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/qn6fz_6_fcw",
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+
     "prix": 119.0
   },
   {
@@ -161,7 +163,8 @@
       "../../assets/Images/eve-cam1.jpg",
       "../../assets/Images/eve-cam2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/3fsKn42wXls",
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+
     "prix": 219.95
   }
 ]

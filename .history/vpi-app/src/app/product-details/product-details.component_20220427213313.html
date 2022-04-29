@@ -72,7 +72,9 @@
         <iframe
           width="560"
           height="315"
-          [src]="product.video | safe"
+          [src]="product.video"
+          |
+          safe
           frameborder="0"
           allowfullscreen
           ng-show="showvideo"

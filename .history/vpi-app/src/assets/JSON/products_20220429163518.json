@@ -64,7 +64,7 @@
       "../../assets/Images/macbook-product1.jpg",
       "../../assets/Images/macbook-product2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/9tobL8U7dQo",
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
 
     "prix": 2499.0
   },
@@ -78,7 +78,7 @@
       "../../assets/Images/imac-po1.jpg",
       "../../assets/Images/imac-po2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/3dPxHKXLsrc",
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
 
     "prix": 1199.99
   },
@@ -92,7 +92,7 @@
       "../../assets/Images/PcGamer-Ryzen1.jpg",
       "../../assets/Images/PcGamer-Ryzen2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/c6ihySYvKYM",
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
 
     "prix": 1049.99
   },
@@ -106,7 +106,7 @@
       "../../assets/Images/Zenbook-Pro1.webp",
       "../../assets/Images/Zenbook-Pro2.webp"
     ],
-    "video": "https://www.youtube.com/embed/6Si9ra5x9jU",
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
 
     "prix": 4199.0
   },
@@ -120,7 +120,7 @@
       "../../assets/Images/airpods-product1.jpg",
       "../../assets/Images/airpods-product2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/OCZVRJ5uZxc",
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
 
     "prix": 329.0
   },
@@ -135,7 +135,8 @@
       "../../assets/Images/apple-watch1.jpg",
       "../../assets/Images/apple-watch2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/LLHpq_WSvhk",
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+
     "prix": 369.0
   },
   {
@@ -148,7 +149,8 @@
       "../../assets/Images/souris-apple1.jpg",
       "../../assets/Images/souris-apple2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/qn6fz_6_fcw",
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+
     "prix": 119.0
   },
   {
@@ -161,7 +163,8 @@
       "../../assets/Images/eve-cam1.jpg",
       "../../assets/Images/eve-cam2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/3fsKn42wXls",
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+
     "prix": 219.95
   }
 ]
