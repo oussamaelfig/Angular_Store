@@ -12,7 +12,7 @@ import { AfterViewInit, ViewChild } from '@angular/core';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit, AfterViewInit{
-  //
+  //valeurs possibles des roles
   u:string = "user";
   a:string = "admin";
 
@@ -33,6 +33,7 @@ export class AdminComponent implements OnInit, AfterViewInit{
   identifiant = new FormControl('');
   role = new FormControl('');
   private idMin:number = 11;
+
   //Observers pour aller chercher le contenu des jsons.
   observer2:any = this.bd.getUser().subscribe((res) => {
     this.dataSource = res.body;
@@ -57,6 +58,7 @@ export class AdminComponent implements OnInit, AfterViewInit{
 
   //Validation du formulaire pour nouvel usager
   validerForm(){
+    console.log(this.candidats);
     if(this.validerNom() && this.validerPrenom && this.validerId()
     && this.validerMotDePasse() && this.validerRole()){
       this.ajouter();

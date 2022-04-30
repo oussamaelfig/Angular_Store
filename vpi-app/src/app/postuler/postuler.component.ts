@@ -9,15 +9,24 @@ import { BdService } from '../bd.service';
   styleUrls: ['./postuler.component.css']
 })
 export class PostulerComponent implements OnInit {
+  //Variable pour le form control
   nom = new FormControl('');
   prenom = new FormControl('');
   date = new FormControl('');
   courriel = new FormControl('');
+
+  //Pour sauvegarder la valeur
+  savestatus = "";
+  candidats:any;
+  //Aller chercher le contenu de candidats.json
+
+
   constructor(private router: Router, private bd:BdService) { }
 
   ngOnInit(): void {
   }
 
+  //Methodes de validation du formulaire de postulation et de ses champs.
   private validerNom(){
     if(this.nom.value == '' || /\d/.test(this.nom.value)){
       alert("Le nom est invalide");
@@ -58,30 +67,51 @@ export class PostulerComponent implements OnInit {
     return true;
   }
 
-  users:any = this.bd.getUser().subscribe((res)=>{
-      this.users = res;
-      console.log(this.users.body);
-      return res.body;
-    });
-
-  setUser(){
-    this.bd.getUser().subscribe((res)=>{
-      this.users = res;
-      console.log(this.users.body);
-      return res.body;
-    });
-    console.log(this.users.body)
-  }
-
   validerPostuler(){
-    this.validerNom();
-    this.validerPrenom();
-    this.validerDate();
-    this.validerCourriel();
-    //If all vrai -> ecrire dans json
-
-    //Pour l'instant, la nouvelle page va toujours s'afficher
-    //if statement avec tout le reste.
-    this.router.navigateByUrl('/merci');
+    if(this.validerNom() && this.validerNom() && this.validerPrenom()
+    && this.validerDate() && this.validerCourriel()){
+      let candi:Candidat ={
+        nom:this.nom.value,
+        prenom:this.prenom.value,
+        date:this.date.value,
+        courriel:this.courriel.value
+      }
+      console.log(this.candidats);
+      this.candidats.push(candi);
+      let datatosave = this.candidats;
+      let filename = "candidats.json";
+      let obs = this.bd.postData(datatosave, filename)
+      .subscribe(
+        (data: any) => this.savestatus = data
+      );
+      this.router.navigateByUrl('/merci');
+    }else{
+      console.log("Erreur lors de postulation. Veuillez recommencer");
+    }
   }
+
+  users:any;
+  //exemple de comment utiliser le service avec un get.
+  obser:any = this.bd.getCandidats().subscribe((res)=>{
+      this.candidats = res.body;
+      console.log(this.obser);
+      console.log(res.body);
+      console.log(this.candidats);
+    });
+
+
 }
+
+export interface Candidat{
+  nom:string;
+  prenom:string;
+  date:string;
+  courriel:string;
+}
+
+/*
+  nom = new FormControl('');
+  prenom = new FormControl('');
+  date = new FormControl('');
+  courriel = new FormControl('');
+*/
