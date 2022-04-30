@@ -11,10 +11,12 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  //verifie si un user est connecte
   valider() {
     this.bdService.verifierConnectUser();
   }
 
+  //Verifie si un admin est connecter pour debloquer le menu admin
   checkAdmin(){
     return localStorage.getItem("utilisateur") == "admin";
   }

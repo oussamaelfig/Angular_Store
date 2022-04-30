@@ -13,9 +13,9 @@ export class LoginComponent implements OnInit {
   motDePasse = new FormControl('');
   private utilisS: string = 'utilisateur';
 
-  constructor(private bd: BdService, private router: Router) {}
+  constructor(private bd: BdService, private router: Router) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   //exemple de comment utiliser le service avec un get.
   users: any = this.bd.getUser().subscribe((res) => {
@@ -38,12 +38,9 @@ export class LoginComponent implements OnInit {
   validerLogin() {
     if (
       this.validerNonVide(this.identifiant.value) &&
-      this.validerNonVide(this.motDePasse.value)
-    ) {
-      //regarder le role de s
+      this.validerNonVide(this.motDePasse.value)){
       let cpt = 0;
       console.log(this.users);
-      //regarder avec si correspond entre les users[i].username -> si oui, on regarde le role et on crée un cookie avec valeur role. else -> return false
       while (cpt < this.users.length) {
         if (
           this.identifiant.value == this.users[cpt].username &&
@@ -64,12 +61,11 @@ export class LoginComponent implements OnInit {
       return false;
     } else {
       alert('Identifiant et/ou mot de passe invalide(s)');
-      return;
+      return false;
     }
-    //this.bdService.getUser();
-    //besoin du service pour aller chercher json et comparer le contenu par la suite
   }
 
+  //Vérifie que l'entree du champs envoye en argument n'est pas vide
   validerNonVide(entree: string) {
     return !(entree.length == 0);
   }

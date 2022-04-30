@@ -18,8 +18,6 @@ export class PostulerComponent implements OnInit {
   //Pour sauvegarder la valeur
   savestatus = "";
   candidats:any;
-  //Aller chercher le contenu de candidats.json
-
 
   constructor(private router: Router, private bd:BdService) { }
 
@@ -67,6 +65,7 @@ export class PostulerComponent implements OnInit {
     return true;
   }
 
+  //Valide le tout et post le nouvel utilisateur sur le serveur tpapp
   validerPostuler(){
     if(this.validerNom() && this.validerNom() && this.validerPrenom()
     && this.validerDate() && this.validerCourriel()){
@@ -89,29 +88,12 @@ export class PostulerComponent implements OnInit {
       console.log("Erreur lors de postulation. Veuillez recommencer");
     }
   }
-
-  users:any;
-  //exemple de comment utiliser le service avec un get.
-  obser:any = this.bd.getCandidats().subscribe((res)=>{
-      this.candidats = res.body;
-      console.log(this.obser);
-      console.log(res.body);
-      console.log(this.candidats);
-    });
-
-
 }
 
+//Attributs qu'un obj candidats possede
 export interface Candidat{
   nom:string;
   prenom:string;
   date:string;
   courriel:string;
 }
-
-/*
-  nom = new FormControl('');
-  prenom = new FormControl('');
-  date = new FormControl('');
-  courriel = new FormControl('');
-*/

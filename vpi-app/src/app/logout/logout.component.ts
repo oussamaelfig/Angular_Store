@@ -13,6 +13,7 @@ export class LogoutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //redirection vers autre component
   ngGo(){
     this.router.navigateByUrl('/connecter')
   }

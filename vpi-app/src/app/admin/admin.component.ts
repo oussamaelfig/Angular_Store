@@ -59,7 +59,8 @@ export class AdminComponent implements OnInit, AfterViewInit{
     console.log(this.candidats);
   });
 
-  //Validation du formulaire pour nouvel usager
+  //Validation du formulaire et de tous ses champs pour
+  //la creation d'un nouvel usager
   validerForm(){
     if(this.validerNom() && this.validerPrenom && this.validerId()
     && this.validerMotDePasse() && this.validerRole()){
@@ -118,20 +119,15 @@ export class AdminComponent implements OnInit, AfterViewInit{
     return true;
   }
 
-  ngAfterViewInit() {
-    //this.dataSource.paginator = this.paginator;
-    console.log(this.paginator);
-    //this.dataSource.sort = this.sort;
-    console.log(this.sort);
-  }
+  ngAfterViewInit() {}
 
-
+  //Construteur de classe
   constructor(private bd:BdService) {}
 
-  //Pour material table
+  //Pour les colonnes de la material table
   colonneAfficher:string[] = ['id', 'username', 'motdepasse', 'nom', 'prenom', 'role', 'delete'];
 
-  //Methode pour ajouter creer un nouvel usager et l'envoyer sur le serveur
+  //Methode pour ajouter creer un nouvel usager et l'envoyer sur le serveur tpapp
   ajouter(){
     let nouvel:Usager = {
       username:this.identifiant.value,
@@ -152,7 +148,8 @@ export class AdminComponent implements OnInit, AfterViewInit{
     alert("L'utilisateur a été créé avec succès. Les changements seront appliqués la prochaine fois que vous revenez.");
   }
 
-  //retirer l'usager selectionner de la liste
+  //retirer l'usager selectionner de la liste et envoyer la modification
+  //au serveur tpapp
   retirer(user:Usager){
     console.log(user);
     console.log(this.users[3].id);
@@ -175,6 +172,7 @@ export class AdminComponent implements OnInit, AfterViewInit{
 
   ngOnInit(){}
 }
+//Attribut qu'un usager possede
 export interface Usager {
   username: string;
   motdepasse: string;

@@ -16,10 +16,12 @@ export class SuccessComponent implements OnInit {
     this.role = this.verifierLocalStorage('utilisateur');
   }
 
+  //verifie le local storage
   verifierLocalStorage(val:string):string|null{
     return localStorage.getItem(val);
   }
 
+  //redirection vers un autre component
   ngGo(){
     this.router.navigateByUrl('/products')
   }
