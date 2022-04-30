@@ -14,4 +14,8 @@ export class NavbarComponent implements OnInit {
   valider() {
     this.bdService.verifierConnectUser();
   }
+
+  checkAdmin(){
+    return localStorage.getItem("utilisateur") == "admin";
+  }
 }
