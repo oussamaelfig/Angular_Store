@@ -40,11 +40,30 @@ git clone https://gitlab.info.uqam.ca/el-figha.oussama/tp2_inf3190.git
 > npm install
 > ```
 
-> - Pour démarrer l'application et l'ouvrir sur le navigateur web
+> - Pour démarrer l'application et l'ouvrir sur le navigateur web en mode développement
 
 > ```csh
 > ng serve --open
 > ```
+
+> - Pour build l'application 
+
+> ```csh
+> ng build
+> ```
+
+> - Pour lancer l'application une fois build
+> - Installation de http-server qui est nécessaire
+
+> ```csh
+> npm install http-server -g
+> ```
+
+> - Lancer l'app
+> ```csh
+> http-server dist/vpi-app
+> ```
+- Vous pouvez y accéder sur un navigateur avec l'adresse que la console vous indique par la suite
 
 # Liste des pages
 
