@@ -63,7 +63,6 @@ export class SearchComponent implements OnInit {
   addToCart(product: any) {
     this.bdService.togglePanier(product);
     localStorage.setItem('products', JSON.stringify(this.items));
-    this.checked = true;
   }
 
   filterData($event: any) {

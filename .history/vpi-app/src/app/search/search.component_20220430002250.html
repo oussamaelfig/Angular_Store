@@ -1,0 +1,84 @@
+<div class="content">
+  <div class="container">
+    <div class="search-container form-group">
+      <label for="exampleFormControlInput1"
+        ><b>Chercher par nom de produit :</b>
+      </label>
+      <mat-form-field appearance="fill">
+        <input
+          id="exampleFormControlInput1"
+          class="form-control"
+          matInput
+          placeholder="Chercher"
+          autocomplete="off"
+          (keyup)="filterData($event)"
+        />
+      </mat-form-field>
+    </div>
+    <table mat-table matsort [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="nom">
+        <th mat-header-cell *matHeaderCellDef>Nom du produit</th>
+        <td mat-cell *matCellDef="let element">{{ element.nom }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="prix">
+        <th mat-header-cell *matHeaderCellDef>Prix</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.prix | currency }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="add">
+        <th mat-header-cell *matHeaderCellDef>Ajouter au panier</th>
+        <td mat-cell *matCellDef="let element">
+          <div class="form-check">
+            <div id="checkbox-container">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                (click)="addToCart(element)"
+                value=""
+                id="flexCheckChecked"
+              />
+            </div>
+
+            <label class="form-check-label" for="flexCheckChecked">
+              Ajouter au panier
+            </label>
+          </div>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+    <mat-paginator
+      #paginator
+      [pageSize]="12"
+      [pageSizeOptions]="[2, 5, 10]"
+      aria-label="Select page"
+    >
+    </mat-paginator>
+  </div>
+</div>
+<script>
+  var checkboxValue = JSON.parse(localStorage.getItem("checkboxValue")) || {};
+  var $checkbox = $("#checkbox-container :checkbox");
+
+  $checkbox.on("change", function () {
+    $checkbox.each(function () {
+      checkboxValue[this.id] = this.checked;
+    });
+    localStorage.setItem("checkboxValue", JSON.stringify(checkboxValue));
+  });
+
+  //on page load
+  $.each(checkboxValue, function (key, value) {
+    $("#" + key).prop("checked", value);
+  });
+</script>

@@ -11,7 +11,6 @@ import { products } from '../products';
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent implements OnInit {
-  checked: boolean = false;
   items = this.bdService.getItems();
   products: any = products;
   // nomProduit: any;
@@ -29,7 +28,6 @@ export class SearchComponent implements OnInit {
       this.dataSource = response.body;
       this.dataSource = new MatTableDataSource(this.dataSource);
       this.dataSource.paginator = this.paginator;
-      this.dataSource.sort = this.matSort;
       console.log('my response is ', this.dataSource);
     });
   }
@@ -63,10 +61,5 @@ export class SearchComponent implements OnInit {
   addToCart(product: any) {
     this.bdService.togglePanier(product);
     localStorage.setItem('products', JSON.stringify(this.items));
-    this.checked = true;
-  }
-
-  filterData($event: any) {
-    this.dataSource.filter = $event.target.value;
   }
 }
