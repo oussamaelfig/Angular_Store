@@ -52,13 +52,15 @@ export class AdminComponent implements OnInit, AfterViewInit{
   });
 
   //aller chercher les candidats ds tpapp
-  observer3:any = this.bd.getCandidats().subscribe((res) => {
-    this.candidats = res.body.data;
+  obser:any = this.bd.getCandidats().subscribe((res)=>{
+    this.candidats = res.body;
+    console.log(this.obser);
+    console.log(res.body);
+    console.log(this.candidats);
   });
 
   //Validation du formulaire pour nouvel usager
   validerForm(){
-    console.log(this.candidats);
     if(this.validerNom() && this.validerPrenom && this.validerId()
     && this.validerMotDePasse() && this.validerRole()){
       this.ajouter();
@@ -146,13 +148,8 @@ export class AdminComponent implements OnInit, AfterViewInit{
     let obs = this.bd.postData(datatosave, filename)
     .subscribe(
       (data: any) => this.savestatus = data
-
     );
     alert("L'utilisateur a été créé avec succès. Les changements seront appliqués la prochaine fois que vous revenez.");
-  }
-
-  creerUsager(){
-
   }
 
   //retirer l'usager selectionner de la liste
