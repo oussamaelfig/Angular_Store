@@ -32,6 +32,9 @@ import { AdminComponent } from './admin/admin.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSortModule } from '@angular/material/sort';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 //import { Observable, throwError } from 'rxjs';
 //import { map, catchError} from 'rxjs/operators';
 
@@ -70,7 +73,11 @@ import { MatSortModule } from '@angular/material/sort';
     RouterModule,
     MatPaginatorModule,
     BrowserAnimationsModule,
+    MatTableModule,
     MatSortModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
