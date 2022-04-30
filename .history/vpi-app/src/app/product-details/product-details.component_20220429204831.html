@@ -1,0 +1,113 @@
+<!-- <h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.nom }}</h3>
+  <h4>{{ product.prix | currency }}</h4>
+  <p>{{ product.description }}</p>
+</div>
+<button type="button" (click)="addToCart(product)" class="btn btn-primary">
+  Buy
+</button>
+<button type="button" [routerLink]="'products'" class="btn btn-primary">
+  Retour
+</button> -->
+
+<div class="body" *ngIf="dataSource">
+  <div class="product_img">
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="{{ dataSource.photo[0] }}"
+            class="d-block w-100"
+            alt="image-du-produit"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{{ dataSource.photo[1] }}"
+            class="d-block w-100"
+            alt="image-du-produit"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{{ dataSource.photo[2] }}"
+            class="d-block w-100"
+            alt="image-du-produit"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only" style="color: black">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only" style="color: black">Next</span>
+      </a>
+    </div>
+    <br />
+    <br />
+    <div class="product-video">
+      <h3 class="d-flex justify-content-center align-items-center h-100">
+        Vidéo présentative du produit
+      </h3>
+
+      <div class="video">
+        <iframe
+          width="560"
+          height="315"
+          [src]="dataSource.video | safe"
+          frameborder="0"
+          allowfullscreen
+          ng-show="showvideo"
+        ></iframe>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+
+  <div class="product_info">
+    <div class="seller_info"></div>
+    <div class="product_title">{{ dataSource.nom }}</div>
+    <div class="product_model">ID du produit: {{ dataSource.id }}</div>
+    <div class="product_price">{{ dataSource.prix | currency }}</div>
+    <div class="product_descr">
+      {{ dataSource.description }}
+    </div>
+    <div class="product_quantity">Quantité :{{ dataSource.quantite }}</div>
+    <div class="d-flex flex-row" style="gap: 5px">
+      <button
+        type="button"
+        (click)="addToCart(dataSource)"
+        class="btn btn-dark"
+      >
+        Ajouter au panier
+      </button>
+      <button type="button" [routerLink]="'/products'" class="btn btn-dark">
+        Retour
+      </button>
+    </div>
+    <br />
+    <br />
+    <br />
+  </div>
+</div>

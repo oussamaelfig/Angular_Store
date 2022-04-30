@@ -1,21 +1,21 @@
 <h3 class="heading">Nos Poduits Disponbles</h3>
 <div class="container">
   <div class="row product">
-    <div class="col-sm-4" *ngFor="let data of dataSource">
+    <div class="col-sm-4" *ngFor="let product of products">
       <div class="card">
         <div class="ccc">
           <p class="text-center">
-            <img src="{{ data.photo[0] }}" class="imw" />
+            <img src="{{ product.photo[0] }}" class="imw" />
           </p>
           <div class="overlay">
             <div class="text">
-              <a [routerLink]="['/products', data.id]"> Voir détails</a>
+              <a [routerLink]="['/products', product.id]"> Voir détails</a>
             </div>
           </div>
         </div>
         <div class="card-body">
-          <h5 [title]="data.nom + ' details'" class="text-center">
-            {{ data.nom }}
+          <h5 [title]="product.nom + ' details'" class="text-center">
+            {{ dataSource.nom }}
           </h5>
         </div>
       </div>
