@@ -27,14 +27,13 @@ export class ProductDetailsComponent implements OnInit {
     );
   }
 
-  //Ajouter le produit au panier
+  //
   addToCart(product: any) {
     this.bdService.togglePanier(product);
     localStorage.setItem('products', JSON.stringify(this.items));
   }
 }
 
-//Le pipe nous a servi pour permettre d'integrer l'url de la video de youtube
 @Pipe({ name: 'safe' })
 export class SafePipe implements PipeTransform {
   constructor(private domSanitizer: DomSanitizer) {}

@@ -34,7 +34,6 @@ export class ProductDetailsComponent implements OnInit {
   }
 }
 
-//Le pipe nous a servi pour permettre d'integrer l'url de la video de youtube
 @Pipe({ name: 'safe' })
 export class SafePipe implements PipeTransform {
   constructor(private domSanitizer: DomSanitizer) {}

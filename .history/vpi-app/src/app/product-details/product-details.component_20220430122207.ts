@@ -17,24 +17,22 @@ export class ProductDetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute, private bdService: BdService) {}
 
   ngOnInit(): void {
-    // prendre le id du produit du route
+    // First get the product id from the current route.
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routeParams.get('productId'));
 
-    //trouver le produit qui corerspond à l'id donne par le route
+    // Find the product that correspond with the id provided in route.
     this.product = products.find(
       (product: { id: number }) => product.id === productIdFromRoute
     );
   }
 
-  //Ajouter le produit au panier
   addToCart(product: any) {
-    this.bdService.togglePanier(product);
+    this.bdService.addToCart(product);
     localStorage.setItem('products', JSON.stringify(this.items));
   }
 }
 
-//Le pipe nous a servi pour permettre d'integrer l'url de la video de youtube
 @Pipe({ name: 'safe' })
 export class SafePipe implements PipeTransform {
   constructor(private domSanitizer: DomSanitizer) {}

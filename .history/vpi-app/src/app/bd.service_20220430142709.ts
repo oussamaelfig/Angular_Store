@@ -10,6 +10,11 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class BdService {
+  private users: any = [];
+  private candidats: any = (listeCandidat as any).default;
+  private produits: any = [];
+  //liste des codes qui se trouvent dans le panier
+  //lstpanier: any[] = [];
   lstpanier: Product[] = [];
 
   constructor(protected http: HttpClient, private router: Router) {}
@@ -38,7 +43,6 @@ export class BdService {
   //met à jour la liste des produit dispo selon ce qui est dans le panier
   updateProduits() {}
 
-  //retourne un observable qui correspond a la liste d'usagers
   getUser(): Observable<HttpResponse<any>> {
     return this.getData('usagers.json');
   }
@@ -48,13 +52,10 @@ export class BdService {
     return this.getData('products.json');
   }
 
-  //Retourne un observable qui correspond a la liste de candidats
   getCandidats(): Observable<HttpResponse<any>> {
     return this.getData('candidats.json');
   }
 
-  //apelle getProduit() pour avoir une liste des produits
-  //retourne ceux qui se trouvent dans le lstpanier ()
   getPanier() {
     let listePro: any;
     let proCart: any;
@@ -64,9 +65,11 @@ export class BdService {
     });
     proCart = this.lstpanier.filter(listePro);
     return proCart;
+    //apelle getProduit() pour avoir une liste des produits
+    //retourne ceux qui se trouvent dans le lstpanier ()
   }
 
-  //prend un produit en commentaire et l'ajoute s'il ne le trouve pas sinon il le supprime s'il le trouve
+  //Product service
   togglePanier(product: Product) {
     const found = this.lstpanier.find(
       (item: any) => JSON.stringify(item) === JSON.stringify(product)
@@ -85,12 +88,10 @@ export class BdService {
     }
   }
 
-  //retourne le contenu de lstpanier
   getItems() {
     return this.lstpanier;
   }
 
-  //supprime tout le contenu du panier
   clearCart() {
     localStorage.removeItem('products');
     this.lstpanier = [];

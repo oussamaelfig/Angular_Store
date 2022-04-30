@@ -11,7 +11,6 @@ export class ProductListComponent implements OnInit {
   //products: any = products;
   dataSource: any;
 
-  //importer les produits de json par la method get
   observer2: any = this.bdService.getProduits().subscribe((res) => {
     this.dataSource = res.body;
     console.log(this.dataSource);
