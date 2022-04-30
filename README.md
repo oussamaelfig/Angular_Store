@@ -82,4 +82,4 @@ git clone https://gitlab.info.uqam.ca/el-figha.oussama/tp2_inf3190.git
 | - user         | - aqswdefr       | - aqswde12   |
 | - admin        | - administ       | - TpAdmi12   |
 
-Après s'être connecté, la page personnelle de l'utlisateur va s'ouvrir.
+Après s'être connecté, une page avec un message de succès selon le type d'utilisateur va s'afficher.
