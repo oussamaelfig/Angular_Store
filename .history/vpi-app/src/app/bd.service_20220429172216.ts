@@ -17,9 +17,12 @@ export class BdService {
   //lstpanier: any[] = [];
   lstpanier: Product[] = [];
 
-  constructor(protected http: HttpClient, private router: Router) {}
-
-  //va chercher les donnes d,un des fichier json
+  constructor(protected http: HttpClient, private router: Router) {
+    /*this.getData("usagers.json").subscribe((res)=>{
+      this.users = res
+      console.log(this.users)
+    });*/
+  }
   getData(filename: string): Observable<HttpResponse<any>> {
     let urlP = 'http://localhost:3001/getjson?f=';
     let url = urlP.concat(filename);
@@ -27,6 +30,20 @@ export class BdService {
     return data;
   }
 
+  /*
+  //retourne un tableau de json avec le endpoint /getjson de GET
+  getData(filename:string){
+    let data:any;
+    let urlP = "http://localhost:3001/getjson?f=";
+    let url = urlP.concat(filename);
+    console.log(url);
+    return this.http.get(url)/*.subscribe((res)=>{
+      data = res
+      console.log(data)
+    })
+    return data;
+  }
+*/
   //enregistre data sur le fichier filename avec le endpoint /postjson de POST
   postData(datatosave: any, filename: string) {
     let posturl: string = 'http://localhost:3001/postjson';
@@ -46,14 +63,30 @@ export class BdService {
   getUser(): Observable<HttpResponse<any>> {
     return this.getData('usagers.json');
   }
+  /*
+    this.getData("usagers.json").subscribe((res)=>{
+      this.users = res
+      console.log(this.users)
+    })
+    return this.users;
+    */ /*
+    this.getData("usagers.json").subscribe((res)=>{
+      this.users = res
+      console.log(this.users)
+    });*/
+  //User est initialisé dans le constructeur car cette liste ne changera pas.
+  //this.users;
 
   //retourne un observable qui correspond a la liste de produit
   getProduits(): Observable<HttpResponse<any>> {
-    return this.getData('products.json');
-  }
+    return this.getData('vpi-app\\src\\assets\\JSON\\products.json');
+    /*this.getData("products.json").subscribe((res)=>{
+      this.produits = res;
+    })
 
-  getCandidats(): Observable<HttpResponse<any>> {
-    return this.getData('candidats.json');
+    return this.produits;
+    */
+    //return = this.getData("products.json").then((requesteddata) => { console.log(requesteddata);this.produits = requesteddata; return(this.produits); });
   }
 
   getPanier() {
@@ -67,6 +100,10 @@ export class BdService {
     return proCart;
     //apelle getProduit() pour avoir une liste des produits
     //retourne ceux qui se trouvent dans le lstpanier ()
+  }
+
+  getCandidats() {
+    return this.getData('candidats.json');
   }
 
   //Product service

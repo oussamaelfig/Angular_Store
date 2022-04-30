@@ -7,9 +7,8 @@
     "photo": [
       "../../assets/Images/iphone-13-pro-green-select.png",
       "../../assets/Images/iphone-13-pro-green-select1.png",
-      "../../assets/Images/iphone-13-pro-green-select3.png"
+      "../../assets/Images/iphone-13-pro-green-select.png2"
     ],
-    "video": "https://www.youtube.com/embed/kV__iZuxDGE",
     "prix": 1599.0
   },
   {
@@ -20,10 +19,9 @@
     "photo": [
       "../../assets/Images/iphone12.jpg",
       "../../assets/Images/iphone121.jpg",
-      "../../assets/Images/iphone122.jpg"
+      "../../assets/Images/iphone122.jpg",
+      "https://www.youtube.com/watch?v=UpolBSznWp0"
     ],
-    "video": "https://www.youtube.com/embed/WoAT4icjrDE",
-
     "prix": 899.99
   },
   {
@@ -36,8 +34,6 @@
       "../../assets/Images/SamsungGalaxyNote10+1.webp",
       "../../assets/Images/SamsungGalaxyNote10+2.webp"
     ],
-    "video": "https://www.youtube.com/embed/3swW7ezmG4s",
-
     "prix": 799.0
   },
   {
@@ -50,8 +46,6 @@
       "../../assets/Images/GooglePixel6Pro1.png",
       "../../assets/Images/GooglePixel6Pro2.png"
     ],
-    "video": "https://www.youtube.com/embed/xMZaObIQps8",
-
     "prix": 599.99
   },
   {
@@ -64,8 +58,6 @@
       "../../assets/Images/macbook-product1.jpg",
       "../../assets/Images/macbook-product2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/9tobL8U7dQo",
-
     "prix": 2499.0
   },
   {
@@ -78,8 +70,6 @@
       "../../assets/Images/imac-po1.jpg",
       "../../assets/Images/imac-po2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/3dPxHKXLsrc",
-
     "prix": 1199.99
   },
   {
@@ -92,8 +82,6 @@
       "../../assets/Images/PcGamer-Ryzen1.jpg",
       "../../assets/Images/PcGamer-Ryzen2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/c6ihySYvKYM",
-
     "prix": 1049.99
   },
   {
@@ -106,8 +94,6 @@
       "../../assets/Images/Zenbook-Pro1.webp",
       "../../assets/Images/Zenbook-Pro2.webp"
     ],
-    "video": "https://www.youtube.com/embed/6Si9ra5x9jU",
-
     "prix": 4199.0
   },
   {
@@ -120,8 +106,6 @@
       "../../assets/Images/airpods-product1.jpg",
       "../../assets/Images/airpods-product2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/OCZVRJ5uZxc",
-
     "prix": 329.0
   },
   {
@@ -135,7 +119,6 @@
       "../../assets/Images/apple-watch1.jpg",
       "../../assets/Images/apple-watch2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/LLHpq_WSvhk",
     "prix": 369.0
   },
   {
@@ -148,7 +131,6 @@
       "../../assets/Images/souris-apple1.jpg",
       "../../assets/Images/souris-apple2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/qn6fz_6_fcw",
     "prix": 119.0
   },
   {
@@ -161,7 +143,6 @@
       "../../assets/Images/eve-cam1.jpg",
       "../../assets/Images/eve-cam2.jpg"
     ],
-    "video": "https://www.youtube.com/embed/3fsKn42wXls",
     "prix": 219.95
   }
 ]
