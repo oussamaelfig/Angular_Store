@@ -1,0 +1,109 @@
+<div class="big-container">
+  <div class="container">
+    <div class="search-container">
+      <mat-form-field appearance="fill">
+        <input
+          matInput
+          placeholder="search"
+          autocomplete="off"
+          (keyup)="filterData($event)"
+        />
+      </mat-form-field>
+    </div>
+
+    <table mat-table matsort [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="nom">
+        <th mat-header-cell *matHeaderCellDef>Nom du produit</th>
+        <td mat-cell *matCellDef="let element">{{ element.nom }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="prix">
+        <th mat-header-cell *matHeaderCellDef>Prix</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.prix | currency }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="add">
+        <th mat-header-cell *matHeaderCellDef>Ajouter au panier</th>
+        <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+    <mat-paginator
+      #paginator
+      [pageSize]="12"
+      [pageSizeOptions]="[2, 5, 10]"
+      aria-label="Select page"
+    >
+    </mat-paginator>
+  </div>
+</div>
+<!-- <div class="container">
+  <br />
+  <br />
+  <br />
+  <h1>Table des produits</h1>
+  <nav class="navbar">
+    <input
+      class="form-control"
+      type="text"
+      name="nomProduit"
+      [(ngModel)]="nomProduit"
+      (ngModelChange)="Search()"
+      placeholder="Entrer le nom du produit à chercher"
+    />
+  </nav>
+  <table class="table table-bordred">
+    <thead>
+      <tr>
+        <th (click)="sort('id')">
+          Code Produit &nbsp; <i class="bi bi-funnel-fill"></i>
+        </th>
+        <th (click)="sort('nom')">
+          Nom &nbsp; <i class="bi bi-funnel-fill"></i>
+        </th>
+        <th>Prix</th>
+        <th>Ajout au panier</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="
+          let product of products
+            | orderBy: key:reverse
+            | paginate: { itemsPerPage: 5, currentPage: p }
+        "
+      >
+        <td>{{ product.id }}</td>
+        <td>{{ product.nom }}</td>
+        <td>{{ product.prix }}$</td>
+        <td>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              (click)="addToCart(product)"
+              value=""
+              id="flexCheckChecked"
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              Checked checkbox
+            </label>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </table>
+</div>
+<br />
+<br />
+<br /> -->
