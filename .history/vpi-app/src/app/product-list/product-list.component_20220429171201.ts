@@ -9,11 +9,15 @@ import { BdService } from '../bd.service';
 })
 export class ProductListComponent implements OnInit {
   products: any = products;
+  items = this.bdService.getProduits();
   dataSource: any;
 
-  observer2: any = this.bdService.getProduits().subscribe((res) => {
+  observer2: any = this.bd.getUser().subscribe((res) => {
     this.dataSource = res.body;
     console.log(this.dataSource);
+    this.dataSource = new MatTableDataSource(this.dataSource);
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
   });
 
   constructor(private bdService: BdService) {}

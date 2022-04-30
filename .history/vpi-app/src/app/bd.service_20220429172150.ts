@@ -79,7 +79,7 @@ export class BdService {
 
   //retourne un observable qui correspond a la liste de produit
   getProduits(): Observable<HttpResponse<any>> {
-    return this.getData('products.json');
+    return this.getData('vpi-appsrcassetsJSONproducts.json');
     /*this.getData("products.json").subscribe((res)=>{
       this.produits = res;
     })

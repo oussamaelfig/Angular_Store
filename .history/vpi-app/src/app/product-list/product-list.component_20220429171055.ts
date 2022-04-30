@@ -9,14 +9,15 @@ import { BdService } from '../bd.service';
 })
 export class ProductListComponent implements OnInit {
   products: any = products;
-  dataSource: any;
+items = this.bdService.getItems();
+    dataSource:any
 
-  observer2: any = this.bdService.getProduits().subscribe((res) => {
+  observer2:any = getProduits().subscribe((res) => {
     this.dataSource = res.body;
     console.log(this.dataSource);
-  });
+  }
 
-  constructor(private bdService: BdService) {}
+  constructor() {}
 
   ngOnInit(): void {}
 }
