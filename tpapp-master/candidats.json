@@ -1,4 +1,1 @@
-{
-  "file":"candidats.json",
-  "data":[]
-}
+[{"nom":"Eiffel","prenom":"Gustave","date":"2001-02-21","courriel":"test@canada.ca"}]

@@ -47,15 +47,14 @@
       <div class="col-12 col-md-6">
         <div class="mb-4 mt-4">
           <label class="form-label">Rôle</label>
-          <select type="text" class="form-select">
-            <option>Choisir un rôle</option>
-            <option>User</option>
-            <option>Admin</option>
+          <select [formControl]="role" type="text" class="form-select" [value]='null'>
+            <option [value]="u">User</option>
+            <option [value]="a">admin</option>
           </select>
         </div>
       </div>
       <div>
-        <button class="btn btn-success">Créer l'utilisateur</button>
+        <button (click)="validerForm()" class="btn btn-success">Créer l'utilisateur</button>
       </div>
     </div>
   </form>
