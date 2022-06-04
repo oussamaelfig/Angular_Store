@@ -1,4 +1,7 @@
-# Ecommerce SiteWeb built with Angular
+# Ecommerce SiteWeb built with PHP and Angular
+
+Pour la version PHP, elle est sur la branche main
+Pour la version Angular, elle est sur la branche TP3_H2022
 
 ## Description du projet :
 
