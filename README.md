@@ -1,4 +1,4 @@
-# TP2 INF3190 HIVER 2022
+# Ecommerce SiteWeb built with Angular
 
 ## Description du projet :
 
